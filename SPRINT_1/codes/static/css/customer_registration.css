@@ -1,0 +1,25 @@
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.cliente{
+    display: flex;
+    flex-direction: column;
+}
+
+.active{
+    background-color: cyan;
+}
