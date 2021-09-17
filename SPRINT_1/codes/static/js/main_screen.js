@@ -22,4 +22,9 @@ function novaProposta() {
       listaValorProposta[i] +
       "</div>";
   }
+
+  document.getElementById("nomeProposta").value = "";
+  document.getElementById("dataProposta").value = "";
+  document.getElementById("valorProposta").value = "";
+
 }
