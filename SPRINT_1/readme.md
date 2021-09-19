@@ -32,15 +32,13 @@ A empresa parceira deseja o desenvolvimento de um sistema CRM para fins de geren
 
 ## :chart_with_downwards_trend: Burndown da Equipe
 
-<img src = "" width="600" height="450"/></h1>
+<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/Burndown.PNG" width="600" height="450"/></h1>
 
 
 <br>
 
 ## :newspaper: Backlog do Produto
-```
-**BUILDING**
-```
+<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/Product_Backlog.png" width="1300" height="700"/></h1>
 
 <br>
 
