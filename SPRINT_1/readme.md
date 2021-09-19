@@ -38,7 +38,7 @@ A empresa parceira deseja o desenvolvimento de um sistema CRM para fins de geren
 <br>
 
 ## :newspaper: Backlog do Produto
-<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/Product_Backlog.png" width="4000" height="840"/></h1>
+<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/Product_Backlog.png" width="2000" height="4000"/></h1>
 
 <br>
 
