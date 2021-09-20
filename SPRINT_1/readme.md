@@ -11,6 +11,7 @@ Nessa sprint focamos em entregar principalmente o Layout do Figma e outras funci
 ## :mag_right: Visão do Projeto
 
 A empresa parceira deseja o desenvolvimento de um sistema CRM para fins de gerenciar o relacionamento de vendas com o cliente.
+
 **O problema é:** A empresa não possui um sistema dedicado ao relacionamento de vendas com o cliente, o que dificulta esse processo.
 
 **Que afeta:** Todo o processo de comunicação com o cliente para a realização das vendas.
