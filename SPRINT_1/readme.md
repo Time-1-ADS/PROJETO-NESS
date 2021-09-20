@@ -29,12 +29,15 @@ A empresa parceira deseja o desenvolvimento de um sistema CRM para fins de geren
 <br>
 
 ## :rocket: Branches das Entregas
-```
-**BUILDING**
-```
+
+| Sprints/Entregas do Projeto | Deliverables | Data de Início | Data de Término |
+| :---: | :---: | :---: | :---: |
+| `SPRINT 1` | Layout Figma e Telas Base | 30/08/2021 | 19/09/2021 |
+| `SPRINT 2` | Sistema de Cadastro de Pipelines e Nível de Pipeline | 20/09/2021 | 10/10/2021 |
+| `SPRINT 3` | Sistema de Acesso e Sistema de Cadastro de Usuário | 18/10/2021 | 07/11/2021 |
+| `SPRINT 4` | Interface Personalizável e Finalização da Documentação do Projeto| 08/11/2021 | 28/11/2021 |
 
 <br>
-
 ## :chart_with_downwards_trend: Burndown da Equipe
 
 <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/Burndown.PNG" width="600" height="450"/></h1>
