@@ -22,9 +22,15 @@ A empresa parceira deseja o desenvolvimento de um sistema CRM para fins de geren
 <br>
 
 ## :black_nib: Escopo da Solução
-```
-**BUILDING**
-```
+Abaixo elencamos as necessidades identificadas em consulta aos stakeholders, classificando-as: 
+
+| Necessidades | Categorias |
+| :--- | :---: |
+| 1. Estruturação do banco de dados com base nas informações do projeto | Essencial |
+| 2. Desenvolvimento de aplicação WEB que permita integrar o Banco de Dados com o sistema. | Essencial |
+| 3. Documentar todo o processo do desenvolvimento da plataforma. | Importante |
+| 4. Aperfeiçoar a interface, de modo a proporcionar uma boa representação visual de toda a plataforma. | Importante |
+| 5. Adicionar funcionalidades que permitam a facilidade no manuseamento da plataforma. | Desejável |
 
 <br>
 
