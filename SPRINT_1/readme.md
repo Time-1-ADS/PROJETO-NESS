@@ -48,11 +48,17 @@ A empresa parceira deseja o desenvolvimento de um sistema CRM para fins de geren
 <br>
 
 ## :sparkles: Wireframe Figma
-```
-**BUILDING**
-```
+<h3 align="center">Layout Inicial</h3>
 
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/LayoutFigma.gif"/></h1>
 <br>
+
+## :sparkles: Front-End Screens
+<h3 align="center">Layout Inicial</h3>
+
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/Front.gif"/></h1>
+<br>
+
 
 ## 🧩 Modelo Estrutura Banco de Dados
 
