@@ -38,6 +38,7 @@ A empresa parceira deseja o desenvolvimento de um sistema CRM para fins de geren
 | `SPRINT 4` | Interface Personalizável e Finalização da Documentação do Projeto| 08/11/2021 | 28/11/2021 |
 
 <br>
+
 ## :chart_with_downwards_trend: Burndown da Equipe
 
 <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/Burndown.PNG" width="600" height="450"/></h1>
