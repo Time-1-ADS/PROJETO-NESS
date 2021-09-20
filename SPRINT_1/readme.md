@@ -11,9 +11,13 @@ Nessa sprint focamos em entregar principalmente o Layout do Figma e outras funci
 ## :mag_right: Visão do Projeto
 
 A empresa parceira deseja o desenvolvimento de um sistema CRM para fins de gerenciar o relacionamento de vendas com o cliente.
-```
-**BUILDING**
-```
+**O problema é:** A empresa não possui um sistema dedicado ao relacionamento de vendas com o cliente, o que dificulta esse processo.
+
+**Que afeta:** Todo o processo de comunicação com o cliente para a realização das vendas.
+
+**O impacto disto é:** Ter de forma organizada todo o processo de gerenciamento de vendas, através disso conseguir de forma adequada entrar em contato com o cliente, para manter o gerenciamento dessa relação cliente e venda.
+
+**A solução seria:** O desenvolvimento de um sistema CRM no qual tanto o gerenciamneto de vendas quanto o contato com o cliente seja possível em uma mesma plataforma.
 <br>
 
 ## :black_nib: Escopo da Solução
@@ -54,14 +58,6 @@ A empresa parceira deseja o desenvolvimento de um sistema CRM para fins de geren
 <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/Modelo.jpg" width="700" height="500"/></h1>
 
 <br>
-
-## :computer: Requisitos para instalação do projeto
-
-
-**Instalação:**
-```
-**BUILDING**
-```
 
 
 
