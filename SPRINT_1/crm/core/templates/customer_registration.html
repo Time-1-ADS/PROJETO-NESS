@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+    {% block title %}Register{% endblock %}
+
+{% block content %}
+    <div class="container" style="display: flex;">
+        <div class="form">
+            <div class="form-btn">
+                
+            </div>
+
+            <form class="cliente">
+                <div class="btns">
+                    <button class="btn active">Client</button>
+                    <button class="btn">Employee</button>
+                </div>
+                <input type="name" placeholder="Company Name">
+                <input type="name" placeholder="Representative Name">
+                <input type="email" placeholder="E-mail">
+                <input type="tel" placeholder="Phone">
+                <input type="url" placeholder="Company Website">
+                <button>Register</button>
+            </form>
+
+        </div>
+    </div>
+    <script>
+        feather.replace()
+    </script>
+    <script src="../static/js/navbar.js"></script>
+{% endblock %}
