@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+    {% block title %}Contacts{% endblock %}
+
+{% block content %}
+    {% for contact in contacts %}
+    <div class="container">
+        {{ contact.nome }}
+        {{ contact.espec }}
+    </div>
+    {% endfor %}
+    <script>
+        feather.replace()
+    </script>
+
+{% endblock %}

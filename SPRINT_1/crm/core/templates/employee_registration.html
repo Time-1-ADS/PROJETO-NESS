@@ -1,19 +1,20 @@
 {% extends "base.html" %}
-    {% block title %}Register{% endblock %}
+    {% block title %}Employee Register{% endblock %}
 
 {% block content %}
+
     <div class="container" style="display: flex;">
         <div class="form">
+
             <form class="cliente">
                 <div class="btns">
-                    <button class="btn active">Client</button>
-                    <button class="btn">Employee</button>
+                    <button class="btn">Client</button>
+                    <button class="btn active">Employee</button>
                 </div>
-                <input type="name" placeholder="Company Name">
-                <input type="name" placeholder="Representative Name">
+                <input type="name" placeholder="Name">
                 <input type="email" placeholder="E-mail">
-                <input type="tel" placeholder="Phone">
-                <input type="url" placeholder="Company Website">
+                <input type="password" placeholder="Password">
+                <input type="number" placeholder="CPF">
                 <button>Register</button>
             </form>
 
