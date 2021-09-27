@@ -5,13 +5,13 @@ var contactsElement = document.getElementById("contacts");
 var dashboardElement = document.getElementById("dashboard");
 var registrationElement = document.getElementById("registration");
 
-if (pageTitle == "Main Screen"){
+if (pageTitle == "Pagina Principal"){
     homeElement.className += " active";
-} else if (pageTitle == "Contacts"){
+} else if (pageTitle == "Contatos"){
     contactsElement.className += " active";
 } else if (pageTitle == "Dashboard"){
     dashboardElement.className += " active";
-} else if (pageTitle == "Register"){
+} else if (pageTitle == "Cadastro"){
     registrationElement.className += " active";
 }
 
