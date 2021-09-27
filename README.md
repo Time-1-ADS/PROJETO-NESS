@@ -44,7 +44,7 @@ Para usar o PROJETO-NESS, siga estas etapas:
 ```
 
 ## 📝 Backlog das Sprints
-<img src="https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/Colorful%20Foundational%204L's%20Retrospective%20Online%20Whiteboard.png" width="1920" height="1920">
+<img src="https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/Colorful%20Foundational%204L's%20Retrospective%20Online%20Whiteboard.png" width="1920" height="1080">
 
 
 ## 🤝 Colaboradores
