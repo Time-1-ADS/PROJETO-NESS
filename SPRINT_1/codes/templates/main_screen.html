@@ -12,30 +12,29 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="navbar" id="navbar">
         <div class="topnav" id="myTopnav">
-            <a href="#" class="active menu">
-                <i data-feather="home"></i>
+            <a href="#" class="menu" id="home">
+                <i data-feather="home" class="menu__icon"></i>
                 <p class="menu-identify">Home</p>
             </a>
-            <a href="#" class="menu">
-                <i data-feather="users"></i>
+            <a href="#" class="menu" id="contacts">
+                <i data-feather="users" class="menu__icon"></i>
                 <p class="menu-identify">Contacts</p>
             </a>
-            <a href="#" class="menu">
-                <i data-feather="pie-chart"></i>
+            <a href="#" class="menu" id="dashboard">
+                <i data-feather="pie-chart" class="menu__icon"></i>
                 <p class="menu-identify">Dashboard</p>
             </a>
-            <a href="#" class="menu">
-                <i data-feather="user-plus"></i>
-                <p class="menu-identify">Registration</p>
+            <a href="#" class="menu" id="registration">
+                <i data-feather="user-plus" class="menu__icon"></i>
+                <p class="menu-identify" class="menu__icon">Registration</p>
             </a>
-
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="navbar()">
                 <i data-feather="menu"></i>
             </a>
         </div>
-    </div>
+    </div> <!-- navbar-->
     <div class="direita">
     <div class="tab">
         <div class="blocoNovaProposta">
