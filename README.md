@@ -13,7 +13,7 @@
 
 O projeto ainda está em desenvolvimento:
 
-- [X] SPRINT 1
+- ✔️ SPRINT 1
 - [ ] SPRINT 2
 - [ ] SPRINT 3
 - [ ] SPRINT 4
