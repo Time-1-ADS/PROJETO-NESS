@@ -7,7 +7,7 @@ align-itens: center;
 }
 
 .button{
-background: whitesmoke;
+background: linear-gradient(135deg, rgb(86,139,218, 0.2), rgb(79,225,173, 0.2));
 width: 50%;
 height: calc(100% - 20px);
 margin: 10px;
@@ -24,6 +24,6 @@ margin-right: 0;
 }
 
 .button:hover{
-background: lightgray;
+background: linear-gradient(135deg, rgb(86,139,218, 0.4), rgb(79,225,173, 0.4));
 font-weight: bold;
 }
