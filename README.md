@@ -13,7 +13,7 @@
 
 O projeto ainda está em desenvolvimento:
 
-- ✅ [SPRINT 1](https://github.com/Time-1-ADS/PROJETO-NESS/tree/main/SPRINT_1)
+- ✅ [SPRINT 1](https://github.com/Time-1-ADS/PROJETO-NESS/tree/SPRINT_1)
 - ⬜ SPRINT 2
 - ⬜ SPRINT 3
 - ⬜ SPRINT 4
