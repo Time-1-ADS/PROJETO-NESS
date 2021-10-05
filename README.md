@@ -1,131 +1,76 @@
-# PROJETO-NESS
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Time-1-ADS/PROJETO-NESS?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/Time-1-ADS/PROJETO-NESS?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/Time-1-ADS/PROJETO-NESS?style=for-the-badge)
+## :bookmark: Primeira Entrega - SPRINT 1
 
+<br>
 
-<img src="https://cdn.dribbble.com/users/10549/screenshots/3062682/build.png?compress=1&resize=400x300" alt="exemplo imagem">
+Nessa sprint focamos em entregar principalmente o Layout do Figma e outras funcionalidades como mostrado no seguinte card:
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/1.jpg" width="710" height="420" /></h1>
 
-> Imagem em construção.
+<br>
 
-### Ajustes e melhorias
+## :mag_right: Visão do Projeto
 
-O projeto ainda está em desenvolvimento:
+A empresa parceira deseja o desenvolvimento de um sistema CRM para fins de gerenciar o relacionamento de vendas com o cliente.
 
-- ✅ [SPRINT 1](https://github.com/Time-1-ADS/PROJETO-NESS/tree/main/SPRINT_1)
-- ⬜ SPRINT 2
-- ⬜ SPRINT 3
-- ⬜ SPRINT 4
+**O problema é:** A empresa não possui um sistema dedicado ao relacionamento de vendas com o cliente, o que dificulta esse processo.
 
+**Que afeta:** Todo o processo de comunicação com o cliente para a realização das vendas.
 
-## 💻 Pré-requisitos
+**O impacto disto é:** Ter de forma organizada todo o processo de gerenciamento de vendas, através disso conseguir de forma adequada entrar em contato com o cliente, para manter o gerenciamento dessa relação cliente e venda.
 
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
-* Você se você instalou a versão mais recente de `Python / SQL `
-* Você tem uma máquina `Windows`.
+**A solução seria:** O desenvolvimento de um sistema CRM no qual tanto o gerenciamneto de vendas quanto o contato com o cliente seja possível em uma mesma plataforma.
+<br>
 
+## :black_nib: Escopo da Solução
+Abaixo elencamos as necessidades identificadas em consulta aos stakeholders, classificando-as: 
 
-## 🚀 Instalando PROJETO-NESS
+| Necessidades | Categorias |
+| :--- | :---: |
+| 1. Estruturação do banco de dados com base nas informações do projeto | Essencial |
+| 2. Desenvolvimento de aplicação WEB que permita integrar o Banco de Dados com o sistema. | Essencial |
+| 3. Documentar todo o processo do desenvolvimento da plataforma. | Importante |
+| 4. Aperfeiçoar a interface, de modo a proporcionar uma boa representação visual de toda a plataforma. | Importante |
+| 5. Adicionar funcionalidades que permitam a facilidade no manuseamento da plataforma. | Desejável |
 
-Para instalar o PROJETO-NESS, siga estas etapas:
+<br>
 
-Windows:
-```
-**BUILDING**
-```
+## :rocket: Branches das Entregas
 
-## ☕ Usando PROJETO-NESS
+| Sprints/Entregas do Projeto | Deliverables | Data de Início | Data de Término |
+| :---: | :---: | :---: | :---: |
+| `SPRINT 1` | Layout Figma e Telas Base | 30/08/2021 | 19/09/2021 |
+| `SPRINT 2` | Sistema de Cadastro de Pipelines e Nível de Pipeline | 20/09/2021 | 10/10/2021 |
+| `SPRINT 3` | Sistema de Acesso e Sistema de Cadastro de Usuário | 18/10/2021 | 07/11/2021 |
+| `SPRINT 4` | Interface Personalizável e Finalização da Documentação do Projeto| 08/11/2021 | 28/11/2021 |
 
-Para usar o PROJETO-NESS, siga estas etapas:
+<br>
 
-```
-**BUILDING**
-```
+## :chart_with_downwards_trend: Burndown da Equipe
 
-## 📝 Backlog das Sprints
-<img src="https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/Colorful%20Foundational%204L's%20Retrospective%20Online%20Whiteboard.png" width="2000" height="650">
-
-
-## 🤝 Colaboradores
-
-Agradecemos às seguintes pessoas que contribuíram para este projeto:
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/66032756?v=4" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
-        <sub>
-          <b>Lucas César</b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/71012953?v=4" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
-        <sub>
-          <b>Marcus Rocha</b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/71013006?s=400&u=cdaf1fd724434cc5928dec38453bce0b3ee5f98a&v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
-        <sub>
-          <b>Elias Ferreira</b>
-        </sub>
-      </a>
-    </td>
-<td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/69976120?v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
-        <sub>
-          <b>Danielle Brito</b>
-        </sub>
-      </a>
-    </td>
-
-  </tr>
-<tr>
-<td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/71130553?v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
-        <sub>
-          <b>Jeferson Henrique</b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/71613664?s=460&u=e49bfb545a1e97319b3dd2b42ecc1f56498fd1c2&v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
-        <sub>
-          <b>Raphael Prado</b>
-        </sub>
-      </a>
-    </td>
-<td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/67916056?v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
-        <sub>
-          <b>Bruno Freire</b>
-        </sub>
-      </a>
-    </td>
-<td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/67859220?v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
-        <sub>
-          <b>Ana Paula</b>
-        </sub>
-      </a>
-</tr>
-
-</table>
+<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/Burndown.PNG" width="600" height="450"/></h1>
 
 
-## 📝 Licença
+<br>
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+## :newspaper: Backlog do Produto
+<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/Product_Backlog.png" width="2000" height="2000"/></h1>
 
-[⬆ Voltar ao topo](#PROJETO-NESS)<br>
+<br>
+
+## :sparkles: Wireframe Figma
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/LayoutFigma.gif"/></h1>
+<br>
+
+## :sparkles: Front-End Screens
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/Front.gif"/></h1>
+<br>
+
+
+## 🧩 Modelo Estrutura Banco de Dados
+
+<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/Modelo.jpg" width="700" height="500"/></h1>
+
+<br>
+
+
+
