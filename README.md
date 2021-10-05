@@ -2,8 +2,8 @@
 
 <br>
 
-Para essa sprint, focamos em desenvolver o front-end do projeto para análise dos gráficos e continuamos no desenvolvimento do Dashboard, como apresentado no card a seguir:
-<h1 align="center"> <img src = "/Imagens Geral/card02.png" width="710" height="420" /></h1>
+Para essa sprint, focamos em desenvolver o front-end do projeto junto com a integração do back-end:
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/SPRINT_2/codes/imagens/2.jpg" width="710" height="420" /></h1>
 
 <br>
 
