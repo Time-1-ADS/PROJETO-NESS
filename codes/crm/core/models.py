@@ -75,9 +75,8 @@ class Medic(models.Model):
     whatsapp = models.CharField('Whatsapp', max_length=13, help_text='Enter your number like: 0000000000, put your DDD and DDI',
                                    default=None)
 
-
     def __str__(self):
         return self.nome
 
 
-#class Clinic(models.Model):
+# class Clinic(models.Model):

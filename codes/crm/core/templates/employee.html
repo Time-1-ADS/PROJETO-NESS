@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+    {% block title %}Employee{% endblock %}
+
+{% block content %}
+
+    <div style="display: flex; flex-direction: column;">
+        {% for func in funcs %}
+        <div class="container" >
+            <img src="{{ func.foto }}">
+            {{ func.nome }}
+            {{ func.email }}
+            {{ func.cargo }}
+        </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

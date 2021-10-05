@@ -1,7 +1,9 @@
 from django.shortcuts import render
 from core.models import Permission, Agent, Medic
 from . import models
+from .forms import *
 from django.views.generic.list import ListView
+from django.contrib.auth.hashers import make_password
 
 
 def index(request):
@@ -13,7 +15,13 @@ def regcustumer(request):
 
 
 def regemployee(request):
-    return render(request, 'employee_registration.html')
+    form = AgentForm(request.POST or None)
+    if form.is_valid():
+        agent = form.save(commit=False)
+        agent.senha = make_password(request.POST['senha'])
+        agent.save()
+        # return redirect('Employee')
+    return render(request, 'employee_registration.html', {'form': form})
 
 
 def contacts(request):
@@ -29,3 +37,14 @@ def dashboard(request):
 
 def register(request):
     return render(request, 'register.html')
+
+
+def leads(request):
+    return render(request, 'leads.html')
+
+
+def employee(request):
+    context = {
+        'funcs': Agent.objects.all()
+    }
+    return render(request, 'employee.html', context)

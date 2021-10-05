@@ -3,7 +3,7 @@ from core.models import *
 
 
 class AgentAdmin(admin.ModelAdmin):
-    list_display = ('nome', 'email', 'cargo')
+    list_display = ('nome', 'email', 'cargo', 'foto')
     list_filter = ('cargo', 'nome')
 
 

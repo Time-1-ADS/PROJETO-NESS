@@ -3,17 +3,11 @@
 
 {% block content %}
         <div class="form">
-
-            <form class="cliente">
-                <div class="btns">
-                    <button class="btn">Client</button>
-                    <button class="btn active">Employee</button>
-                </div>
-                <input type="name" placeholder="Name">
-                <input type="email" placeholder="E-mail">
-                <input type="password" placeholder="Password">
-                <input type="number" placeholder="CPF">
-                <button>Register</button>
+            {% csrf_token %}
+            <form class="cliente" action="" method="post">
+                <label for="nome">Your name: </label>
+                <input id="nome" type="text" name="nome" value="">
+                <input type="submit" value="Enviar">
             </form>
 
         </div>
