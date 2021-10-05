@@ -1,131 +1,73 @@
-# PROJETO-NESS
+## :bookmark: Segunda Entrega - SPRINT 2
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Time-1-ADS/PROJETO-NESS?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/Time-1-ADS/PROJETO-NESS?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/Time-1-ADS/PROJETO-NESS?style=for-the-badge)
+<br>
 
+Para essa sprint, focamos em desenvolver o front-end do projeto para análise dos gráficos e continuamos no desenvolvimento do Dashboard, como apresentado no card a seguir:
+<h1 align="center"> <img src = "/Imagens Geral/card02.png" width="710" height="420" /></h1>
 
-<img src="https://cdn.dribbble.com/users/10549/screenshots/3062682/build.png?compress=1&resize=400x300" alt="exemplo imagem">
+<br>
 
-> Imagem em construção.
+## :sparkles: Wireframe Figma
 
-### Ajustes e melhorias
+<h3 align="center">Layout Atualizado</h3>
 
-O projeto ainda está em desenvolvimento:
+<h1 align="center"> <img src = "/Imagens Geral/figma2gif.gif"/></h1>
 
-- ✅ [SPRINT 1](https://github.com/Time-1-ADS/PROJETO-NESS/tree/main/SPRINT_1)
-- ⬜ SPRINT 2
-- ⬜ SPRINT 3
-- ⬜ SPRINT 4
+ _Nota: Após o feedback do cliente, focamos em melhorar a estética do Wireframe e personalizar as cores._
 
+<br>
 
-## 💻 Pré-requisitos
+## :bar_chart: Tela Inicial
 
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
-* Você se você instalou a versão mais recente de `Python / SQL `
-* Você tem uma máquina `Windows`.
+<h3 align="center">Gráficos e Status</h3>
 
+<h1 align="center"> <img src = "/Imagens Geral/telainicialgif.gif"/></h1>
 
-## 🚀 Instalando PROJETO-NESS
+<br>
 
-Para instalar o PROJETO-NESS, siga estas etapas:
+## :bar_chart: Tela de Projetos
 
-Windows:
-```
-**BUILDING**
-```
+<h3 align="center">Status dos Projetos Específicos</h3>
 
-## ☕ Usando PROJETO-NESS
+<h1 align="center"> <img src = "/Imagens Geral/projetogif.gif"/></h1>
 
-Para usar o PROJETO-NESS, siga estas etapas:
+<br>
 
-```
-**BUILDING**
-```
+## :bar_chart: Tela de Colaboradores
 
-## 📝 Backlog das Sprints
-<img src="https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/Colorful%20Foundational%204L's%20Retrospective%20Online%20Whiteboard.png" width="2000" height="650">
+<h3 align="center">Lista de Colaboradores: Email, Horas p/mês e ano</h3>
 
+<h1 align="center"> <img src = "/Imagens Geral/colaboradorgif.gif"/></h1>
 
-## 🤝 Colaboradores
+<br>
 
-Agradecemos às seguintes pessoas que contribuíram para este projeto:
+## :bar_chart: Tela de Tarefas
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/66032756?v=4" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
-        <sub>
-          <b>Lucas César</b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/71012953?v=4" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
-        <sub>
-          <b>Marcus Rocha</b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/71013006?s=400&u=cdaf1fd724434cc5928dec38453bce0b3ee5f98a&v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
-        <sub>
-          <b>Elias Ferreira</b>
-        </sub>
-      </a>
-    </td>
-<td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/69976120?v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
-        <sub>
-          <b>Danielle Brito</b>
-        </sub>
-      </a>
-    </td>
+<h3 align="center">Tasks Abertas e Fechadas</h3>
 
-  </tr>
-<tr>
-<td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/71130553?v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
-        <sub>
-          <b>Jeferson Henrique</b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/71613664?s=460&u=e49bfb545a1e97319b3dd2b42ecc1f56498fd1c2&v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
-        <sub>
-          <b>Raphael Prado</b>
-        </sub>
-      </a>
-    </td>
-<td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/67916056?v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
-        <sub>
-          <b>Bruno Freire</b>
-        </sub>
-      </a>
-    </td>
-<td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/67859220?v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
-        <sub>
-          <b>Ana Paula</b>
-        </sub>
-      </a>
-</tr>
+<h1 align="center"> <img src = "/Imagens Geral/tasksgif.gif"/></h1>
 
-</table>
+<br>
 
+## :computer: API Online
 
-## 📝 Licença
+<h3 align="center">Acessando rotas</h3>
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+<h1 align="center"> <img src = "/Imagens Geral/apisprint2.gif"/></h1>
 
-[⬆ Voltar ao topo](#PROJETO-NESS)<br>
+#### 🔗 Para visualizar os códigos da segunda sprint, [clique aqui](https://github.com/Time-1-ADS/ProjetoGSW/tree/sprints/SPRINT_2/codes).
+
+<br>
+
+## :chart_with_downwards_trend: Burndown da Equipe
+
+<img src = "/Imagens Geral/burn2.png" width="600" height="450"/></h1>
+
+<br>
+
+## :newspaper: Backlog do Produto
+
+<img src = "/Imagens Geral/backlogproduto2.png" width="800" height="1300"/></h1>
+
+#### 🔗 [Visualizar *product backlog* da segunda sprint](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/backlogproduto2.png)
+
