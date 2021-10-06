@@ -36,34 +36,92 @@
         </div>
     </div> <!-- navbar-->
     <div class="direita">
-    <div class="tab">
-        <div class="blocoNovaProposta">
-            <div class="tituloBloco pb">Novas Propostas</div>
-            <div class="propostas" id="propostas"></div>
+        <button class="btn-novaProposta" onclick="formularioNovaProposta()">Nova Proposta</button>
+        <div class="tab">
+            <div class="blocoNovaProposta">
+                <div class="tituloBloco pb">Novas Propostas</div>
+                <div class="propostas" id="novasPropostas"></div>
+            </div>
+            <div class="blocoPrimeiroContato">
+                <div class="tituloBloco sb">Primeiro Contato</div>
+                <div class="propostas" id="primeiroContato"></div>
+            </div>
+            <div class="blocoNovaProposta">
+                <div class="tituloBloco tb">Proposta Fechada</div>
+                <div class="propostas" id="propostaFechada"></div>
+            </div>
+            <div class="blocoNovaProposta">
+                <div class="tituloBloco qb">Projeto em Andamento</div>
+                <div class="propostas" id="projetoEmAndamento"></div>
+            </div>
         </div>
-        <div class="blocoPrimeiroContato">
-            <div class="tituloBloco sb">Primeiro Contato</div>
-            <div class="propostas" id="primeiroContato"></div>
-        </div>
-        <div class="blocoNovaProposta">
-            <div class="tituloBloco tb">Proposta Fechada</div>
-            <div class="propostas" id="propostaFechada"></div>
-        </div>
-        <div class="blocoNovaProposta">
-            <div class="tituloBloco qb">Projeto em Andamento</div>
-            <div class="propostas" id="projetoEmAndamento"></div>
+
+        <div class="cadastro">
+            <div class="cadastroProposta">
+                <input type="text" id="nomeProposta" placeholder="Nome da proposta">
+                <input type="date" id="dataProposta" placeholder="Data da proposta">
+                <input type="number" id="valorProposta" placeholder="Valor da proposta">
+                
+                <div class="radioOpcoes">
+                    <div class="radio">
+                        <p>Coluna</p>
+                        <input type="radio" name="coluna" id="nova-proposta">Nova proposta <br>
+                        <input type="radio" name="coluna" id="primeiro-contato">Primeiro Contato <br>
+                        <input type="radio" name="coluna" id="proposta-fechada">Proposta Fechada <br>
+                        <input type="radio" name="coluna" id="projeto-em-andamento">Projeto em Andamento
+                    </div>
+                    
+                    <div class="prioridade">
+                        <p>Nível de prioridade</p>
+                        <input type="radio" name="prioridade" id="alta">Alta <br>
+                        <input type="radio" name="prioridade" id="media">Média <br>
+                        <input type="radio" name="prioridade" id="baixa">Baixa
+                    </div>
+                </div>
+                <button type="submit" onclick="novaProposta()">Adicionar</button>
+            </div>
         </div>
     </div>
 
-    <div class="cadastro">
-        <div class="cadastroProposta">
-          <input type="text" id="nomeProposta" placeholder="Nome da proposta">
-          <input type="date" id="dataProposta" placeholder="Data da proposta">
-          <input type="number" id="valorProposta" placeholder="Valor da proposta">
-          <button type="submit" onclick="novaProposta()">Adicionar</button>
+    <!-- ESSE FORMULÁRIO APARECERÁ SOBRE A TELA AO PRESSIONAR O BOTÃO "NOVA PROPOSTA" -->
+
+    <div class="fundo-formulario display-none" id="formularioNovaProposta">
+        <div class="formulario">
+            <h1>Nova Proposta</h1>
+            <div class="primeira-parte">
+                <input type="text" placeholder="Nome do projeto">
+                <input type="text" placeholder="Empresa">
+            </div>
+            <p>Pessoas para Contato</p>
+            <hr>
+            <div class="segunda-parte">
+                <input type="text" placeholder="Nome">
+                <input type="tel" placeholder="Telefone">
+                <input type="email" placeholder="E-mail">
+            </div>
+            <p>Dados do Projeto</p>
+            <hr>
+            <div class="terceira-parte">
+                <input type="number" placeholder="Valor total do projeto">
+                <input type="text" name="" id="" placeholder="Status do projeto">
+                <input type="date" name="" id="" placeholder="Início">
+            </div>
+            <div class="quarta-parte">
+                <input type="text" placeholder="Descrição do projeto">
+            </div>
+            <div class="quinta-parte">
+                <input type="text" name="" id="" placeholder="Visível para">
+                <input type="text" name="" id="" placeholder="Proprietário">
+            </div>
+            <div class="botoes">
+                <button onclick="cancelarFormulario()">Cancelar</button>
+                <button>Cadastrar</button>
+            </div>
         </div>
-      </div>
     </div>
+
+
+
     <script>
         feather.replace()
     </script>
