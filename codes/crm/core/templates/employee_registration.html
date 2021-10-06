@@ -2,13 +2,15 @@
     {% block title %}Employee Register{% endblock %}
 
 {% block content %}
-        <div class="form">
-            {% csrf_token %}
-            <form class="cliente" action="" method="post">
-                <label for="nome">Your name: </label>
-                <input id="nome" type="text" name="nome" value="">
-                <input type="submit" value="Enviar">
+        <h1>Register</h1>
+
+            <form class="cliente" method="POST">
+                {% csrf_token %}
+                {{ form.as_table }}
+
+                <br>
+
+                <button type="submit">Register</button>
             </form>
 
-        </div>
 {% endblock %}

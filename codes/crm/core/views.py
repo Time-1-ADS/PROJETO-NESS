@@ -1,9 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from core.models import Permission, Agent, Medic
 from . import models
-from .forms import *
-from django.views.generic.list import ListView
-from django.contrib.auth.hashers import make_password
+from .forms import AgentForm, MedicForm
 
 
 def index(request):
@@ -12,16 +10,6 @@ def index(request):
 
 def regcustumer(request):
     return render(request, 'customer_registration.html')
-
-
-def regemployee(request):
-    form = AgentForm(request.POST or None)
-    if form.is_valid():
-        agent = form.save(commit=False)
-        agent.senha = make_password(request.POST['senha'])
-        agent.save()
-        # return redirect('Employee')
-    return render(request, 'employee_registration.html', {'form': form})
 
 
 def contacts(request):
@@ -48,3 +36,41 @@ def employee(request):
         'funcs': Agent.objects.all()
     }
     return render(request, 'employee.html', context)
+
+
+def form_agent(request):
+    if request.method == "GET":
+        form = AgentForm()
+        context = {
+            'form': form
+        }
+        return render(request, 'employee_registration.html', context=context)
+    else:
+        form = AgentForm(request.POST)
+        if form.is_valid():
+            agente = form.save()
+            form = AgentForm()
+            return redirect('index')
+        context = {
+            'form': form
+        }
+        return render(request, 'employee_registration.html', context=context)
+
+
+def form_medic(request):
+    if request.method == "GET":
+        form = MedicForm()
+        context = {
+            'form': form
+        }
+        return render(request, 'customer_registration.html', context=context)
+    else:
+        form = MedicForm(request.POST)
+        if form.is_valid():
+            agente = form.save()
+            form = MedicForm()
+            return redirect('Contacts')
+        context = {
+            'form': form
+        }
+        return render(request, 'customer_registration.html', context=context)

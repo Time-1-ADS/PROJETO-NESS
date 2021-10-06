@@ -1,20 +1,18 @@
 {% extends "base.html" %}
-    {% block title %}Register{% endblock %}
+    {% block title %}Customer Register{% endblock %}
 
 {% block content %}
-
         <div class="form">
-            <form class="cliente">
-                <div class="btns">
-                    <button class="btn active">Client</button>
-                    <button class="btn">Employee</button>
-                </div>
-                <input type="name" name="company_name" placeholder="Company Name">
-                <input type="name" placeholder="Representative Name">
-                <input type="email" placeholder="E-mail">
-                <input type="tel" placeholder="Phone">
-                <input type="url" placeholder="Company Website">
-                <button type="submit" >Register</button>
+            <h1>Register</h1>
+
+            <form class="cliente" method="POST">
+                {% csrf_token %}
+
+                {{ form.as_table }}
+
+                <br>
+
+                <button type="submit">Register</button>
             </form>
 
         </div>
