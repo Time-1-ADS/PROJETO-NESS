@@ -1,34 +1,53 @@
 {% extends "base.html" %}
     {% block title %}Main Screen{% endblock %}
-
+ {% load static %}
 {% block content %}
     <div class="direita">
-    <div class="tab">
-        <div class="blocoNovaProposta">
-            <div class="tituloBloco pb">Novas Propostas</div>
-            <div class="propostas" id="propostas"></div>
-        </div>
-        <div class="blocoPrimeiroContato">
-            <div class="tituloBloco sb">Primeiro Contato</div>
-            <div class="propostas" id="primeiroContato"></div>
-        </div>
-        <div class="blocoNovaProposta">
-            <div class="tituloBloco tb">Proposta Fechada</div>
-            <div class="propostas" id="propostaFechada"></div>
-        </div>
-        <div class="blocoNovaProposta">
-            <div class="tituloBloco qb">Projeto em Andamento</div>
-            <div class="propostas" id="projetoEmAndamento"></div>
+        <button class="btn--nova-proposta" onclick="formularioNovaProposta()">Nova Proposta</button>
+        <div class="tabela">
+            <div class="tabela__coluna">
+                <div class="coluna__titulo coluna__titulo--novas-propostas">Novas Propostas</div>
+                <div class="coluna__propostas" id="novasPropostas">
+                    {% for pipeline in pipelines %}
+                        {{ pipeline.nome }}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="tabela__coluna">
+                <div class="coluna__titulo coluna__titulo--primeiro-contato">Primeiro Contato</div>
+                <div class="coluna__propostas" id="primeiroContato"></div>
+            </div>
+            <div class="tabela__coluna">
+                <div class="coluna__titulo coluna__titulo--proposta-fechada">Proposta Fechada</div>
+                <div class="coluna__propostas" id="propostaFechada"></div>
+            </div>
+            <div class="tabela__coluna">
+                <div class="coluna__titulo coluna__titulo--projeto-em-andamento">Projeto em Andamento</div>
+                <div class="coluna__propostas" id="projetoEmAndamento"></div>
+            </div>
         </div>
     </div>
 
-    <div class="cadastro">
-        <div class="cadastroProposta">
-          <input type="text" id="nomeProposta" placeholder="Nome da proposta">
-          <input type="date" id="dataProposta" placeholder="Data da proposta">
-          <input type="number" id="valorProposta" placeholder="Valor da proposta">
-          <button type="submit" onclick="novaProposta()">Adicionar</button>
+
+    <!-- ESSE FORMULÁRIO APARECERÁ SOBRE A TELA AO PRESSIONAR O BOTÃO "NOVA PROPOSTA" -->
+
+    <div class="background-formulario formulario--oculto" id="formularioNovaProposta">
+        <div class="formulario__nova-proposta">
+            <h1>Nova Proposta</h1>
+
+            <form class="cliente" method="POST">
+
+                {% csrf_token %}
+                {{ form_pip.as_table }}
+
+                <div class="formulario__nova-proposta__botoes">
+                <button onclick="cancelarFormulario()">Cancelar</button>
+                <button type="submit">Cadastrar</button>
+                </div>
+            </form>
+
         </div>
-      </div>
     </div>
+
+<script src="{% static 'js/main_screen.js' %}"></script>
 {% endblock %}

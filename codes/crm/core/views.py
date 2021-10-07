@@ -1,11 +1,32 @@
 from django.shortcuts import render, redirect
-from core.models import Permission, Agent, Medic
+from core.models import Permission, Agent, Medic, Pipeline
 from . import models
-from .forms import AgentForm, MedicForm
+from .forms import AgentForm, MedicForm, PipeForm
 
 
 def index(request):
-    return render(request, 'main_screen.html')
+    if request.method == "GET" or "POST":
+        if request.method == "GET":
+            form_pip = PipeForm()
+            context = {
+                'form_pip': form_pip
+            }
+            return render(request, 'main_screen.html', context=context)
+        else:
+            form_pip = PipeForm(request.POST)
+            if form_pip.is_valid():
+                pipe = form_pip.save()
+                form = PipeForm()
+                return redirect('index')
+            context = {
+                'form_pip': form_pip
+            }
+            return render(request, 'main_screen.html', context=context)
+    else:
+        context = {
+            'pipelines': Pipeline.objects.all()
+        }
+        return render(request, 'main_screen.html', context=context)
 
 
 def regcustumer(request):

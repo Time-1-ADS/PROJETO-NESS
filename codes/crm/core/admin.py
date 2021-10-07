@@ -12,6 +12,12 @@ class MedicAdmin(admin.ModelAdmin):
     list_filter = ('espec', 'estado', 'cidade')
 
 
+class PipeAdmin(admin.ModelAdmin):
+    list_display = ('nome', 'empresa', 'status')
+
+
 admin.site.register(Permission)
 admin.site.register(Agent, AgentAdmin)
 admin.site.register(Medic, MedicAdmin)
+admin.site.register(Clinic)
+admin.site.register(Pipeline, PipeAdmin)
