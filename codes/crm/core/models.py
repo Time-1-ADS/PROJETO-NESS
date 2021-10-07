@@ -87,7 +87,7 @@ class Pipeline(models.Model):
 
     nome = models.CharField('Nome do Projeto', max_length=255, null=False)
     empresa = models.CharField('Empresa', max_length=255, null=False)
-    valor_total = models.DecimalField('Valor total', max_digits=100, decimal_places=100, null=False)
+    valor_total = models.DecimalField('Valor total', max_digits=30, decimal_places=30, null=False)
     status = models.CharField('Status', max_length=255, choices=status_projeto, default='Novo', null=False)
     descricao = models.TextField('Descrição', max_length=500, null=False)
     data_ini = models.DateField('Data', null=False)
