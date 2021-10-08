@@ -13,15 +13,6 @@ body{
     justify-content: space-between;
 }
 
-  
-.cadastroProposta {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    background: red;
-}
-
-
 .direita{
     display: flex;
     flex-direction: column;
@@ -33,29 +24,14 @@ body{
     justify-content: flex-end;
 }
 
-
-.btns{
-    display: flex;
-    justify-content: space-around;
-    
-}
-
-.btn{
-    cursor: row-resize;
-
-}
-button{
+.btn-novo-lead{
     position:absolute;
-    border-radius: 15px;
-    color: 48C1BC;
     font-size: 15px;
-    padding: 10px 50px;
-    cursor: row-resize;
-    font-weight: bold;
     width: 150px;
-    background: rgba(72, 193, 188, 0.5);
+    background: #48C1BC;
     margin-top: 30px;
-    left: 100px;
+    left: 115px;
+    color: #000000;
 }
 
 .table{
@@ -73,6 +49,7 @@ button{
     text-align: center;
     color: rgba(60, 60, 60, 0.7);
     justify-items: baseline;
+    padding: 15px;
 
 
 }
@@ -92,8 +69,7 @@ button{
     text-align: center;
     color: rgba(60, 60, 60, 0.7);
     justify-items: baseline;
-
-
+    padding: 15px;
 }
 
 .table3{
@@ -111,7 +87,7 @@ button{
     text-align: center;
     color: rgba(60, 60, 60, 0.7);
     justify-items: baseline;
-
+    padding: 15px;
 
 }
 
