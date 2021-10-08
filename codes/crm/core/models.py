@@ -83,7 +83,7 @@ class Empresa(models.Model):
 
 
 class Pipeline(models.Model):
-    status_projeto = (('Aberto', 'Aberto'), ('Pendente', 'Pendente'), ('Fechado', 'Fechado'))
+    status_projeto = (('Novo', 'Novo'), ('Aberto', 'Aberto'), ('Pendente', 'Pendente'), ('Fechado', 'Fechado'))
 
     nome = models.CharField('Nome do Projeto', max_length=255, null=False)
     empresa = models.CharField('Empresa', max_length=255, null=False)

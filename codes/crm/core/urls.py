@@ -10,4 +10,7 @@ urlpatterns = [
     path('register/employee/', views.form_agent, name='RegEmployee'),
     path('leads/', views.leads, name='Leads'),
     path('employee/', views.employee, name='Employee'),
+    path('proposta/', views.proposta, name='Proposta'),
+    path('atualiza/<str:pk>/', views.atualizaProposta, name='Atualiza'),
+    path('delete/<str:pk>/', views.deletaProposta, name='Delete'),
 ]

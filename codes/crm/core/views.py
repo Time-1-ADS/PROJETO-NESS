@@ -5,28 +5,12 @@ from .forms import AgentForm, MedicForm, PipeForm
 
 
 def index(request):
-    if request.method == "GET" or "POST":
-        if request.method == "GET":
-            form_pip = PipeForm()
-            context = {
-                'form_pip': form_pip
-            }
-            return render(request, 'main_screen.html', context=context)
-        else:
-            form_pip = PipeForm(request.POST)
-            if form_pip.is_valid():
-                pipe = form_pip.save()
-                form = PipeForm()
-                return redirect('index')
-            context = {
-                'form_pip': form_pip
-            }
-            return render(request, 'main_screen.html', context=context)
-    else:
+    if request.method == "GET":
         context = {
-            'pipelines': Pipeline.objects.all()
+            'form_pip': Pipeline.objects.all()
         }
         return render(request, 'main_screen.html', context=context)
+
 
 
 def regcustumer(request):
@@ -95,3 +79,48 @@ def form_medic(request):
             'form': form
         }
         return render(request, 'customer_registration.html', context=context)
+
+
+def proposta(request):
+    if request.method == "GET":
+        form = PipeForm()
+        context = {
+            'form': form
+        }
+        return render(request, 'proposta.html', context=context)
+    else:
+        form = PipeForm(request.POST)
+        if form.is_valid():
+            agente = form.save()
+            form = PipeForm()
+            return redirect('index')
+        context = {
+            'form': form
+        }
+        return render(request, 'proposta.html', context=context)
+
+
+def atualizaProposta(request, pk):
+    propos = Pipeline.objects.get(id=pk)
+    form = PipeForm(instance=propos)
+    if request.method == 'POST':
+        form = PipeForm(request.POST, instance=propos)
+        if form.is_valid():
+            agente = form.save()
+            form = PipeForm()
+            return redirect('index')
+    context = {
+        'form': form
+    }
+    return render(request, 'proposta.html', context=context)
+
+
+def deletaProposta(request, pk):
+    propos = Pipeline.objects.get(id=pk)
+    if request.method == 'POST':
+        propos.delete()
+        return redirect('index')
+    context = {
+        'prop': propos
+    }
+    return render(request, 'delete.html', context=context)

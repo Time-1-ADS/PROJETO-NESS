@@ -3,27 +3,63 @@
  {% load static %}
 {% block content %}
     <div class="direita">
-        <button class="btn--nova-proposta" onclick="formularioNovaProposta()">Nova Proposta</button>
+        <button class="btn--nova-proposta"> <a href="{% url 'Proposta' %}">Nova Proposta</a></button> <!-- onclick="formularioNovaProposta()" -->
         <div class="tabela">
             <div class="tabela__coluna">
                 <div class="coluna__titulo coluna__titulo--novas-propostas">Novas Propostas</div>
+                {% for form_pip in form_pip %}
                 <div class="coluna__propostas" id="novasPropostas">
-                    {% for pipeline in pipelines %}
-                        {{ pipeline.nome }}
-                    {% endfor %}
+                    {% if form_pip.status == "Novo" %}
+                    <a href="{% url 'Atualiza' form_pip.id %}"><strong>{{ form_pip.nome }}</strong></a>
+                    <a href="{% url 'Delete' form_pip.id %}">................................X</a>
+                    <p><strong>valor:</strong> {{ form_pip.valor_total }} <strong>Status:</strong> {{ form_pip.status }}
+                    </p>
+                    <br>
+                    {% endif %}
                 </div>
+                {% endfor %}
             </div>
             <div class="tabela__coluna">
                 <div class="coluna__titulo coluna__titulo--primeiro-contato">Primeiro Contato</div>
-                <div class="coluna__propostas" id="primeiroContato"></div>
-            </div>
-            <div class="tabela__coluna">
-                <div class="coluna__titulo coluna__titulo--proposta-fechada">Proposta Fechada</div>
-                <div class="coluna__propostas" id="propostaFechada"></div>
+                {% for form_pip in form_pip %}
+                <div class="coluna__propostas" id="primeiroContato">
+                    {% if form_pip.status == "Aberto" %}
+                    <a href="{% url 'Atualiza' form_pip.id %}"><strong>{{ form_pip.nome }}</strong></a>
+                    <a href="{% url 'Delete' form_pip.id %}">................................X</a>
+                    <p><strong>valor:</strong> {{ form_pip.valor_total }} <strong>Status:</strong> {{ form_pip.status }}
+                    </p>
+                    <br>
+                    {% endif %}
+                </div>
+                {% endfor %}
             </div>
             <div class="tabela__coluna">
                 <div class="coluna__titulo coluna__titulo--projeto-em-andamento">Projeto em Andamento</div>
-                <div class="coluna__propostas" id="projetoEmAndamento"></div>
+                {% for form_pip in form_pip %}
+                <div class="coluna__propostas" id="projetoEmAndamento">
+                    {% if form_pip.status == "Pendente" %}
+                    <a href="{% url 'Atualiza' form_pip.id %}"><strong>{{ form_pip.nome }}</strong></a>
+                    <a href="{% url 'Delete' form_pip.id %}">................................X</a>
+                    <p><strong>valor:</strong> {{ form_pip.valor_total }} <strong>Status:</strong> {{ form_pip.status }}
+                    </p>
+                    <br>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+            <div class="tabela__coluna">
+                <div class="coluna__titulo coluna__titulo--proposta-fechada">Proposta Fechada</div>
+                {% for form_pip in form_pip %}
+                <div class="coluna__propostas" id="propostaFechada">
+                    {% if form_pip.status == "Fechado" %}
+                    <a href="{% url 'Atualiza' form_pip.id %}"><strong>{{ form_pip.nome }}</strong></a>
+                    <a href="{% url 'Delete' form_pip.id %}">................................X</a>
+                    <p><strong>valor:</strong> {{ form_pip.valor_total }} <strong>Status:</strong> {{ form_pip.status }}
+                    </p>
+                    <br>
+                    {% endif %}
+                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
@@ -31,23 +67,23 @@
 
     <!-- ESSE FORMULÁRIO APARECERÁ SOBRE A TELA AO PRESSIONAR O BOTÃO "NOVA PROPOSTA" -->
 
-    <div class="background-formulario formulario--oculto" id="formularioNovaProposta">
-        <div class="formulario__nova-proposta">
-            <h1>Nova Proposta</h1>
+<!--    <div class="background-formulario formulario&#45;&#45;oculto" id="formularioNovaProposta">-->
+<!--        <div class="formulario__nova-proposta">-->
+<!--            <h1>Nova Proposta</h1>-->
 
-            <form class="cliente" method="POST">
+<!--            <form class="cliente" method="POST">-->
 
-                {% csrf_token %}
-                {{ form_pip.as_table }}
+<!--                {% csrf_token %}-->
+<!--                {{ form_pip.as_table }}-->
 
-                <div class="formulario__nova-proposta__botoes">
-                <button onclick="cancelarFormulario()">Cancelar</button>
-                <button type="submit">Cadastrar</button>
-                </div>
-            </form>
+<!--                <div class="formulario__nova-proposta__botoes">-->
+<!--                <button onclick="cancelarFormulario()">Cancelar</button>-->
+<!--                <button type="submit">Cadastrar</button>-->
+<!--                </div>-->
+<!--            </form>-->
 
-        </div>
-    </div>
+<!--        </div>-->
+<!--    </div>-->
 
 <script src="{% static 'js/main_screen.js' %}"></script>
 {% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+    {% block title %}Proposta{% endblock %}
+{% block content %}
+<div class="form">
+<form class="cliente" method="POST">
+
+    {% csrf_token %}
+    {{ form.as_table }}
+
+    <div class="formulario__nova-proposta__botoes">
+    <button onclick="cancelarFormulario()">Cancelar</button>
+    <button type="submit">Cadastrar</button>
+    </div>
+</form>
+</div>
+{% endblock %}
