@@ -15,13 +15,15 @@ body{
     
 }
 .grandona{
-    width: 90%;
-    height: 550px;
-    border: solid 2px;
+    width: 95%;
+    height: 530px;
+    border: solid 1px;
     border-radius: 20px;
     color: #3C3C3C;
     padding-left: 10px;
     padding-right: 10px;
+    
+
 }
 .categoria{
     font-size: 15px;
@@ -33,14 +35,18 @@ body{
 .informacao{
    
     width: 200px;
+    height: 50px;
+    margin-top: 10px;
 }
 .titulo{
     width: 200px;
     color: #3C3C3C;
+    height: 26px;
+    margin-top: 10px;
 
 }
 .contatos{
-    width: 90%;
+    width: 93%;
     font-size: 10px;
     color: #3C3C3C;
 
@@ -48,6 +54,8 @@ body{
 .botao{
     width: 90%;
     margin-top: 20px;
+    margin-bottom:;
+    
 
 }
 .btn-novo-contato{
