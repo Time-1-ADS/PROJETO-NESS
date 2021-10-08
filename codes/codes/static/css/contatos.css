@@ -15,22 +15,28 @@ body{
     
 }
 .grandona{
-    width: 95%;
-    height: 530px;
+    width: 90%;
+    height: 460px;
     border: solid 1px;
     border-radius: 20px;
     color: #3C3C3C;
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: 10px;
+    
     
 
 }
 .categoria{
     font-size: 15px;
-    font-weight: 550;
+    font-weight: 500;
     color: #3C3C3C;
     display: flex;
     justify-content: space-around;
+    font-family: Arial;
+}
+.nome-da-empresa{
+    font-weight: 550;
 }
 .informacao{
    
@@ -41,22 +47,27 @@ body{
 .titulo{
     width: 200px;
     color: #3C3C3C;
-    height: 26px;
+    height: 25px;
     margin-top: 10px;
-
+    font-size: 15px;
+    font-weight: 550;
+    
 }
 .contatos{
-    width: 93%;
+    width: 85%;
     font-size: 10px;
     color: #3C3C3C;
+    font-weight: 10px;
+    font-size: 15px;
+    margin-top: 50px;
+    font-family: arial;
+    
+
 
 }
 .botao{
     width: 90%;
     margin-top: 20px;
-    margin-bottom:;
-    
-
 }
 .btn-novo-contato{
     border-radius: 3px;
@@ -65,4 +76,8 @@ body{
     height: 30px;
     width: 150px;
 
+}
+.barra{
+    margin-top: 25px;
+    
 }
