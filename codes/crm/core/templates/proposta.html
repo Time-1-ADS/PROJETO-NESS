@@ -8,7 +8,7 @@
     {{ form.as_table }}
 
     <div class="formulario__nova-proposta__botoes">
-    <button onclick="cancelarFormulario()">Cancelar</button>
+    <button><a href="{% url 'index' %}">Cancelar</a> </button>
     <button type="submit">Cadastrar</button>
     </div>
 </form>

@@ -73,22 +73,29 @@ class Clinic(models.Model):
         return self.razao
 
 
-class Empresa(models.Model):
-    medico = models.ForeignKey('Medic', on_delete=models.CASCADE)
-    empresa = models.ForeignKey('Clinic', on_delete=models.CASCADE)
-    tudo = [medico, empresa]
-
-    def __str__(self):
-        return self.tudo
-
-
 class Pipeline(models.Model):
     status_projeto = (('Novo', 'Novo'), ('Aberto', 'Aberto'), ('Pendente', 'Pendente'), ('Fechado', 'Fechado'))
+    prioridade_projeto = (('Baixo', 'Baixo'), ('Médio', 'Médio'), ('Alto', 'Alto'))
 
     nome = models.CharField('Nome do Projeto', max_length=255, null=False)
     empresa = models.CharField('Empresa', max_length=255, null=False)
     valor_total = models.DecimalField('Valor total', max_digits=30, decimal_places=0, null=False)
     status = models.CharField('Status', max_length=255, choices=status_projeto, default='Novo', null=False)
+    prioridade = models.CharField('Prioridade', max_length=255, choices=prioridade_projeto, null=False, default='Baixo')
     descricao = models.TextField('Descrição', max_length=500, null=False)
     data_ini = models.DateField('Data', null=False)
     visivel = models.ForeignKey('Permission', on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.nome
+
+
+class Empresa(models.Model):
+    medico = Medic.objects.all()
+    empresa = Clinic.objects.all()
+    projeto = Pipeline.objects.all()
+    cliente = {'medico': [medico, empresa]}
+
+    def __str__(self):
+        return self.cliente
+

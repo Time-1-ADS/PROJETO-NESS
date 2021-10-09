@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from core.models import Permission, Agent, Medic, Pipeline
+from core.models import Permission, Agent, Medic, Pipeline, Clinic, Empresa
 from . import models
 from .forms import AgentForm, MedicForm, PipeForm
 
@@ -12,14 +12,14 @@ def index(request):
         return render(request, 'main_screen.html', context=context)
 
 
-
 def regcustumer(request):
     return render(request, 'customer_registration.html')
 
 
 def contacts(request):
+    tudo = Empresa.objects.all()
     context = {
-        'contacts': Medic.objects.all()
+        'contacts': tudo
     }
     return render(request, "contacts.html", context)
 
