@@ -1,41 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../static/css/navbar.css">
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
+
 <body>
-    <div class="container">
-        <div class="topnav" id="myTopnav">
-            <a href="#" class="menu">
-                <i data-feather="home"></i>
-                <p class="menu-identify">Home</p>
-            </a>
-            <a href="#" class="menu">
-                <i data-feather="users"></i>
-                <p class="menu-identify">Contacts</p>
-            </a>
-            <a href="#" class="active menu">
-                <i data-feather="pie-chart"></i>
-                <p class="menu-identify">Dashboard</p>
-            </a>
-            <a href="#" class="menu">
-                <i data-feather="user-plus"></i>
-                <p class="menu-identify">Registration</p>
-            </a>
-            
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i data-feather="menu"></i>
-            </a>
+    <div class="container-fluid" style="padding-left: 0px !important;">
+        <div class="row">
+            <nav class="d-none ml-3 d-md-block bg-light sidebar">
+                <div class="topnav" id="myTopnav">
+                    <a href="#" class="menu">
+                        <i data-feather="home"></i>
+                        <p class="menu-identify">Home</p>
+                    </a>
+                    <a href="#" class="menu">
+                        <i data-feather="users"></i>
+                        <p class="menu-identify">Contacts</p>
+                    </a>
+                    <a href="#" class="active menu">
+                        <i data-feather="pie-chart"></i>
+                        <p class="menu-identify">Dashboard</p>
+                    </a>
+                    <a href="#" class="menu">
+                        <i data-feather="user-plus"></i>
+                        <p class="menu-identify">Registration</p>
+                    </a>
+
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i data-feather="menu"></i>
+                    </a>
+                </div>
+            </nav>
+
         </div>
+
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-3 text-center">
+                <h4>LEADS</h4>
+                <h3>Total</h3>
+                <h1>20</h1>
+            </div>
+            <div class="col-7">
+                <canvas id="myChart" width="80%" height="25%"></canvas>
+            </div>
+            <div class="col-2">
+                <canvas id="pizzaChart" width="80%" height="25%"></canvas>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-3 text-center">
+                <h4>OPPORTUNITIES</h4>
+                <h3>Total</h3>
+                <h1>10</h1>
+            </div>
+            <div class="col-7">
+                <canvas id="myChart2" width="80%" height="25%"></canvas>
+            </div>
+            <div class="col-2">
+                <canvas id="pizzaChart2" width="50%" height="50%"></canvas>
+            </div>
+        </div>
+
+
+
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var ctx = document.getElementById('myChart');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Social Media', 'Email Marketing', 'Organic Search', 'Paid Social', 'Referral', 'Direct Trafic', 'Offline Sources', 'Cold Cal', 'Other'],
+                datasets: [{
+                    label: ' Leads by Source',
+                    data: [6, 1, 1, 2, 1, 2, 1, 1, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+    <script>
+        var data = {
+            labels: ['Open', 'Lost', 'Won'],
+            datasets: [{
+                label: 'Leads by Status',
+                data: [10, 5, 4],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        };
+
+        var canva = document.getElementById("pizzaChart").getContext("2d");
+        new Chart(canva, {
+            type: 'pie',
+            data: data
+        });
+
+        //new Chart(ctx).Doughnut(data);
+    </script>
+    <script>
+        var ctx = document.getElementById('myChart2');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Social Media', 'Email Marketing', 'Organic Search', 'Paid Social', 'Referral', 'Direct Trafic', 'Offline Sources', 'Cold Cal', 'Other'],
+                datasets: [{
+                    label: ' Leads by Source',
+                    data: [6, 1, 1, 2, 1, 2, 1, 1, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+    <script>
+        var data = {
+            labels: ['Open', 'Lost', 'Won'],
+            datasets: [{
+
+                data: [10, 5, 4],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        };
+
+        var canva = document.getElementById("pizzaChart2").getContext("2d");
+        new Chart(canva, {
+            type: 'pie',
+            data: data
+        });
+
+        //new Chart(ctx).Doughnut(data);
+    </script>
     <script>
         feather.replace()
-      </script>
+    </script>
     <script src="../static/js/navbar.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
