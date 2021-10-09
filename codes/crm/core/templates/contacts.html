@@ -14,6 +14,7 @@
         <div class="contatos">
             <p>contatos</p>
         </div>
+
         <div class="grandona">
             <div class="linha-titulo">
                 <div class="titulo">
@@ -59,6 +60,53 @@
             </div>
             <hr>
         </div>
+        <!-- DUPLICATA DA PRIMEIRA TABELA INICIA AQUI -->
+        <div class="grandona">
+            <div class="linha-titulo">
+                <div class="titulo">
+                    <p>Cliente</p>
+                </div>
+                <div class="titulo">
+                    <p>Projeto</p>
+                </div>
+                <div class="titulo">
+                    <p>Prioridade</p>
+                </div>
+                <div class="titulo">
+                    <p>Meio de contato</p>
+                </div>
+            </div>
+            <hr>
+            <div class="categoria">
+                {% for obj in contacts %}
+
+                <div class="informacao">
+                    <div class="nome-da-empresa">
+                        <p> {{obj.nome}}</p>
+                    </div>
+                    <p>{{obj.numero_fixo}}</p>
+                </div>
+                <div class="informacao">
+
+                    <p>{{obj.nome}}</p>
+
+                </div>
+                <div class="informacao">
+
+                    <p>Alta</p>
+
+                </div>
+                <div class="informacao">
+                    <p>E-mail</p>
+                    <p>Telefone</p>
+
+                </div>
+                {% endfor %}
+
+            </div>
+            <hr>
+        </div>
+        <!-- DUPLICATA DA PRIMEIRA TABELA TERMINA AQUI -->
 
     </div>
 

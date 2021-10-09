@@ -2,10 +2,13 @@ body{
     display: flex;
 }
 .direita{
+    height: 100vh;
     display: flex;
     width: 100%;
     align-items: center;
     flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
     
 }
 .linha-titulo{
