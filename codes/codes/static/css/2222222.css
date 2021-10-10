@@ -1,0 +1,17 @@
+body{
+    display: flex;
+}
+.direita{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+    margin-top: 15px;
+}

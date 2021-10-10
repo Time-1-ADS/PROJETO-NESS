@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../static/css/navbar.css">
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -15,9 +13,51 @@
 </head>
 
 <body>
-    <div class="container-fluid" style="padding-left: 0px !important;">
+    <div class="navbar" id="navbar">
+        <div class="topnav" id="myTopnav">
+            <a href="#" class="menu" id="home">
+                <i data-feather="home" class="menu__icon"></i>
+                <p class="menu-identify">Home</p>
+            </a>
+            <a href="#" class="menu" id="contacts">
+                <i data-feather="users" class="menu__icon"></i>
+                <p class="menu-identify">Contacts</p>
+            </a>
+            <a href="#" class="menu" id="dashboard">
+                <i data-feather="pie-chart" class="menu__icon"></i>
+                <p class="menu-identify">Dashboard</p>
+            </a>
+            <a href="#" class="menu" id="registration">
+                <i data-feather="user-plus" class="menu__icon"></i>
+                <p class="menu-identify" class="menu__icon">Registration</p>
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="navbar()">
+                <i data-feather="menu"></i>
+            </a>
+        </div>
+    </div> <!-- navbar-->
+    <div class="direita">
+        <h1>aaaaaaaaaaaaaaaaa</h1>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    <div class="container-fluid" style="padding-left: 0px !important;">
         <div class="row">
-            <nav class="d-none ml-3 d-md-block bg-light sidebar">
+            <nav class="d-none ml-3 d-md-block bg-light sidebar" style="position: absolute;">
                 <div class="topnav" id="myTopnav">
                     <a href="#" class="menu">
                         <i data-feather="home"></i>
@@ -230,13 +270,9 @@
 
         //new Chart(ctx).Doughnut(data);
     </script>
-    <script>
-        feather.replace()
-    </script>
-    <script src="../static/js/navbar.js"></script>
+    
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -246,6 +282,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    -->
+
+
+    <script>
+        feather.replace()
+    </script>
+    <script src="../static/js/navbar.js"></script>
 </body>
 
 </html>
