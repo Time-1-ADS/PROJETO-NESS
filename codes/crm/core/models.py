@@ -76,10 +76,13 @@ class Clinic(models.Model):
 class Pipeline(models.Model):
     status_projeto = (('Novo', 'Novo'), ('Aberto', 'Aberto'), ('Pendente', 'Pendente'), ('Fechado', 'Fechado'))
     prioridade_projeto = (('Baixo', 'Baixo'), ('Médio', 'Médio'), ('Alto', 'Alto'))
+    produtos = (('nMonitor', 'nMonitor'), ('nSensor', 'nSensor'), ('nCommand', 'nCommand'), ('nEcho', 'nEcho'),
+                ('nReport', 'nR'), ('Iara', 'Iara'))
 
-    nome = models.CharField('Nome do Projeto', max_length=255, null=False)
+    titulo = models.CharField('Nome do Projeto', max_length=255, null=False)
     empresa = models.CharField('Empresa', max_length=255, null=False)
     valor_total = models.DecimalField('Valor total', max_digits=30, decimal_places=0, null=False)
+    # produto = models.CharField('Status', max_length=255, choices=produtos, default='Novo', null=False)
     status = models.CharField('Status', max_length=255, choices=status_projeto, default='Novo', null=False)
     prioridade = models.CharField('Prioridade', max_length=255, choices=prioridade_projeto, null=False, default='Baixo')
     descricao = models.TextField('Descrição', max_length=500, null=False)
@@ -87,15 +90,18 @@ class Pipeline(models.Model):
     visivel = models.ForeignKey('Permission', on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.nome
+        return self.titulo
 
 
 class Empresa(models.Model):
     medico = Medic.objects.all()
     empresa = Clinic.objects.all()
     projeto = Pipeline.objects.all()
-    cliente = {'medico': [medico, empresa]}
+    cliente = {'medico': medico, 'projeto': projeto}
+    if cliente:
+        medico_nome = [cliente['medico'], cliente['projeto']]
 
     def __str__(self):
-        return self.cliente
+        return self.medico_nome
+
 

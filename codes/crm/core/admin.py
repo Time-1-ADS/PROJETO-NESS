@@ -13,7 +13,7 @@ class MedicAdmin(admin.ModelAdmin):
 
 
 class PipeAdmin(admin.ModelAdmin):
-    list_display = ('nome', 'empresa', 'status')
+    list_display = ('titulo', 'empresa', 'status')
 
 
 admin.site.register(Permission)

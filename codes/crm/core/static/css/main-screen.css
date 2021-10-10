@@ -22,7 +22,19 @@ body{
 }
 
 .btn--nova-proposta{
-    position: absolute;
+    margin-left: -587px;
+    position: fixed;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 11px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 200px;
+    background: linear-gradient(135deg, #568BDA, #4FE1AD);
+    border: 1px solid ;
+
 }
 
 .tabela{
@@ -40,6 +52,16 @@ body{
     width: 200px;
     color: #fff;
     text-align: center;
+}
+
+.titulo-da-proposta{
+    color: black;
+}
+
+.ttle{
+display: flex;
+justify-content: space-between;
+padding-right: 5px;
 }
 
 .coluna__titulo--novas-propostas{

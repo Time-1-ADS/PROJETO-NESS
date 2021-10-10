@@ -1,7 +1,7 @@
 {% extends "base.html" %}
     {% block title %}Delete{% endblock %}
 {% block content %}
-<p>Deseja mesmo deletar essa proposta "{{prop.nome}}" ?</p>
+<p>Deseja mesmo deletar essa proposta "{{prop.titulo}}" ?</p>
 
 <form class="cliente" action="{% url 'Delete' prop.id%}" method="POST">
     {% csrf_token %}

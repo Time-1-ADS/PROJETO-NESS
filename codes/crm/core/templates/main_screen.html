@@ -3,15 +3,21 @@
  {% load static %}
 {% block content %}
     <div class="direita">
-        <button class="btn--nova-proposta"> <a href="{% url 'Proposta' %}">Nova Proposta</a></button> <!-- onclick="formularioNovaProposta()" -->
+        <a href="{% url 'Proposta' %}">
+        <div class="btn--nova-proposta">Nova Proposta</div> <!-- onclick="formularioNovaProposta()" -->
+            </a>
         <div class="tabela">
             <div class="tabela__coluna">
                 <div class="coluna__titulo coluna__titulo--novas-propostas">Novas Propostas</div>
                 {% for form_pip in form_pip %}
                 <div class="coluna__propostas" id="novasPropostas">
                     {% if form_pip.status == "Novo" %}
-                    <a href="{% url 'Atualiza' form_pip.id %}"><strong>{{ form_pip.nome }}</strong></a>
-                    <a href="{% url 'Delete' form_pip.id %}">................................X</a>
+                    <div class="ttle">
+                    <a class="titulo-da-proposta" href="{% url 'Atualiza' form_pip.id %}"><strong>{{ form_pip.titulo }}</strong></a>
+                    <a class="titulo-da-proposta" href="{% url 'Delete' form_pip.id %}">
+                    <i data-feather="trash-2" class="menu__icon" style="height: 15px;"></i>
+                    </a>
+                    </div>
                     <p><strong>valor:</strong> {{ form_pip.valor_total }} <strong>Status:</strong> {{ form_pip.status }}
                     </p>
                     <br>
@@ -24,7 +30,7 @@
                 {% for form_pip in form_pip %}
                 <div class="coluna__propostas" id="primeiroContato">
                     {% if form_pip.status == "Aberto" %}
-                    <a href="{% url 'Atualiza' form_pip.id %}"><strong>{{ form_pip.nome }}</strong></a>
+                    <a href="{% url 'Atualiza' form_pip.id %}"><strong>{{ form_pip.titulo }}</strong></a>
                     <a href="{% url 'Delete' form_pip.id %}">................................X</a>
                     <p><strong>valor:</strong> {{ form_pip.valor_total }} <strong>Status:</strong> {{ form_pip.status }}
                     </p>
@@ -38,7 +44,7 @@
                 {% for form_pip in form_pip %}
                 <div class="coluna__propostas" id="projetoEmAndamento">
                     {% if form_pip.status == "Pendente" %}
-                    <a href="{% url 'Atualiza' form_pip.id %}"><strong>{{ form_pip.nome }}</strong></a>
+                    <a href="{% url 'Atualiza' form_pip.id %}"><strong>{{ form_pip.titulo }}</strong></a>
                     <a href="{% url 'Delete' form_pip.id %}">................................X</a>
                     <p><strong>valor:</strong> {{ form_pip.valor_total }} <strong>Status:</strong> {{ form_pip.status }}
                     </p>
@@ -52,7 +58,7 @@
                 {% for form_pip in form_pip %}
                 <div class="coluna__propostas" id="propostaFechada">
                     {% if form_pip.status == "Fechado" %}
-                    <a href="{% url 'Atualiza' form_pip.id %}"><strong>{{ form_pip.nome }}</strong></a>
+                    <a href="{% url 'Atualiza' form_pip.id %}"><strong>{{ form_pip.titulo }}</strong></a>
                     <a href="{% url 'Delete' form_pip.id %}">................................X</a>
                     <p><strong>valor:</strong> {{ form_pip.valor_total }} <strong>Status:</strong> {{ form_pip.status }}
                     </p>

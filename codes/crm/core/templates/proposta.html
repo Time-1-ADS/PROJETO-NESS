@@ -1,5 +1,6 @@
 {% extends "base.html" %}
     {% block title %}Proposta{% endblock %}
+{% load static %}
 {% block content %}
 <div class="form">
 <form class="cliente" method="POST">
@@ -8,8 +9,12 @@
     {{ form.as_table }}
 
     <div class="formulario__nova-proposta__botoes">
-    <button><a href="{% url 'index' %}">Cancelar</a> </button>
+        <div class="botoes--cancelar-cadastrar">
+        <a href="{% url 'index' %}">
+    <div class="btn--cancelar">Cancelar </div>
+            </a>
     <button type="submit">Cadastrar</button>
+        </div>
     </div>
 </form>
 </div>

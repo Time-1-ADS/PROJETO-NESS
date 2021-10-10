@@ -17,9 +17,9 @@ def regcustumer(request):
 
 
 def contacts(request):
-    tudo = Empresa.objects.all()
+    medico = Medic.objects.all()
     context = {
-        'contacts': tudo
+        'contacts': medico,
     }
     return render(request, "contacts.html", context)
 
