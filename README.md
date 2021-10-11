@@ -16,7 +16,7 @@ Para essa sprint, focamos em desenvolver o front-end do projeto junto com a inte
 
 <br>
 
-## :bar_chart: Tela Inicial
+## :bar_chart: Tela 
 
 <h3 align="center">Gráficos e Status</h3>
 
@@ -24,7 +24,7 @@ Para essa sprint, focamos em desenvolver o front-end do projeto junto com a inte
 
 <br>
 
-## :bar_chart: Tela de Projetos
+## :bar_chart: Tela 
 
 <h3 align="center">Status dos Projetos Específicos</h3>
 
@@ -32,7 +32,7 @@ Para essa sprint, focamos em desenvolver o front-end do projeto junto com a inte
 
 <br>
 
-## :bar_chart: Tela de Colaboradores
+## :bar_chart: Tela 
 
 <h3 align="center">Lista de Colaboradores: Email, Horas p/mês e ano</h3>
 
@@ -40,7 +40,7 @@ Para essa sprint, focamos em desenvolver o front-end do projeto junto com a inte
 
 <br>
 
-## :bar_chart: Tela de Tarefas
+## :bar_chart: Tela 
 
 <h3 align="center">Tasks Abertas e Fechadas</h3>
 
@@ -48,7 +48,7 @@ Para essa sprint, focamos em desenvolver o front-end do projeto junto com a inte
 
 <br>
 
-## :computer: API Online
+## :computer: Tela
 
 <h3 align="center">Acessando rotas</h3>
 
