@@ -11,9 +11,8 @@ Para essa sprint, focamos em desenvolver o front-end do projeto junto com a inte
 
 <h3 align="center">Layout Atualizado</h3>
 
-<h1 align="center"> <img src = ""/></h1>
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/SPRINT_2/codes/imagens/GIF%20FIGMA%20SPRINT%202.gif"/></h1>
 
- _Nota: Após o feedback do cliente, focamos em melhorar a estética do Wireframe e personalizar as cores._
 
 <br>
 
