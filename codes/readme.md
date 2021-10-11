@@ -53,7 +53,7 @@ Abaixo elencamos as necessidades identificadas em consulta aos stakeholders, cla
 <br>
 
 ## :newspaper: Backlog do Produto
-<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/Product_Backlog.png" width="2000" height="2000"/></h1>
+<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/SPRINT_2/codes/imagens/Product%20Backlog%20Sprint%202.png" width="2000" height="2000"/></h1>
 
 <br>
 
