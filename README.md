@@ -20,7 +20,7 @@ Para essa sprint, focamos em desenvolver o front-end do projeto junto com a inte
 
 <h3 align="center">Back-End e Funcionalidades integradas.</h3>
 
-<h1 align="center"> <img src = ""/></h1>
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/SPRINT_2/codes/imagens/GIF%20FRONT-END%20SPRINT%202.gif"/></h1>
 
 <br>
 
