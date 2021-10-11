@@ -66,6 +66,6 @@ Para essa sprint, focamos em desenvolver o front-end do projeto junto com a inte
 
 ## :newspaper: Backlog do Produto
 
-<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/SPRINT_2/codes/imagens/Product%20Backlog%20Sprint%202.png" width="800" height="1300"/></h1>
+<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/SPRINT_2/codes/imagens/Product%20Backlog%20Sprint%202.png" width="800" height="2000"/></h1>
 
 
