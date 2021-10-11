@@ -60,7 +60,7 @@ Para essa sprint, focamos em desenvolver o front-end do projeto junto com a inte
 
 ## :chart_with_downwards_trend: Burndown da Equipe
 
-<img src = "" width="600" height="450"/></h1>
+<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/SPRINT_2/codes/imagens/burndown.PNG" width="600" height="450"/></h1>
 
 <br>
 
