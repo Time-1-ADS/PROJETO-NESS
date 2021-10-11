@@ -1,0 +1,26 @@
+.deleta{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content:center;
+text-align: center;
+}
+.btn-cancelar-cadastrar{
+ border-radius: 15px;
+background: linear-gradient(135deg, #568BDA, #4FE1AD);
+width: 150px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: black;
+padding: 12px;
+cursor: pointer;}
+
+.alinha-btn{
+display: flex;
+justify-content: space-around;}
+
+
+#cor_input{
+background: linear-gradient(135deg, #568BDA, #4FE1AD);
+}

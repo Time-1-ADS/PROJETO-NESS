@@ -18,6 +18,11 @@
     <link rel="stylesheet" href="{% static 'css/proposta.css' %}">
 <!--    <link rel="stylesheet" href="../static/css/leads.css">-->
 <!--    <link rel="stylesheet" href="{% static 'css/leads.css' %}">-->
+<!--    <link rel="stylesheet" href="../static/css/leads.css">-->
+    <link rel="stylesheet" href="{% static 'css/leads.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dash.css' %}">
+    <link rel="stylesheet" href="{% static 'css/deleta.css' %}">
+
     <script src="https://unpkg.com/feather-icons"></script>
     <title>{% block title %}{% endblock %}</title>
 </head>
@@ -39,6 +44,9 @@
             <a href="{% url 'Register' %}" class="menu" id="registration">
                 <i data-feather="user-plus" class="menu__icon"></i>
                 <p class="menu-identify">Registration</p>
+            </a>
+            <a href="{% url 'Leads' %}" class="menu" id="registration">
+                <i data-feather="book-open" class="menu__icon"></i>
             </a>
             <a href="javascript:void(0);" class="icon" onclick="navbar()">
                 <i data-feather="menu"></i>
