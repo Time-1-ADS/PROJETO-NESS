@@ -28,7 +28,7 @@ Para essa sprint, focamos em desenvolver o front-end do projeto junto com a inte
 
 <h3 align="center">Acessando Rotas</h3>
 
-<h1 align="center"> <img src = ""/></h1>
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/SPRINT_2/codes/imagens/2021-10-10%2023-53-15%20(1).gif"/></h1>
 
 
 <br>
