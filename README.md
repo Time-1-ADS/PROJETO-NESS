@@ -3,7 +3,7 @@
 <br>
 
 Para essa sprint, focamos em desenvolver o front-end do projeto junto com a integração do back-end como mostrado no card abaixo:
-<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/SPRINT_2/codes/imagens/2.png" width="710" height="420" /></h1>
+<h1 align="center"> <img src = "" width="710" height="420" /></h1>
 
 <br>
 
