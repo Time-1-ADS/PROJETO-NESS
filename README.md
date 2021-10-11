@@ -48,9 +48,9 @@ Para essa sprint, focamos em desenvolver o front-end do projeto junto com a inte
 
 <br>
 
-## :computer: Tela
+## :computer: Back-End
 
-<h3 align="center">Tela</h3>
+<h3 align="center">Acessando Rotas</h3>
 
 <h1 align="center"> <img src = ""/></h1>
 
