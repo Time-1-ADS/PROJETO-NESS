@@ -16,33 +16,9 @@ Para essa sprint, focamos em desenvolver o front-end do projeto junto com a inte
 
 <br>
 
-## :bar_chart: Tela 
+## :bar_chart: Telas Front-End
 
-<h3 align="center">Tela</h3>
-
-<h1 align="center"> <img src = ""/></h1>
-
-<br>
-
-## :bar_chart: Tela 
-
-<h3 align="center">Tela</h3>
-
-<h1 align="center"> <img src = ""/></h1>
-
-<br>
-
-## :bar_chart: Tela 
-
-<h3 align="center">Tela</h3>
-
-<h1 align="center"> <img src = ""/></h1>
-
-<br>
-
-## :bar_chart: Tela 
-
-<h3 align="center">Tela</h3>
+<h3 align="center">Back-End e Funcionalidades integradas.</h3>
 
 <h1 align="center"> <img src = ""/></h1>
 
