@@ -5,7 +5,22 @@
 {% load static %}
 
 {% block content %}
-    <div class="direita">
-        <img class="graficos-dash" src="{% static 'img/graficos.png' %}">
+<div class="direita--superior">
+    <div class="superior--leads grafico">
+        <p class="d-titulo">Leads<p>
+        <h2>Total</h2>
+        <p class="d-total">50</p>
     </div>
+    <div class="grafico" id="superior--primeiro-grafico"></div>
+    <div class="grafico" id="superior--segundo-grafico"></div>
+</div>
+<div class="direita--inferior">
+    <div class="inferior--leads grafico">
+        <p class="d-titulo">Opportunities<p>
+        <h2>Total</h2>
+        <p class="d-total">50</p>
+    </div>
+    <div class="grafico" id="inferior--primeiro-grafico"></div>
+    <div class="grafico" id="inferior--segundo-grafico"></div>
+</div>
 {% endblock %}
