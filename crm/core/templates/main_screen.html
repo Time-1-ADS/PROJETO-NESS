@@ -3,12 +3,12 @@
  {% load static %}
 {% block content %}
     <div class="direita">
-        <a href="{% url 'Proposta' %}">
+        <a style="width: 100%;" href="{% url 'Proposta' %}">
         <div class="btn--nova-proposta">Nova Proposta</div> <!-- onclick="formularioNovaProposta()" -->
             </a>
         <div class="tabela">
             <div class="tabela__coluna">
-                <div class="coluna__titulo coluna__titulo--novas-propostas">Novas Propostas</div>
+                <div class="coluna__titulo coluna__titulo--novas-propostas" id="coluna1Title">Novas Propostas</div>
                 {% for form_pip in form_pip %}
                 <div class="coluna__propostas" id="novasPropostas">
                     {% if form_pip.status == "Novo" %}
@@ -26,7 +26,7 @@
                 {% endfor %}
             </div>
             <div class="tabela__coluna">
-                <div class="coluna__titulo coluna__titulo--primeiro-contato">Primeiro Contato</div>
+                <div class="coluna__titulo coluna__titulo--primeiro-contato" id="coluna2Title">Primeiro Contato</div>
                 {% for form_pip in form_pip %}
                 <div class="coluna__propostas" id="primeiroContato">
                     {% if form_pip.status == "Aberto" %}
@@ -44,7 +44,7 @@
                 {% endfor %}
             </div>
             <div class="tabela__coluna">
-                <div class="coluna__titulo coluna__titulo--projeto-em-andamento">Projeto em Andamento</div>
+                <div class="coluna__titulo coluna__titulo--projeto-em-andamento" id="coluna3Title">Projeto em Andamento</div>
                 {% for form_pip in form_pip %}
                 <div class="coluna__propostas" id="projetoEmAndamento">
                     {% if form_pip.status == "Pendente" %}
@@ -62,7 +62,7 @@
                 {% endfor %}
             </div>
             <div class="tabela__coluna">
-                <div class="coluna__titulo coluna__titulo--proposta-fechada">Proposta Fechada</div>
+                <div class="coluna__titulo coluna__titulo--proposta-fechada" id="coluna4Title">Proposta Fechada</div>
                 {% for form_pip in form_pip %}
                 <div class="coluna__propostas" id="propostaFechada">
                     {% if form_pip.status == "Fechado" %}

@@ -25,7 +25,30 @@ def contacts(request):
 
 
 def dashboard(request):
-    return render(request, 'dashboard.html')
+    leads = Pipeline.objects.all()
+
+    opportunities = leads.filter(status='Novo')
+    open = leads.filter(status='Aberto')
+    pendente = leads.filter(status='Pendente')
+    closed = leads.filter(status='Fechado')
+
+    leads_count = leads.count()
+    opportunities_count = opportunities.count()
+    open_count = open.count()
+    pendent_count = pendente.count()
+    closed_count = closed.count()
+
+    
+
+    if request.method=="GET":
+        context = {
+            'leads': leads_count,
+            'oport': opportunities_count,
+            'open': open_count,
+            'pendent': pendent_count,
+            'closed': closed_count
+        }
+    return render(request, 'dashboard.html', context=context)
 
 
 def register(request):

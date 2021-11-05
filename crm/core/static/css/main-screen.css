@@ -22,8 +22,7 @@ body{
 }
 
 .btn--nova-proposta{
-    margin-left: -725px;
-    position: fixed;
+    position: absolute;
     border-radius: 15px;
     text-transform: uppercase;
     color: #fff;

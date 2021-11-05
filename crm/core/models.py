@@ -89,8 +89,8 @@ class Pipeline(models.Model):
     data_ini = models.DateField('Data', null=False)
     visivel = models.ForeignKey('Permission', on_delete=models.CASCADE)
 
-    def __str__(self):
-        return self.titulo
+    """ def __str__(self):
+        return self.titulo """
 
 
 class Empresa(models.Model):
