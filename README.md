@@ -4,7 +4,7 @@
 <br>
 
 Nessa sprint focamos em entregar principalmente o Layout do Figma e outras funcionalidades como mostrado no seguinte card:
-<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/1.jpg" width="710" height="420" /></h1>
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/1.jpg" width="710" height="420" /></h1>
 
 <br>
 
@@ -47,7 +47,7 @@ Abaixo elencamos as necessidades identificadas em consulta aos stakeholders, cla
 
 ## :chart_with_downwards_trend: Burndown da Equipe
 
-<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/Burndown.PNG" width="600" height="450"/></h1>
+<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/Burndown.PNG" width="600" height="450"/></h1>
 
 
 <br>
