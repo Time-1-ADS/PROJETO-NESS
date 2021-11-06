@@ -53,22 +53,22 @@ Abaixo elencamos as necessidades identificadas em consulta aos stakeholders, cla
 <br>
 
 ## :newspaper: Backlog do Produto
-<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/Product_Backlog.png" width="2000" height="2000"/></h1>
+<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/Product_Backlog.png" width="2000" height="2000"/></h1>
 
 <br>
 
 ## :sparkles: Wireframe Figma
-<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/LayoutFigma.gif"/></h1>
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/LayoutFigma.gif"/></h1>
 <br>
 
 ## :sparkles: Front-End Screens
-<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/Front.gif"/></h1>
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/Front.gif"/></h1>
 <br>
 
 
 ## 🧩 Modelo Estrutura Banco de Dados
 
-<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/main/SPRINT_1/imagens/Modelo.jpg" width="700" height="500"/></h1>
+<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/Modelo.jpg" width="700" height="500"/></h1>
 
 <br>
 
