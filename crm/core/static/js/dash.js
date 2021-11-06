@@ -8,8 +8,6 @@ function drawChart() {
     var coluna3Valor = parseInt(document.getElementById("coluna3").innerText);
     var coluna4Valor = parseInt(document.getElementById("coluna4").innerText);
 
-    
-
     var dataGraficoSuperiorBarra = google.visualization.arrayToDataTable([
         ['Coluna', 'Itens', { role: 'style' }],
         ['Novo', coluna1Valor, 'red'],
@@ -25,8 +23,7 @@ function drawChart() {
 
     //Primeiro Gráfico Inferior - Barra
     
-    var dadosDoGrafico = document.getElementById("valorProjetos").innerText
-
+    
     var dataGraficoInferiorBarra = google.visualization.arrayToDataTable([
         ['Element', ''],
         ['Elemento 1', 8.94],            // RGB value
@@ -42,12 +39,21 @@ function drawChart() {
 
     //Segundo Gráfico Superior - Pizza
 
+    var valornMonitor = parseInt(document.getElementById("nMonitor").innerHTML)
+    var valornSensor = parseInt(document.getElementById("nSensor").innerHTML)
+    var valornCommand = parseInt(document.getElementById("nCommand").innerHTML)
+    var valornEcho = parseInt(document.getElementById("nEcho").innerHTML)
+    var valornReport = parseInt(document.getElementById("nReport").innerHTML)
+    var valorIara = parseInt(document.getElementById("Iara").innerHTML)
+
     var dataGraficoSuperiorPizza = google.visualization.arrayToDataTable([
-        ['Element', '', { role: 'style' }],
-        ['Elemento 1', 8.94, 'red'],
-        ['Elemento 2', 10.49, 'blue'],
-        ['Elemento 3', 19.30, 'yellow'],
-        ['Elemento 4', 21.45, 'green' ],
+        ['Produtos', '', { role: 'style' }],
+        ['nMonitor', valornMonitor, 'red'],
+        ['nSensor', valornSensor, 'blue'],
+        ['nCommand', valornCommand, 'yellow'],
+        ['nEcho', valornEcho, 'green' ],
+        ['nReport', valornReport, 'green' ],
+        ['Iara', valorIara, 'green' ],
      ]);
     var optionsGraficoSuperiorPizza = {'title':'Primeiro Gráfico Superior',
                        'width':500,

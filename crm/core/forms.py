@@ -18,5 +18,5 @@ class MedicForm(forms.ModelForm):
 class PipeForm(forms.ModelForm):
     class Meta:
         model = Pipeline
-        fields = ['titulo', 'empresa', 'descricao', 'status', 'prioridade', 'valor_total',
+        fields = ['titulo', 'empresa', 'descricao', 'status', 'prioridade', 'produto', 'clinica', 'medico', 'valor_total',
                   'data_ini', 'visivel']
