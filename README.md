@@ -79,7 +79,7 @@ Tela        |  Tela
 
 ## :newspaper: Backlog do Produto
 
-<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/Backlog%20Produto%20Sprint%203.png" width="900" height="1500"/></h1>
+<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/Backlog%20Produto%20Sprint%203.png" width="800" height="2000"/></h1>
 
 
 
