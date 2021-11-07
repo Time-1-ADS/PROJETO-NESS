@@ -17,11 +17,11 @@ Para essa sprint, focamos em integrar os dados diretamente do banco de dados e c
 
 Tela         |  Tela
 :-------------------------:|:-------------------------:
-![Login](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/tela2.png)  |  ![Inicial](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/tela3.png)
+![Login]()  |  ![Inicial]()
 
 Tela        |  Tela
 :-------------------------:|:-------------------------:
-![Login](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/tela4.png)  |  ![Inicial](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/tela5.png)
+![Login]()  |  ![Inicial]()
 
 <br>
 
