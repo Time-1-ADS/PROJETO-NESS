@@ -1,46 +1,85 @@
-## :bookmark: Segunda Entrega - SPRINT 2
+## :bookmark: Terceira Entrega - SPRINT 3
 
 <br>
 
-Para essa sprint, focamos em desenvolver o front-end do projeto junto com a integração do back-end como mostrado no card abaixo:
-<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/SPRINT_2/codes/imagens/CARD2.png" width="710" height="420" /></h1>
+Para essa sprint, focamos em integrar os dados diretamente do banco de dados e colocá-los no dashboard e também o desenvolvimento do sistema de cadastro e login funcional, como mostrado no card abaixo:
+<h1 align="center"> <img src = "" width="710" height="420" /></h1>
 
 <br>
 
 ## :sparkles: Wireframe Figma
 
-<h3 align="center">Layout Atualizado</h3>
+<p align="center">
+      <h3 align="center"> Tela </h3>
+<p align="center">
+      <img src="/Imagens Geral/tela1.png" width="500" height="250">
+<p align="center">
 
-<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/SPRINT_2/codes/imagens/GIF%20FIGMA%20SPRINT%202.gif"/></h1>
+Tela         |  Tela
+:-------------------------:|:-------------------------:
+![Login](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/tela2.png)  |  ![Inicial](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/tela3.png)
 
+Tela        |  Tela
+:-------------------------:|:-------------------------:
+![Login](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/tela4.png)  |  ![Inicial](https://github.com/Time-1-ADS/ProjetoGSW/blob/sprints/Imagens%20Geral/tela5.png)
 
 <br>
 
-## :bar_chart: Telas Front-End
+## :desktop_computer: Tela
 
-<h3 align="center">Back-End e Funcionalidades integradas.</h3>
+<h3 align="center">Front-end (código)</h3>
 
-<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/SPRINT_2/codes/imagens/GIF%20FRONT-END%20SPRINT%202.gif"/></h1>
+<h1 align="center"> <img src = "/Imagens Geral/giflogin.gif"/></h1>
 
 <br>
 
-## :computer: Back-End
+## :desktop_computer: Tela
 
-<h3 align="center">Acessando Rotas</h3>
+<h3 align="center">Front-end (código)</h3>
 
-<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/SPRINT_2/codes/imagens/2021-10-10%2023-53-15%20(1).gif"/></h1>
+<h1 align="center"> <img src = "/Imagens Geral/gifgeral.gif"/></h1>
 
+<br>
+
+## :desktop_computer: Tela
+
+<h3 align="center">Front-end (código)</h3>
+
+<h1 align="center"> <img src = "/Imagens Geral/gifinicial.gif"/></h1>
+
+<br>
+
+## :desktop_computer: Tela
+
+<h3 align="center">Front-end (código)</h3>
+
+<h1 align="center"> <img src = "/Imagens Geral/gifcolaborador.gif"/></h1>
+
+<br>
+
+## :desktop_computer: Tela
+
+<h3 align="center">Front-end (código)</h3>
+
+<h1 align="center"> <img src = "/Imagens Geral/gifhoras.gif"/></h1>
 
 <br>
 
 ## :chart_with_downwards_trend: Burndown da Equipe
 
-<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/SPRINT_2/codes/imagens/burndown.PNG" width="600" height="450"/></h1>
+<img src = "" width="600" height="450"/></h1>
+
+<br>
+
+## :chart_with_downwards_trend: Árvore Organizacional
+
+<img src = "" width="700" height="650"/></h1>
 
 <br>
 
 ## :newspaper: Backlog do Produto
 
-<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/SPRINT_2/codes/imagens/Product%20Backlog%20Sprint%202.png" width="800" height="2000"/></h1>
+<img src = "" width="900" height="1500"/></h1>
+
 
 
