@@ -67,7 +67,7 @@ Para essa sprint, focamos em integrar os dados diretamente do banco de dados e c
 
 ## :chart_with_downwards_trend: Organograma
 
-<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/ORGANOGRAMA.PNG" width="700" height="650"/></h1>
+<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/ORGANOGRAMA.PNG"/></h1>
 
 <br>
 
