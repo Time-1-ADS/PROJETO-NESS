@@ -61,13 +61,13 @@ Para essa sprint, focamos em integrar os dados diretamente do banco de dados e c
 
 ## :chart_with_downwards_trend: Burndown da Equipe
 
-<img src = "" width="600" height="450"/></h1>
+<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/burndown%20sprint%203.PNG" width="600" height="450"/></h1>
 
 <br>
 
-## :chart_with_downwards_trend: Árvore Organizacional
+## :chart_with_downwards_trend: Organograma
 
-<img src = "" width="700" height="650"/></h1>
+<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/ORGANOGRAMA.PNG" width="700" height="650"/></h1>
 
 <br>
 
