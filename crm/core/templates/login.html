@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+    {% block title %}Login{% endblock %}
+{% load static %}
+{% block content %}
+
+<div class="containerl">
+    <div class="contentl">
+        <div class="column-leftl">
+            <h2 class="titlel title--leftl">Welcome</h2>
+            <p class="descriptionl">Forget spreadsheets<br>The best way to organize</p>
+        </div> <!--column-left-->
+        <div class="column-rightl">
+            <h2 class="titlel title-rightl title--gradientl">Login</h2>
+            <form class="forml">
+                <div class="hidden" style="color: red; text-align: center;" id="error">E-mail e/ou senha errado(s)</div>
+                <input type="email" placeholder="E-mail">
+                <input type="password" placeholder="Password">
+                <a href="#" class="forgot-passwordl">Forgot your password?</a>
+                <button class="btnl" onclick="login()">Sign in</button>
+            </form>
+        </div> <!-- column-right -->
+    </div>
+</div>
+
+{% endblock %}
