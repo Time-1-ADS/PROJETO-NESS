@@ -12,7 +12,7 @@ Para essa sprint, focamos em integrar os dados diretamente do banco de dados e c
 <p align="center">
       <h3 align="center"> Tela </h3>
 <p align="center">
-      <img src="https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/GIF%20FIGMA%20SPRINT%202.gif" width="500" height="250">
+      <img src="https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/GIF%20FIGMA%20SPRINT%202.gif">
 <p align="center">
 
 
