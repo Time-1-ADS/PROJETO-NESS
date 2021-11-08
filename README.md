@@ -19,11 +19,19 @@ Para essa sprint, focamos em integrar os dados diretamente do banco de dados e c
 
 <br>
 
-## :desktop_computer: Tela
+## :desktop_computer: Telas
 
 <h3 align="center">Front-end (código)</h3>
 
 <h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/GIF%20FRONT%20SPRINT%203.gif"/></h1>
+
+<br>
+
+## :desktop_computer: Rotas
+
+<h3 align="center">Back-End (código)</h3>
+
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/2021-10-10%2023-53-15%20(1).gif"/></h1>
 
 <br>
 
