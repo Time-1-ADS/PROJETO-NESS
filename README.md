@@ -27,38 +27,6 @@ Para essa sprint, focamos em integrar os dados diretamente do banco de dados e c
 
 <br>
 
-## :desktop_computer: Tela
-
-<h3 align="center">Front-end (código)</h3>
-
-<h1 align="center"> <img src = "/Imagens Geral/gifgeral.gif"/></h1>
-
-<br>
-
-## :desktop_computer: Tela
-
-<h3 align="center">Front-end (código)</h3>
-
-<h1 align="center"> <img src = "/Imagens Geral/gifinicial.gif"/></h1>
-
-<br>
-
-## :desktop_computer: Tela
-
-<h3 align="center">Front-end (código)</h3>
-
-<h1 align="center"> <img src = "/Imagens Geral/gifcolaborador.gif"/></h1>
-
-<br>
-
-## :desktop_computer: Tela
-
-<h3 align="center">Front-end (código)</h3>
-
-<h1 align="center"> <img src = "/Imagens Geral/gifhoras.gif"/></h1>
-
-<br>
-
 ## :chart_with_downwards_trend: Burndown da Equipe
 
 <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/burndown%20sprint%203.PNG" width="600" height="450"/></h1>
