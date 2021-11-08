@@ -23,7 +23,7 @@ Para essa sprint, focamos em integrar os dados diretamente do banco de dados e c
 
 <h3 align="center">Front-end (código)</h3>
 
-<h1 align="center"> <img src = "/Imagens Geral/giflogin.gif"/></h1>
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/GIF%20FRONT%20SPRINT%203.gif"/></h1>
 
 <br>
 
