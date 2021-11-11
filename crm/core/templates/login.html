@@ -1,8 +1,15 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
 
-    {% block title %}Login{% endblock %}
-{% load static %}
-{% block content %}
+</head>
+<body>
 
 <div class="containerl">
     <div class="contentl">
@@ -17,10 +24,11 @@
                 <input type="email" placeholder="E-mail">
                 <input type="password" placeholder="Password">
                 <a href="#" class="forgot-passwordl">Forgot your password?</a>
-                <button class="btnl" onclick="login()">Sign in</button>
+                <a href="{% url 'index' %}"><div class="btnl" onclick="login()">Sign in</div></a>
             </form>
         </div> <!-- column-right -->
     </div>
 </div>
-
-{% endblock %}
+<script src="{% static 'js/lgn.js' %}"></script>
+</body>
+</html>

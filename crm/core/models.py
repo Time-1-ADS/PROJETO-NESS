@@ -1,17 +1,15 @@
+from django.contrib.auth.models import AbstractUser, UserManager
 from django.db import models
-from django.urls import reverse
 
 
-class Agent(models.Model):
-
-    nome = models.CharField('Nome', max_length=20, null=False)
-    email = models.EmailField('E-mail', null=False)
-    senha = models.CharField('Senha', max_length=255, null=False)
-    cargo = models.ForeignKey('Permission', on_delete=models.CASCADE)
+class Agent(AbstractUser):
+    cargo = models.ForeignKey('Permission', on_delete=models.CASCADE, default=4)
     foto = models.ImageField('Foto', upload_to='static/img', null=True)
 
+    objects = UserManager()
+    
     def __str__(self):
-        return self.nome
+        return self.username
 
 
 class Permission(models.Model):

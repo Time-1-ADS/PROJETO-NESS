@@ -1,4 +1,5 @@
 from pathlib import Path
+
 from .secret import key_sec
 from .db import MYSQL
 import os
@@ -26,6 +27,7 @@ DEFAULT_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core.apps.CoreConfig',
+    'usuarios.apps.UsuariosConfig',
 ]
 
 THIRD_PARTY_APPS = [
@@ -114,3 +116,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# User Model
+
+AUTH_USER_MODEL = "core.Agent"

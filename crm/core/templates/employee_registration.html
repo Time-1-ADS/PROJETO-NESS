@@ -4,11 +4,21 @@
 {% block content %}
     <div class="form">
         <h1>Register</h1>
-
             <form class="cliente" method="POST">
                 {% csrf_token %}
-                {{ form.as_table }}
+                <tr><th><label for="id_username">Usuário:</label></th><td><input type="text" name="username" maxlength="150" required id="id_username"><br></td></tr>
+                <tr><th><label for="id_first_name">Primeiro nome:</label></th><td><input type="text" name="first_name" maxlength="150" id="id_first_name"></td></tr>
+                <tr><th><label for="id_last_name">Último nome:</label></th><td><input type="text" name="last_name" maxlength="150" id="id_last_name"></td></tr>
+                <tr><th><label for="id_email">Endereço de email:</label></th><td><input type="email" name="email" maxlength="254" id="id_email"></td></tr>
+                <tr><th><label for="id_password">Senha:</label></th><td><input type="password" name="password" maxlength="128" required id="id_password"></td></tr>
+                <tr><th><label for="id_cargo">Cargo:</label></th><td><select name="cargo" id="id_cargo">
+                <option value="2">Diretor</option>
 
+                <option value="3">Administrador</option>
+
+                <option value="4" selected>Agente</option>
+
+                </select></td></tr>
                 <br>
 
                 <button type="submit">Register</button>

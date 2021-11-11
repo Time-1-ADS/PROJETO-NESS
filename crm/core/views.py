@@ -79,30 +79,30 @@ def leads(request):
     return render(request, 'leads.html')
 
 
-def employee(request):
-    context = {
-        'funcs': Agent.objects.all()
-    }
-    return render(request, 'employee.html', context)
+# def employee(request):
+#     context = {
+#         'funcs': Agent.objects.all()
+#     }
+#     return render(request, 'employee.html', context)
 
 
-def form_agent(request):
-    if request.method == "GET":
-        form = AgentForm()
-        context = {
-            'form': form
-        }
-        return render(request, 'employee_registration.html', context=context)
-    else:
-        form = AgentForm(request.POST)
-        if form.is_valid():
-            agente = form.save()
-            form = AgentForm()
-            return redirect('index')
-        context = {
-            'form': form
-        }
-        return render(request, 'employee_registration.html', context=context)
+# def form_agent(request):
+#     if request.method == "GET":
+#         form = AgentForm()
+#         context = {
+#             'form': form
+#         }
+#         return render(request, 'employee_registration.html', context=context)
+#     else:
+#         form = AgentForm(request.POST)
+#         if form.is_valid():
+#             agente = form.save()
+#             form = AgentForm()
+#             return redirect('index')
+#         context = {
+#             'form': form
+#         }
+#         return render(request, 'employee_registration.html', context=context)
 
 
 def form_medic(request):
@@ -168,3 +168,6 @@ def deletaProposta(request, pk):
     }
     return render(request, 'delete.html', context=context)
 
+
+def login(request):
+    return render(request, 'login.html')
