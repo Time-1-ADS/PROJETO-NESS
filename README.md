@@ -22,8 +22,8 @@ O projeto ainda está em desenvolvimento:
 ## 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
-* Você se você instalou a versão mais recente de `Python / SQL `
-* Você tem uma máquina `Windows`.
+* Veja se você instalou a versão mais recente de `Python / SQL `
+* Veja se você tem uma máquina `Windows`.
 
 
 ## 🚀 Instalando PROJETO-NESS
