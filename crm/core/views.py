@@ -2,8 +2,9 @@ from django.shortcuts import render, redirect
 from core.models import Permission, Agent, Medic, Pipeline, Clinic, Empresa
 from . import models
 from .forms import AgentForm, MedicForm, PipeForm
+from django.contrib.auth.decorators import login_required
 
-
+@login_required
 def index(request):
     if request.method == "GET":
         context = {
@@ -11,11 +12,11 @@ def index(request):
         }
         return render(request, 'main_screen.html', context=context)
 
-
+@login_required
 def regcustumer(request):
     return render(request, 'customer_registration.html')
 
-
+@login_required
 def contacts(request):
     medico = Medic.objects.all()
     context = {
@@ -23,7 +24,7 @@ def contacts(request):
     }
     return render(request, "contacts.html", context)
 
-
+@login_required
 def dashboard(request):
     leads = Pipeline.objects.all()
 
@@ -70,41 +71,30 @@ def dashboard(request):
         }
     return render(request, 'dashboard.html', context=context)
 
-
+@login_required
 def register(request):
     return render(request, 'register.html')
 
-
+@login_required
 def leads(request):
-    return render(request, 'leads.html')
+    leads = Pipeline.objects.all()
+
+    titulo = leads.values_list('titulo')
+    titulos = []
+
+    for i in titulo:
+
+        titulos.append(i)
+
+    print(titulos)
+    if request.method=="GET":
+        context = {
+            'titulo': titulos
+        }
+    return render(request, 'leads.html', context=context)
 
 
-# def employee(request):
-#     context = {
-#         'funcs': Agent.objects.all()
-#     }
-#     return render(request, 'employee.html', context)
-
-
-# def form_agent(request):
-#     if request.method == "GET":
-#         form = AgentForm()
-#         context = {
-#             'form': form
-#         }
-#         return render(request, 'employee_registration.html', context=context)
-#     else:
-#         form = AgentForm(request.POST)
-#         if form.is_valid():
-#             agente = form.save()
-#             form = AgentForm()
-#             return redirect('index')
-#         context = {
-#             'form': form
-#         }
-#         return render(request, 'employee_registration.html', context=context)
-
-
+@login_required
 def form_medic(request):
     if request.method == "GET":
         form = MedicForm()
@@ -123,7 +113,7 @@ def form_medic(request):
         }
         return render(request, 'customer_registration.html', context=context)
 
-
+@login_required
 def proposta(request):
     if request.method == "GET":
         form = PipeForm()
@@ -142,7 +132,7 @@ def proposta(request):
         }
         return render(request, 'proposta.html', context=context)
 
-
+@login_required
 def atualizaProposta(request, pk):
     propos = Pipeline.objects.get(id=pk)
     form = PipeForm(instance=propos)
@@ -157,7 +147,7 @@ def atualizaProposta(request, pk):
     }
     return render(request, 'proposta.html', context=context)
 
-
+@login_required
 def deletaProposta(request, pk):
     propos = Pipeline.objects.get(id=pk)
     if request.method == 'POST':
@@ -167,7 +157,3 @@ def deletaProposta(request, pk):
         'prop': propos
     }
     return render(request, 'delete.html', context=context)
-
-
-def login(request):
-    return render(request, 'login.html')

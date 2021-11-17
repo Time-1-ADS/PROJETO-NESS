@@ -120,3 +120,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # User Model
 
 AUTH_USER_MODEL = "core.Agent"
+
+LOGIN_URL = 'Login'
+LOGOUT_REDIRECT_URL = 'Login'

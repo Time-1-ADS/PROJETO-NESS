@@ -19,12 +19,17 @@
         </div> <!--column-left-->
         <div class="column-rightl">
             <h2 class="titlel title-rightl title--gradientl">Login</h2>
-            <form class="forml">
-                <div class="hidden" style="color: red; text-align: center;" id="error">E-mail e/ou senha errado(s)</div>
-                <input type="email" placeholder="E-mail">
-                <input type="password" placeholder="Password">
-                <a href="#" class="forgot-passwordl">Forgot your password?</a>
-                <a href="{% url 'index' %}"><div class="btnl" onclick="login()">Sign in</div></a>
+
+            {% for message in messages %}
+            <h4 style="color: red;">{{message}}</h4>
+            {% endfor %}
+
+            
+            <form class="forml" action="submit" method="POST">{% csrf_token %}
+                
+                <input type="text" placeholder="Username" id="email" name='username' class='form-control'>
+                <input type="password" placeholder="Password" id="password" name='password' class='form-control'>
+                <button type="submit" class="btnl">Entrar</button>
             </form>
         </div> <!-- column-right -->
     </div>

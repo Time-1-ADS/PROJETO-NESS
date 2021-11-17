@@ -1,15 +1,19 @@
-from django.contrib.auth.models import AbstractUser, UserManager
+import uuid
+from django.contrib.auth.models import AbstractUser, User, UserManager
+from django.core.checks.messages import Error
 from django.db import models
+from django.contrib.auth.hashers import make_password, check_password
 
 
 class Agent(AbstractUser):
+    password = models.CharField('password', max_length=128)
     cargo = models.ForeignKey('Permission', on_delete=models.CASCADE, default=4)
     foto = models.ImageField('Foto', upload_to='static/img', null=True)
 
-    objects = UserManager()
     
-    def __str__(self):
-        return self.username
+
+
+    
 
 
 class Permission(models.Model):

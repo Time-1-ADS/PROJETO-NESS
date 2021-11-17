@@ -3,169 +3,87 @@
 
 {% block content %}
 <div class="direita">
-        <div class="botao">
-            <button class="btn-novo-lead">Novo Lead</button>
-            <div class="barra">
-                <hr>
-            </div>
-            <table class="table-responsive">
-                <table class="table">
-                    <div class="titulo">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>NOME</th>
-                                <th>Contato</th>
-                                <th>Prioridade</th>
-                                <th>Empresa</th>
-                                <th>Valor do projeto</th>
-                                <th>Telefone</th>
-                                <th>E-mail</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td></td>
-                                <td>Nome da oferta 1</td>
-                                <td>Lucas Prado</td>
-                                <td>Alta</td>
-                                <td>Apple</td>
-                                <td>R$ 10.000</td>
-                                <td>+55 1198709867</td>
-                                <td>lucasprado@gmail.com</td>
-
-
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Nome da oferta 2</td>
-                                <td>Pedro Silva</td>
-                                <td>Alta</td>
-                                <td>Google</td>
-                                <td>R$ 25.000</td>
-                                <td>+55 1198709867</td>
-                                <td>lucasprado@gmail.com</td>
-
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Nome da oferta 3</td>
-                                <td>Paula Lima</td>
-                                <td>Alta</td>
-                                <td>Spotify</td>
-                                <td>R$ 35.000</td>
-                                <td>+55 1198709867</td>
-                                <td>lucasprado@gmail.com</td>
-                            </tr>
-                        </tbody>
-                    </div>
-                </table>
-                <table class="table-responsive">
-                    <table class="table2">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>NOME</th>
-                                <th>Contato</th>
-                                <th>Prioridade</th>
-                                <th>Empresa</th>
-                                <th>Valor do projeto</th>
-                                <th>Telefone</th>
-                                <th>E-mail</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td></td>
-                                <td>Nome da oferta 1</td>
-                                <td>Lucas Prado</td>
-                                <td>Alta</td>
-                                <td>Apple</td>
-                                <td>R$ 10.000</td>
-                                <td>+55 1198709867</td>
-                                <td>lucasprado@gmail.com</td>
-
-
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Nome da oferta 2</td>
-                                <td>Pedro Silva</td>
-                                <td>Alta</td>
-                                <td>Google</td>
-                                <td>R$ 25.000</td>
-                                <td>+55 1198709867</td>
-                                <td>lucasprado@gmail.com</td>
-
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Nome da oferta 3</td>
-                                <td>Paula Lima</td>
-                                <td>Alta</td>
-                                <td>Spotify</td>
-                                <td>R$ 35.000</td>
-                                <td>+55 1198709867</td>
-                                <td>lucasprado@gmail.com</td>
-
-                            </tr>
-                        </tbody>
-                    </table>
-                </table>
-                <table class="table-responsive">
-                    <table class="table3">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>NOME</th>
-                                <th>Contato</th>
-                                <th>Prioridade</th>
-                                <th>Empresa</th>
-                                <th>Valor do projeto</th>
-                                <th>Telefone</th>
-                                <th>E-mail</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td></td>
-                                <td>Nome da oferta 1</td>
-                                <td>Lucas Prado</td>
-                                <td>Alta</td>
-                                <td>Apple</td>
-                                <td>R$ 10.000</td>
-                                <td>+55 1198709867</td>
-                                <td>lucasprado@gmail.com</td>
-
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Nome da oferta 2</td>
-                                <td>Pedro Silva</td>
-                                <td>Alta</td>
-                                <td>Google</td>
-                                <td>R$ 25.000</td>
-                                <td>+55 1198709867</td>
-                                <td>lucasprado@gmail.com</td>
-
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Nome da oferta 3</td>
-                                <td>Paula Lima</td>
-                                <td>Alta</td>
-                                <td>Spotify</td>
-                                <td>R$ 35.000</td>
-                                <td>+55 1198709867</td>
-                                <td>lucasprado@gmail.com</td>
-
-                            </tr>
-                        </tbody>
-                    </table>
-                </table>
-            </table>
+    <hr>
+    <div class="botao">
+        <a href="{% url 'RegCustumer' %}">
+        <div class="btn-novo-contato" >Adicionar novo lead</div>
+            </a>
+        <div class="barra">
+            <hr>
         </div>
-</div>
+    </div>
+    <div class="contatos">
+        <h1>Leads</h1>
+    </div>
+
+    <div class="grandona">
+        <div class="linha-titulo">
+            <div class="titulo">
+                <p>Nome</p>
+            </div>
+            <div class="titulo">
+                <p>Prioridade</p>
+            </div>
+            <div class="titulo">
+                <p>Empresa</p>
+            </div>
+            <div class="titulo">
+                <p>Valor do Projeto</p>
+            </div>
+            <div class="titulo">
+                <p>Telefone</p>
+            </div>
+            <div class="titulo">
+                <p>E-mail</p>
+            </div>
+        </div>
+        <hr>
+        <div class="conteudo-contatos">
+        <div class="categoria">
+
+            <div class="informacao">
+                {% for titulo in titulo %}
+                <div class="nome-da-empresa">
+                    <p> {{titulo}}</p>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="informacao">
+
+                <p>Média</p>
+
+            </div>
+            <div class="informacao">
+
+                <p>cliente</p>
+
+            </div>
+            <div class="informacao">
+
+                <p>R$ 1500</p>
+
+            </div>
+            <div class="informacao">
+
+                <p>+55 (12) 99999-9999</p>
+
+            </div>
+            <div class="informacao">
+
+                <p>teste@teste.com</p>
+
+            </div>
+
+
+
+            
+
+
+        </div>
+
+        <hr>
+            </div>
+    </div>
 
 
 
