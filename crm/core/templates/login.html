@@ -11,14 +11,15 @@
 </head>
 <body>
 
-<div class="containerl">
-    <div class="contentl">
-        <div class="column-leftl">
-            <h2 class="titlel title--leftl">Welcome</h2>
-            <p class="descriptionl">Forget spreadsheets<br>The best way to organize</p>
+<div class="container">
+
+        <div class="column-left">
+            <h2 class="title title--left">Welcome</h2>
+            <p class="description">Forget spreadsheets<br>The best way to organize</p>
         </div> <!--column-left-->
-        <div class="column-rightl">
-            <h2 class="titlel title-rightl title--gradientl">Login</h2>
+
+        <div class="column-right">
+            <h2 class="title title-right title--gradient">Login</h2>
 
             {% for message in messages %}
             <h4 style="color: red;">{{message}}</h4>
@@ -32,8 +33,6 @@
                 <button type="submit" class="btnl">Entrar</button>
             </form>
         </div> <!-- column-right -->
-    </div>
 </div>
-<script src="{% static 'js/lgn.js' %}"></script>
 </body>
 </html>
