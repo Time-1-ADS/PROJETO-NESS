@@ -30,7 +30,6 @@
 <body>
     <div class="navbar" id="navbar">
         <div class="topnav" id="myTopnav">
-            <div class="menus-navegacao">
                 <a href="{% url 'index' %}" class="menu" id="home">
                     <i data-feather="home" class="menu__icon"></i>
                     <p class="menu-identify">Home</p>
@@ -50,8 +49,6 @@
                 <a href="{% url 'Leads' %}" class="menu" id="registration">
                     <i data-feather="book-open" class="menu__icon"></i>
                 </a>
-            </div>
-            <div class="menus-usuario">
                 <a href="#" class="menu" id="perfil">
                     <i data-feather="user" class="menu__icon"></i>
                     <p class="menu-identify">Registration</p>
@@ -59,14 +56,13 @@
                 <a href="{% url 'Logout' %}" class="menu" id="sair">
                     <i data-feather="log-out" class="menu__icon"></i>
                 </a>
-            </div>
             <a href="javascript:void(0);" class="icon" onclick="navbar()">
                 <i data-feather="menu"></i>
             </a>
         </div>
     </div> <!-- navbar-->
     {% if request.user.is_authenticated %}
-    <p>Welcome! {{ request.user.first_name }}</p>
+    <!--<p>Welcome! {{ request.user.first_name }}</p>-->
     {% endif %}
     <div class="direita">
         {% block content %} {% endblock %}

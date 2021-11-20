@@ -7,8 +7,18 @@
     cursor: pointer;
     font-weight: bold;
     width: 150px;
-    background: linear-gradient(135deg, #568BDA, #4FE1AD);
+    background: #d60f0f;
     border: 1px solid ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cadastrar{
+    background: #4FE1AD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 }
 .botoes--cancelar-cadastrar{
     display:flex;
@@ -21,9 +31,17 @@
 height: 500px;
 padding-bottom: 90px;
 }
-.form{
-height: 100vh;
-align-items: center;
-justify-content: center;
-display: flex;
+
+@media screen and (max-width: 600px){
+    .form{
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .cliente input{
+        width: 100%;
+    }
+    .cliente label{
+        width: 100%;
+    }
 }

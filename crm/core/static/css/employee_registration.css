@@ -1,9 +1,12 @@
 .form{
     width: 100%;
+    height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .btns{
@@ -19,7 +22,7 @@
     display: flex;
     flex-direction: column;
     height: 50%;
-    width: 50%;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -47,8 +50,9 @@ button.active{
 }
 
 .cliente input{
-    height: 45px;
-    border: none;
-    background: #ecf0f1;
+    width: 100%;
+    background: white;
+    border: solid 1px;
+    border-radius: 3px;
     padding-left: 10px;
 }
