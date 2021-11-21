@@ -1,8 +1,10 @@
+from django.http.response import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render, redirect
 from core.models import Permission, Agent, Medic, Pipeline, Clinic, Empresa
 from . import models
-from .forms import AgentForm, MedicForm, PipeForm
+from .forms import AgentForm, DocumentForm, MedicForm, PipeForm
 from django.contrib.auth.decorators import login_required
+from django.urls import reverse
 
 @login_required
 def index(request):
@@ -157,3 +159,20 @@ def deletaProposta(request, pk):
         'prop': propos
     }
     return render(request, 'delete.html', context=context)
+
+
+def importacao(request):
+    if request.method == "GET":
+        form = DocumentForm()
+        context = {
+            'form': form
+        }
+        return render(request, 'importação.html', context=context)
+    else:
+        form = DocumentForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect(reverse('core.views.contacts'))
+        context = {
+            'form': form
+        }

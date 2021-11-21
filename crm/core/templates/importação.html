@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+    {% block title %}Importação{% endblock %}
+{% load static %}
+{% block content %}
+<div class="form">
+<form class="cliente" method="POST">
+
+    {% csrf_token %}
+    {{ form.as_table }}
+
+    <div class="formulario__nova-proposta__botoes">
+        <div class="botoes--cancelar-cadastrar">
+        <a href="{% url 'Contacts' %}">
+    <div class="btn--cancelar">Cancelar </div>
+            </a>
+    <button type="submit" class="cadastrar">Enviar</button>
+        </div>
+    </div>
+</form>
+</div>
+{% endblock %}

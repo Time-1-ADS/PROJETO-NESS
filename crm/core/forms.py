@@ -20,3 +20,10 @@ class PipeForm(forms.ModelForm):
         model = Pipeline
         fields = ['titulo', 'empresa', 'descricao', 'status', 'prioridade', 'produto', 'clinica', 'medico', 'valor_total',
                   'data_ini', 'visivel']
+
+
+class DocumentForm(forms.Form):
+    docfile = forms.FileField(
+        label='Select a file',
+        help_text='max. 42 megabytes'
+    )

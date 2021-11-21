@@ -3,6 +3,7 @@ from django.contrib.auth.models import AbstractUser, User, UserManager
 from django.core.checks.messages import Error
 from django.db import models
 from django.contrib.auth.hashers import make_password, check_password
+from django.db.models.base import ModelBase
 
 
 class Agent(AbstractUser):
@@ -107,3 +108,8 @@ class Empresa(models.Model):
 
     def __str__(self):
         return self.medico_nome
+
+
+
+class Importacao(models.Model):
+    files = models.FileField(upload_to="static/files/doc__%Y_%m_%d")

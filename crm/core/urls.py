@@ -11,4 +11,5 @@ urlpatterns = [
     path('proposta/', views.proposta, name='Proposta'),
     path('atualiza/<str:pk>/', views.atualizaProposta, name='Atualiza'),
     path('delete/<str:pk>/', views.deletaProposta, name='Delete'),
+    path('contatos/import', views.importacao, name="Importar")
 ]
