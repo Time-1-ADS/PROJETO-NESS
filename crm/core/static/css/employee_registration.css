@@ -3,7 +3,7 @@
     height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin: 0;
     padding: 0;
