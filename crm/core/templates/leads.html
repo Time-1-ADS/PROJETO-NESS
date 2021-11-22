@@ -5,7 +5,7 @@
 <div class="direita">
     <hr>
     <div class="botao">
-        <a href="{% url 'RegCustumer' %}">
+        <a href="{% url 'Proposta' %}">
         <div class="btn-novo-contato" >Adicionar novo lead</div>
             </a>
         <div class="barra">
@@ -25,9 +25,6 @@
                 <p>Prioridade</p>
             </div>
             <div class="titulo">
-                <p>Empresa</p>
-            </div>
-            <div class="titulo">
                 <p>Valor do Projeto</p>
             </div>
             <div class="titulo">
@@ -39,28 +36,24 @@
         </div>
         <hr>
         <div class="conteudo-contatos">
+        {% for titulo in titulo %}
         <div class="categoria">
 
             <div class="informacao">
-                {% for titulo in titulo %}
+                
                 <div class="nome-da-empresa">
-                    <p> {{titulo}}</p>
+                    <p> {{titulo.titulo}}</p>
                 </div>
-                {% endfor %}
+                
             </div>
             <div class="informacao">
 
-                <p>Média</p>
-
-            </div>
-            <div class="informacao">
-
-                <p>cliente</p>
+                <p>{{titulo.status}}</p>
 
             </div>
             <div class="informacao">
 
-                <p>R$ 1500</p>
+                <p>R$ {{ titulo.valor_total}}</p>
 
             </div>
             <div class="informacao">
@@ -73,7 +66,7 @@
                 <p>teste@teste.com</p>
 
             </div>
-
+            
 
 
             
@@ -82,7 +75,8 @@
         </div>
 
         <hr>
-            </div>
+        {% endfor %}
+        </div>
     </div>
 
 

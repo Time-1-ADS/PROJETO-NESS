@@ -20,6 +20,7 @@
                     <p><strong>valor:</strong> {{ form_pip.valor_total }} <strong>Status:</strong> {{ form_pip.status }}
                     </p>
                     <br>
+                    <hr>
                     {% endif %}
                 </div>
                 {% endfor %}
@@ -38,6 +39,7 @@
                     <p><strong>valor:</strong> {{ form_pip.valor_total }} <strong>Status:</strong> {{ form_pip.status }}
                     </p>
                     <br>
+                    <hr>
                     {% endif %}
                 </div>
                 {% endfor %}
@@ -56,6 +58,7 @@
                     <p><strong>valor:</strong> {{ form_pip.valor_total }} <strong>Status:</strong> {{ form_pip.status }}
                     </p>
                     <br>
+                    <hr>
                     {% endif %}
                 </div>
                 {% endfor %}
@@ -74,32 +77,12 @@
                     <p><strong>valor:</strong> {{ form_pip.valor_total }} <strong>Status:</strong> {{ form_pip.status }}
                     </p>
                     <br>
+                    <hr>
                     {% endif %}
                 </div>
                 {% endfor %}
             </div>
         </div>
-
-
-    <!-- ESSE FORMULÁRIO APARECERÁ SOBRE A TELA AO PRESSIONAR O BOTÃO "NOVA PROPOSTA" -->
-
-<!--    <div class="background-formulario formulario&#45;&#45;oculto" id="formularioNovaProposta">-->
-<!--        <div class="formulario__nova-proposta">-->
-<!--            <h1>Nova Proposta</h1>-->
-
-<!--            <form class="cliente" method="POST">-->
-
-<!--                {% csrf_token %}-->
-<!--                {{ form_pip.as_table }}-->
-
-<!--                <div class="formulario__nova-proposta__botoes">-->
-<!--                <button onclick="cancelarFormulario()">Cancelar</button>-->
-<!--                <button type="submit">Cadastrar</button>-->
-<!--                </div>-->
-<!--            </form>-->
-
-<!--        </div>-->
-<!--    </div>-->
 
 <script src="{% static 'js/main_screen.js' %}"></script>
 {% endblock %}

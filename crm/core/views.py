@@ -80,18 +80,10 @@ def register(request):
 @login_required
 def leads(request):
     leads = Pipeline.objects.all()
-
-    titulo = leads.values_list('titulo')
-    titulos = []
-
-    for i in titulo:
-
-        titulos.append(i)
-
-    print(titulos)
+    
     if request.method=="GET":
         context = {
-            'titulo': titulos
+            'titulo': leads
         }
     return render(request, 'leads.html', context=context)
 
