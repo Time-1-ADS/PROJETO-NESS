@@ -54,6 +54,7 @@ class Medic(models.Model):
     numero_fixo = models.CharField('Telefone', max_length=10, default=None)
     whatsapp = models.CharField('Whatsapp', max_length=13, default=None)
     produto = models.CharField('Produto', max_length=255, choices=produtos_medic, null=False)
+    email = models.EmailField('E-mail', max_length=100, null=False, default='')
 
     def __str__(self):
         return self.nome
@@ -83,7 +84,7 @@ class Pipeline(models.Model):
                 ('nReport', 'nReport'), ('Iara', 'Iara'))
 
     titulo = models.CharField('Nome do Projeto', max_length=255, null=False)
-    empresa = models.CharField('Empresa', max_length=255, null=False)
+    empresa = models.CharField('Empresa', max_length=255, null=True)
     valor_total = models.DecimalField('Valor total', max_digits=30, decimal_places=0, null=False)
     produto = models.CharField('Status', max_length=255, choices=produtos, default=' ', null=False)
     status = models.CharField('Status', max_length=255, choices=status_projeto, default='Novo', null=False)
@@ -91,8 +92,8 @@ class Pipeline(models.Model):
     descricao = models.TextField('Descrição', max_length=500, null=False)
     data_ini = models.DateField('Data', null=False)
     visivel = models.ForeignKey('Permission', on_delete=models.CASCADE)
-    medico = models.ForeignKey('Medic', on_delete=models.CASCADE, null=True)
-    clinica = models.ForeignKey('Clinic', on_delete=models.CASCADE, null=True)
+    medico = models.ForeignKey('Medic', on_delete=models.CASCADE, null=True, default='-')
+    clinica = models.ForeignKey('Clinic', on_delete=models.CASCADE, null=True, default='-')
 
     """ def __str__(self):
         return self.titulo """

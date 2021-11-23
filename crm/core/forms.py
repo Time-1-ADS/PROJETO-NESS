@@ -14,11 +14,17 @@ class MedicForm(forms.ModelForm):
         fields = ['nome', 'cpf', 'crm', 'uf_crm', 'espec', 'estado', 'cidade',
                   'numero_fixo', 'whatsapp', 'produto']
 
+class ClinicForm(forms.ModelForm):
+
+    class Meta:
+        model = Clinic
+        fields = ['razao', 'categoria', 'cnpj', 'numero', 'email', 'produto']
+
 
 class PipeForm(forms.ModelForm):
     class Meta:
         model = Pipeline
-        fields = ['titulo', 'empresa', 'descricao', 'status', 'prioridade', 'produto', 'clinica', 'medico', 'valor_total',
+        fields = ['titulo', 'descricao', 'status', 'prioridade', 'produto', 'clinica', 'medico', 'valor_total',
                   'data_ini', 'visivel']
 
 

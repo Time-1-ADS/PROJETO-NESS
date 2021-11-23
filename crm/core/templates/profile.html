@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+    {% block title %}Profile{% endblock %}
+{% load static %}
+{% block content %}
+<div class="form">
+<form class="cliente" action="{% url 'Profile' prof.id %}" method="GET">
+    {% csrf_token %}
+    {{ form.as_table }}
+</form>
+</div>
+{% endblock %}

@@ -2,7 +2,7 @@ from django.http.response import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render, redirect
 from core.models import Permission, Agent, Medic, Pipeline, Clinic, Empresa
 from . import models
-from .forms import AgentForm, DocumentForm, MedicForm, PipeForm
+from .forms import *
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse
 
@@ -21,8 +21,10 @@ def regcustumer(request):
 @login_required
 def contacts(request):
     medico = Medic.objects.all()
+    clinica = Clinic.objects.all()
     context = {
         'contacts': medico,
+        'clinica': clinica
     }
     return render(request, "contacts.html", context)
 
@@ -107,6 +109,76 @@ def form_medic(request):
         }
         return render(request, 'customer_registration.html', context=context)
 
+
+@login_required
+def medic_atualiza(request, pk):
+    medic = Medic.objects.get(id=pk)
+    form = MedicForm(instance=medic)
+    if request.method == 'POST':
+        form = MedicForm(request.POST, instance=medic)
+        if form.is_valid():
+            form.save()
+            return redirect('Contacts')
+    context = {
+        'form': form
+    }
+    return render(request, 'customer_registration.html', context=context)
+
+@login_required
+def medic_deleta(request, pk):
+    medic = Medic.objects.get(id=pk)
+    if request.method == 'POST':
+        medic.delete()
+        return redirect('Contacts')
+    context = {
+        'delmedic': medic
+    }
+    return render(request, 'deleteMedic.html', context=context)
+
+@login_required
+def form_clinic(request):
+    if request.method == "GET":
+        form = ClinicForm()
+        context = {
+            'form': form
+        }
+        return render(request, 'clinic_registration.html', context=context)
+    else:
+        form = ClinicForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('Contacts')
+        context = {
+            'form': form
+        }
+        return render(request, 'clinic_registration.html', context=context)
+
+
+@login_required
+def clinic_atualiza(request, pk):
+    clinic = Clinic.objects.get(id=pk)
+    form = ClinicForm(instance=clinic)
+    if request.method == 'POST':
+        form = ClinicForm(request.POST, instance=clinic)
+        if form.is_valid():
+            form.save()
+            return redirect('Contacts')
+    context = {
+        'form': form
+    }
+    return render(request, 'clinic_registration.html', context=context)
+
+@login_required
+def clinic_deleta(request, pk):
+    clinic = Clinic.objects.get(id=pk)
+    if request.method == 'POST':
+        clinic.delete()
+        return redirect('Contacts')
+    context = {
+        'delclinic': clinic
+    }
+    return render(request, 'deleteclinic.html', context=context)
+
 @login_required
 def proposta(request):
     if request.method == "GET":
@@ -153,6 +225,7 @@ def deletaProposta(request, pk):
     return render(request, 'delete.html', context=context)
 
 
+@login_required
 def importacao(request):
     if request.method == "GET":
         form = DocumentForm()
@@ -168,3 +241,7 @@ def importacao(request):
         context = {
             'form': form
         }
+
+@login_required
+def emailEnviar(request):
+    pass

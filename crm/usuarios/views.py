@@ -3,6 +3,8 @@ from django.contrib.auth import logout as django_logout
 from django.contrib.auth import login as auth_login
 from django.contrib import messages
 from django.http.response import HttpResponseRedirect
+
+from core.forms import AgentForm
 from .forms import *
 from django.shortcuts import render, redirect
 from django.contrib.auth.hashers import make_password, check_password
@@ -61,3 +63,12 @@ def logar(request):
 def logout(request):
     django_logout(request)
     return HttpResponseRedirect('/')
+
+# @login_required
+# def profile(request, pk):
+#     model = Agent.objects.get(id=pk)
+#     form = AgentForm(instance=model)
+#     context = {
+#         'prof': form
+#     }
+#     return render(request, 'profile.html', context=context)

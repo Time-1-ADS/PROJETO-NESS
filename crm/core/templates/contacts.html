@@ -3,8 +3,6 @@
     {% block title %}Contacts{% endblock %}
 {% load static %}
 {% block content %}
-    <div class="direita">
-        <hr>
         <div class="botao">
             <a href="{% url 'RegCustumer' %}">
             <div class="btn-novo-contato" >Adicionar novo contato</div>
@@ -20,16 +18,19 @@
         <div class="grandona">
             <div class="linha-titulo">
                 <div class="titulo">
-                    <p>Cliente</p>
+                    <p>Cliente:</p>
                 </div>
                 <div class="titulo">
-                    <p>Projeto</p>
+                    <p>Telefone:</p>
                 </div>
                 <div class="titulo">
-                    <p>Prioridade</p>
+                    <p>Whatsapp:</p>
                 </div>
                 <div class="titulo">
-                    <p>Meio de contato</p>
+                    <p>E-mail:</p>
+                </div>
+                <div class="titulo">
+                    <p> </p>
                 </div>
             </div>
             <hr>
@@ -39,27 +40,65 @@
 
                 <div class="informacao">
                     <div class="nome-da-empresa">
-                        <p> {{contact.nome}}</p>
+                        <p><a href="{% url 'AtualizaMedico' contact.id %}">{{contact.nome}}</a></p>
                     </div>
                     <p>{{contact.espec}}</p>
                     <br>
                 </div>
-
+                
                 <div class="informacao">
-
-                    <p>Teste</p>
-
-                </div>
-                <div class="informacao">
-
-                    <p>Média</p>
-
-                </div>
-
-                <div class="informacao">
-                    <p>Whatsapp: {{contact.whatsapp}}</p>
-                    <p>Telefone: {{contact.numero_fixo}}</p>
+                    <p>{{contact.numero_fixo}}</p>
                     <br>
+                </div>
+
+                <div class="informacao">
+                    <p>{{contact.whatsapp}}</p>
+                    <br>
+                </div>
+                <div class="informacao">
+                    <p>{{contact.email}}</p>
+                    <br>
+                </div>
+                <div class="informacao">
+                    <a class="titulo-da-proposta" href="{% url 'DeletaMedico' contact.id %}">
+                        <i data-feather="trash-2" class="menu__icon" style="height: 15px;"></i>
+                    </a>
+                </div>
+
+
+            </div>
+
+            <hr>
+            {% endfor %}
+            {% for clinica in clinica %}
+            <div class="categoria">
+
+                <div class="informacao">
+                    <div class="nome-da-empresa">
+                        <a href="{% url 'AtualizaClinic' clinica.id %}">{{clinica.razao}}</a>
+                    </div>
+                    <p>{{clinica.categoria}}</p>
+                    <br>
+                </div>
+
+                <div class="informacao">
+                    <p>{{clinica.numero}}</p>
+                    <br>
+                </div>
+
+                <div class="informacao">
+                    <p>-</p>
+                    <br>
+                </div>
+
+                <div class="informacao">
+                    <p>{{clinica.email}}</p>
+                    <br>
+                </div>
+                <div class="informacao">
+                    <a class="titulo-da-proposta" href="{% url 'DeletaClinic' clinica.id %}">
+                        <i data-feather="trash-2" class="menu__icon" style="height: 15px;"></i>
+                    </a>
                 </div>
 
 
@@ -69,54 +108,4 @@
             {% endfor %}
                 </div>
         </div>
-<!--        &lt;!&ndash; DUPLICATA DA PRIMEIRA TABELA INICIA AQUI &ndash;&gt;-->
-<!--        <div class="grandona">-->
-<!--            <div class="linha-titulo">-->
-<!--                <div class="titulo">-->
-<!--                    <p>Cliente</p>-->
-<!--                </div>-->
-<!--                <div class="titulo">-->
-<!--                    <p>Projeto</p>-->
-<!--                </div>-->
-<!--                <div class="titulo">-->
-<!--                    <p>Prioridade</p>-->
-<!--                </div>-->
-<!--                <div class="titulo">-->
-<!--                    <p>Meio de contato</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <hr>-->
-<!--            <div class="categoria">-->
-<!--                {% for obj in contacts %}-->
-
-<!--                <div class="informacao">-->
-<!--                    <div class="nome-da-empresa">-->
-<!--                        <p> {{obj.nome}}</p>-->
-<!--                    </div>-->
-<!--                    <p>{{obj.numero_fixo}}</p>-->
-<!--                </div>-->
-<!--                <div class="informacao">-->
-
-<!--                    <p>{{obj.nome}}</p>-->
-
-<!--                </div>-->
-<!--                <div class="informacao">-->
-
-<!--                    <p>Alta</p>-->
-
-<!--                </div>-->
-<!--                <div class="informacao">-->
-<!--                    <p>E-mail</p>-->
-<!--                    <p>Telefone</p>-->
-
-<!--                </div>-->
-<!--                {% endfor %}-->
-
-<!--            </div>-->
-<!--            <hr>-->
-<!--        </div>-->
-<!--        &lt;!&ndash; DUPLICATA DA PRIMEIRA TABELA TERMINA AQUI &ndash;&gt;-->
-
-    </div>
-
 {% endblock %}
