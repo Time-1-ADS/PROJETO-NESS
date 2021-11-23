@@ -133,3 +133,6 @@ dmypy.json
 
 #key
 secret.py
+
+#enviroment
+.vscode

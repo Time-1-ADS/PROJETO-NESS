@@ -11,12 +11,6 @@ class Agent(AbstractUser):
     cargo = models.ForeignKey('Permission', on_delete=models.CASCADE, default=4)
     foto = models.ImageField('Foto', upload_to='static/img', null=True)
 
-    
-
-
-    
-
-
 class Permission(models.Model):
     administrador = 'Administrador'
     diretoria = 'Diretor'
@@ -114,3 +108,10 @@ class Empresa(models.Model):
 
 class Importacao(models.Model):
     files = models.FileField(upload_to="static/files/doc__%Y_%m_%d")
+
+
+class TituloMain(models.Model):
+    novo = models.CharField('Nova Proposta', max_length=25, default='Nova Proposta', null=False)
+    aberto = models.CharField('Primeiro Contato', max_length=25, default='Primeiro Contato', null=False)
+    pendente = models.CharField('Proposta em Andamento', max_length=25, default='Proposta em Andamento', null=False)
+    fechado = models.CharField('Proposta fechada', max_length=25, default='Proposta fechada', null=False)
