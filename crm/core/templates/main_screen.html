@@ -2,9 +2,9 @@
     {% block title %}Main Screen{% endblock %}
  {% load static %}
 {% block content %}
-        <a style="width: 100%;" href="{% url 'Proposta' %}">
+        <a class="add-nova-proposta" href="{% url 'Proposta' %}">
         <div class="btn--nova-proposta"><i data-feather="folder-plus" class="menu__icon"></i>Nova Proposta</div> <!-- onclick="formularioNovaProposta()" -->
-            </a>
+        </a>
         <div class="tabela">
             <div class="tabela__coluna">
                 <div class="coluna__titulo coluna__titulo--novas-propostas" id="coluna1Title">Novas Propostas</div>
