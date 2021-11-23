@@ -11,12 +11,6 @@ class Agent(AbstractUser):
     cargo = models.ForeignKey('Permission', on_delete=models.CASCADE, default=4)
     foto = models.ImageField('Foto', upload_to='static/img', null=True)
 
-    
-
-
-    
-
-
 class Permission(models.Model):
     administrador = 'Administrador'
     diretoria = 'Diretor'
