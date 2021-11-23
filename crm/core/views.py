@@ -9,8 +9,12 @@ from django.urls import reverse
 @login_required
 def index(request):
     if request.method == "GET":
+        titulos = TituloMain.objects.all()
         context = {
-            'form_pip': Pipeline.objects.all()
+            'form_pip': Pipeline.objects.all(),
+            'titulo': titulos
+            
+
         }
         return render(request, 'main_screen.html', context=context)
 
