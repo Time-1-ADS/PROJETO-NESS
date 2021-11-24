@@ -29,32 +29,46 @@
 <body>
     <div class="navbar" id="navbar">
         <div class="topnav" id="myTopnav">
+            <abbr title="Início">
                 <a href="{% url 'index' %}" class="menu" id="home">
                     <i data-feather="home" class="menu__icon"></i>
                     <p class="menu-identify">Home</p>
                 </a>
+            </abbr>
+            <abbr title="Contatos">
                 <a href="{% url 'Contacts' %}" class="menu" id="contacts">
                     <i data-feather="users" class="menu__icon"></i>
                     <p class="menu-identify">Contacts</p>
                 </a>
+            </abbr>
+            <abbr title="Dashboard">
                 <a href="{% url 'Dashboard' %}" class="menu" id="dashboard">
                     <i data-feather="pie-chart" class="menu__icon"></i>
                     <p class="menu-identify">Dashboard</p>
                 </a>
+            </abbr>
+            <abbr title="Cadastrar">
                 <a href="{% url 'Register' %}" class="menu" id="registration">
                     <i data-feather="user-plus" class="menu__icon"></i>
                     <p class="menu-identify">Registration</p>
                 </a>
+            </abbr>
+            <abbr title="Leads">
                 <a href="{% url 'Leads' %}" class="menu" id="leads">
                     <i data-feather="book-open" class="menu__icon"></i>
                 </a>
+            </abbr>
+            <abbr title="Perfil">
                 <a href="#" class="menu" id="profile">
                     <i data-feather="user" class="menu__icon"></i>
                     <p class="menu-identify">Registration</p>
                 </a>
+            </abbr>
+            <abbr title="Sair">
                 <a href="{% url 'Logout' %}" class="menu" id="sair">
                     <i data-feather="log-out" class="menu__icon"></i>
                 </a>
+            </abbr>
             <a href="javascript:void(0);" class="icon" onclick="navbar()">
                 <i data-feather="menu"></i>
             </a>
