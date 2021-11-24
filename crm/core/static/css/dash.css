@@ -1,21 +1,13 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: 0;
-}
 
-body{
-    display:flex;
-}
 .direita--superior{
-    width: 100%;
+    width: 90%;
     height: 50vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .direita--inferior{
-    width: 100%;
+    width: 90%;
     height: 50vh;
     display: flex;
     justify-content: space-around;
@@ -23,6 +15,7 @@ body{
 }
 .grafico{
     width: 30%;
+    margin-right: 110px;
 }
 .superior--leads{
     text-align: center;
@@ -32,7 +25,40 @@ body{
 }
 .d-titulo{
     font-size: 30px;
+    margin-right: 60px; 
 }
 .d-total{
     font-size: 50px;
+    margin-right: 60px;
 }
+
+h2{
+    margin-right: 60px;
+}
+
+@media screen and (max-width: 600px){
+   
+    .direita--superior{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .superior--leads{  
+        width: 100%;
+        margin-top: 500px;   
+    }
+    .grafico{
+        width: 100%;
+    }
+    .direita--inferior{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 500px;
+    }
+    .inferior--leads{   
+        width: 100%;
+        margin-top: 500px;
+    }   
+    
+ 
