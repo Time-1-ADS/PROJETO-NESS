@@ -7,6 +7,7 @@ body{
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    
 }
 
 .linha-titulo{
@@ -16,7 +17,7 @@ body{
     
 }
 .grandona{
-    width: 90%;
+    width: 100%;
     height: 90vh;
     border: solid 1px;
     border-radius: 20px;
@@ -95,3 +96,29 @@ text-decoration: none;
     overflow-y: scroll;
     height: 460px;
 }
+
+@media screen and (max-width: 600px){
+
+    .categoria{
+        display: flex;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+
+    }
+
+    .linha-titulo{
+        padding: 10px;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .titulo{
+        padding-right: 30px;
+    }
+
+    .conteudo-contatos{
+        justify-content: space-between;
+        padding-left: 10px;
+
+    }
+} 
