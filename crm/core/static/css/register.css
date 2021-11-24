@@ -2,21 +2,31 @@
 width:100%;
 height:100%;
 display: flex;
-justify-content: space-between;
+justify-content: space-evenly;
 align-items: center;
 }
-
+.up{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
 .button{
-background: linear-gradient(135deg, rgb(86,139,218, 0.2), rgb(79,225,173, 0.2));
-width: 50%;
-height: calc(100% - 20px);
-margin: 10px;
-display: flex;
-align-items: center;
-justify-content: center;
-text-decoration: none;
-color: black;
-font-size: 40px;
+    height: 300px;
+    width: 300px;
+    border-radius: 30px;
+    background: rgba(255, 0, 255, 0.158);
+    transition-duration: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 40px;
+    color: rgb(129, 0, 129);
+    border: solid 5px rgba(129, 0, 129, 0.363);
 }
 
 .button--left{
@@ -24,8 +34,12 @@ margin-right: 0;
 }
 
 .button:hover{
-background: linear-gradient(135deg, rgb(86,139,218, 0.4), rgb(79,225,173, 0.4));
-font-weight: bold;
+    transition-duration: 1s;
+    background: rgb(79,225,173, 0.4);
+    width: 310px;
+    height: 310px;
+    color: rgb(16, 105, 74);
+    border: solid 5px rgba(6, 126, 84, 0.4);
 }
 
 @media screen and (max-width:600px){
@@ -37,8 +51,10 @@ font-weight: bold;
         justify-content: flex-start;
         align-items: center;
     }
+    .up{
+        height: min-content;
+    }
     .button{
-        background: linear-gradient(135deg, rgb(86,139,218, 0.2), rgb(79,225,173, 0.2));
         width: 100%;
         height: 100%;
         margin: 10px;
