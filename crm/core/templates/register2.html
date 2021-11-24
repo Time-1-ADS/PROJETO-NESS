@@ -1,10 +1,13 @@
 {% extends "base.html" %}
 
-    {% block title %}Register{% endblock %}
+{% block title %}Register{% endblock %}
 
 {% block content %}
-    <div class="right">
-        <a href="{% url 'RegCustumer' %}" class="button button--left">Clínica</a>
-        <a href="{% url 'Cadastro' %}" class="button">Profissional</a>
-    </div>
+<div class="up">
+    Realizar cadastro de:
+</div>
+<div class="right">
+    <a href="{% url 'RegCustumer' %}" class="button button--left">Clínica</a>
+    <a href="{% url 'Cadastro' %}" class="button">Profissional</a>
+</div>
 {% endblock %}

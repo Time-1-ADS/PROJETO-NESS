@@ -5,30 +5,14 @@
 {% load static %}
 
 {% block content %}            
-<div class="direita--superior">
-    <div class="superior--leads grafico">
-        <p class="d-titulo">Leads<p>
-        <h2>Total</h2>
-        <div class="barra">
-            <hr>
-        </div>
-        <p class="d-total">{{leads}}</p>
-    </div>
-    <div class="grafico" id="superior--primeiro-grafico"></div>
-    <div class="grafico" id="superior--segundo-grafico"></div>
+<div class="direita-superior">
+    <div id="superior--primeiro-grafico"></div>
+    <div id="superior--segundo-grafico"></div>
 </div>
-<div class="direita--inferior">
-    <div class="inferior--leads grafico">
-        <p class="d-titulo">Opportunities<p>
-        <h2>Total</h2>
-        <div class="barra">
-            <hr>
-        </div>
-        <p class="d-total">{{oport}}</p>
-    </div>
-    <div class="grafico" id="inferior--primeiro-grafico"></div>
-    <div class="grafico" id="inferior--segundo-grafico"></div>
+<div class="direita-superior">
+    
 </div>
+
 
 <div class="hidden">
     <div id="coluna1">{{oport}}</div>

@@ -1,27 +1,10 @@
+.direita-superior{
+    display:flex;
+    background: greenyellow;
+}
 
-.direita--superior{
-    width: 90%;
-    height: 50vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.direita--inferior{
-    width: 90%;
-    height: 50vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 .grafico{
-    width: 30%;
-    margin-right: 110px;
-}
-.superior--leads{
-    text-align: center;
-}
-.inferior--leads{
-    text-align: center;
+    width: 20%;
 }
 .d-titulo{
     font-size: 30px;
@@ -61,4 +44,4 @@ h2{
         margin-top: 500px;
     }   
     
- 
+}

@@ -21,21 +21,6 @@ function drawChart() {
     var chartGraficoSuperiorBarra = new google.visualization.ColumnChart(document.getElementById('superior--primeiro-grafico'));
     chartGraficoSuperiorBarra.draw(dataGraficoSuperiorBarra, optionsGraficoSuperiorBarra);
 
-    //Primeiro Gráfico Inferior - Barra
-    
-    
-    var dataGraficoInferiorBarra = google.visualization.arrayToDataTable([
-        ['Element', ''],
-        ['Elemento 1', 8.94],            // RGB value
-        ['Elemento 2', 10.49],            // English color name
-        ['Elemento 3', 19.30],
-        ['Elemento 4', 21.45], // CSS-style declaration
-     ]);
-    var optionsGraficoInferiorBarra = {'title':'Primeiro Gráfico Inferior',
-                       'width':500,
-                       'height':300};
-    var chartGraficoInferiorBarra = new google.visualization.ColumnChart(document.getElementById('inferior--primeiro-grafico'));
-    chartGraficoInferiorBarra.draw(dataGraficoInferiorBarra, optionsGraficoInferiorBarra);
 
     //Segundo Gráfico Superior - Pizza
 
@@ -56,11 +41,29 @@ function drawChart() {
         ['Iara', valorIara, 'green' ],
      ]);
     var optionsGraficoSuperiorPizza = {'title':'Primeiro Gráfico Superior',
-                       'width':500,
-                       'height':300};
+                       'width':300,
+                       'height':300,
+                    'padding':0};
     var chartGraficoSuperiorPizza = new google.visualization.PieChart(document.getElementById('superior--segundo-grafico'));
     chartGraficoSuperiorPizza.draw(dataGraficoSuperiorPizza, optionsGraficoSuperiorPizza);
+
+
+    //Primeiro Gráfico Inferior - Barra
     
+    var dataGraficoInferiorBarra = google.visualization.arrayToDataTable([
+        ['Element', ''],
+        ['Elemento 1', 8.94],            // RGB value
+        ['Elemento 2', 10.49],            // English color name
+        ['Elemento 3', 19.30],
+        ['Elemento 4', 21.45], // CSS-style declaration
+     ]);
+    var optionsGraficoInferiorBarra = {'title':'Primeiro Gráfico Inferior',
+                       'width':500,
+                       'height':300};
+    var chartGraficoInferiorBarra = new google.visualization.ColumnChart(document.getElementById('inferior--primeiro-grafico'));
+    chartGraficoInferiorBarra.draw(dataGraficoInferiorBarra, optionsGraficoInferiorBarra);
+    
+
     //Segundo Gráfico Inferior - Pizza
 
     var dataGraficoInferiorPizza = google.visualization.arrayToDataTable([
