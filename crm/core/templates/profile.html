@@ -3,9 +3,48 @@
 {% load static %}
 {% block content %}
 <div class="form">
-<form class="cliente" action="{% url 'Profile' prof.id %}" method="GET">
+<form class="cliente" method="GET">
     {% csrf_token %}
-    {{ form.as_table }}
+    <tr>
+        <th>
+            <label for="id_username">Usuário:</label>
+        </th>
+        <td>
+            <input type="text" name="username" disabled value="{{user.username}}" maxlength="150" required id="id_username">
+        </td>
+    </tr>
+    <tr>
+        <th>
+            <label for="id_first_name">Primeiro nome:</label>
+        </th>
+        <td>
+            <input type="text" name="first_name" disabled value="{{user.first_name}}" maxlength="150" id="id_first_name">
+        </td>
+    </tr>
+    <tr>
+        <th>
+            <label for="id_last_name">Último nome:</label>
+        </th>
+        <td>
+            <input type="text" name="last_name" disabled value="{{user.last_name}}" maxlength="150" id="id_last_name">
+        </td>
+    </tr>
+    <tr>
+        <th>
+            <label for="id_email">Endereço de email:</label>
+        </th>
+        <td>
+            <input type="email" name="email" disabled value="{{user.email}}" maxlength="254" id="id_email">
+        </td>
+    </tr>
+    <tr>
+        <th>
+            <label for="id_cargo">Cargo:</label>
+        </th>
+        <td>
+            <input type="text" name="cargo" disabled value="{{user.cargo.cargo}}" id="id_cargo">
+        </td>
+    </tr>
 </form>
 </div>
 {% endblock %}

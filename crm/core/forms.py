@@ -5,7 +5,7 @@ from django import forms
 class AgentForm(forms.ModelForm):
     class Meta:
         model = Agent
-        fields = [ 'cargo']
+        fields = ['username','first_name', 'last_name', 'email', 'cargo']
 
 
 class MedicForm(forms.ModelForm):

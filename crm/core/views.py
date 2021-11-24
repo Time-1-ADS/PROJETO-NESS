@@ -62,7 +62,7 @@ def dashboard(request):
     iara_count = iara.count()
 
     
-
+    
     if request.method=="GET":
         context = {
             'leads': leads_count,
@@ -209,8 +209,7 @@ def atualizaProposta(request, pk):
     if request.method == 'POST':
         form = PipeForm(request.POST, instance=propos)
         if form.is_valid():
-            agente = form.save()
-            form = PipeForm()
+            form.save()
             return redirect('index')
     context = {
         'form': form

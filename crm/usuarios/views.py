@@ -64,11 +64,11 @@ def logout(request):
     django_logout(request)
     return HttpResponseRedirect('/')
 
-# @login_required
-# def profile(request, pk):
-#     model = Agent.objects.get(id=pk)
-#     form = AgentForm(instance=model)
-#     context = {
-#         'prof': form
-#     }
-#     return render(request, 'profile.html', context=context)
+@login_required
+def profile(request, pk):
+    model = Agent.objects.get(id=pk)
+    form = AgentForm(instance=model)
+    context = {
+        'form': form
+    }
+    return render(request, 'profile.html', context=context)

@@ -41,12 +41,14 @@
                     <p class="menu-identify">Contacts</p>
                 </a>
             </abbr>
+            {% if user.cargo.cargo == "Administrador" or user.cargo.cargo == "Diretor" %}
             <abbr title="Dashboard">
                 <a href="{% url 'Dashboard' %}" class="menu" id="dashboard">
                     <i data-feather="pie-chart" class="menu__icon"></i>
                     <p class="menu-identify">Dashboard</p>
                 </a>
             </abbr>
+            {% endif %}
             <abbr title="Cadastrar">
                 <a href="{% url 'Register' %}" class="menu" id="registration">
                     <i data-feather="user-plus" class="menu__icon"></i>
@@ -59,7 +61,7 @@
                 </a>
             </abbr>
             <abbr title="Perfil">
-                <a href="#" class="menu" id="profile">
+                <a href="{% url 'Profile' user.id %}" class="menu" id="profile">
                     <i data-feather="user" class="menu__icon"></i>
                     <p class="menu-identify">Registration</p>
                 </a>
@@ -74,9 +76,7 @@
             </a>
         </div>
     </div> <!-- navbar-->
-    {% if request.user.is_authenticated %}
-    <!--<p>Welcome! {{ request.user.first_name }}</p>-->
-    {% endif %}
+
     <div class="direita">
         {% block content %} {% endblock %}
     </div>

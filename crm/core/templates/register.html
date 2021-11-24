@@ -8,6 +8,8 @@
     </div>
     <div class="right">
         <a href="{% url 'RegCustumer' %}" class="button button--left">Cliente</a>
-        <a href="{% url 'Cadastro' %}" class="button">Funcionário</a>
+        {% if user.cargo.cargo == "Administrador" %}
+            <a href="{% url 'Cadastro' %}" class="button">Funcionário</a>
+        {% endif %}
     </div>
 {% endblock %}
