@@ -2,9 +2,20 @@
     {% block title %}Main Screen{% endblock %}
  {% load static %}
 {% block content %}
+<div class="btns-main">
         <a class="add-nova-proposta" href="{% url 'Proposta' %}">
-        <div class="btn--nova-proposta"><i data-feather="folder-plus" class="menu__icon"></i>Nova Proposta</div> <!-- onclick="formularioNovaProposta()" -->
+        <div class="btn--nova-proposta">
+            <i data-feather="folder-plus" class="menu__icon"></i>
+            Nova Proposta
+        </div> <!-- onclick="formularioNovaProposta()" -->
         </a>
+        <a class="add-nova-proposta" href="#">
+        <div class="btn--nova-proposta edit">
+            <i data-feather="edit" class="menu__icon"></i>
+            Editar Tabelas
+        </div> <!-- onclick="formularioNovaProposta()" -->
+        </a>
+    </div>
         <div class="tabela">
             <div class="tabela__coluna">
                 {% for titulo in titulo %}

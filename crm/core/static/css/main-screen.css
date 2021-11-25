@@ -1,7 +1,13 @@
 .direita .formulario-kanban{
     justify-content: flex-end;
 }
-
+.btns-main{
+    width: 50%;
+    display: flex;
+}
+.edit{
+    margin-left: 20px;
+}
 
 .btn--nova-proposta{
     border-radius: 10px;
@@ -172,4 +178,15 @@ padding-right: 5px;
     .direita{
         padding: 0px;
     }
+    .btns-main{
+        width: 100%;
+        flex-direction: column;
     }
+    .edit{
+        width: 100%;
+        margin-left: 0;
+    }
+    .btn--nova-proposta{
+        width: 100%;
+    }
+}
