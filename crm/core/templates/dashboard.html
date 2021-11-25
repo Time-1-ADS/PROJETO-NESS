@@ -5,12 +5,21 @@
 {% load static %}
 
 {% block content %}            
-<div class="direita-superior">
+<div class="direita-div">
+    <div class="info" id="info">
+        <p>Total de Leads</p>
+        <h1 id="leads-info">{{leads}}</h1>
+    </div>
     <div id="superior--primeiro-grafico"></div>
     <div id="superior--segundo-grafico"></div>
 </div>
-<div class="direita-superior">
-    
+<div class="direita-div">
+    <div class="info" id="info">
+        <p>Novos</p>
+        <h1 id="novos">{{oport}}</h1>
+    </div>
+    <div id="inferior--primeiro-grafico"></div>
+    <div id="inferior--segundo-grafico"></div>
 </div>
 
 

@@ -18,15 +18,15 @@ align-items: center;
     height: 300px;
     width: 300px;
     border-radius: 30px;
-    background: rgba(255, 0, 255, 0.158);
+    background: rgba(79, 225, 174, 0.26);
     transition-duration: 1s;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     font-size: 40px;
-    color: rgb(129, 0, 129);
-    border: solid 5px rgba(129, 0, 129, 0.363);
+    color: rgba(16, 105, 74, 0.685);
+    border: solid 5px rgba(16, 105, 74, 0.685);
 }
 
 .button--left{
@@ -39,7 +39,7 @@ margin-right: 0;
     width: 310px;
     height: 310px;
     color: rgb(16, 105, 74);
-    border: solid 5px rgba(6, 126, 84, 0.4);
+    border: solid 5px rgb(16, 105, 74);
 }
 
 @media screen and (max-width:600px){

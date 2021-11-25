@@ -16,7 +16,6 @@ function drawChart() {
         ['Fechado', coluna4Valor, 'green' ],
      ]);
     var optionsGraficoSuperiorBarra = {'title':'Qtde de itens por status',
-                       'width':500,
                        'height':300};
     var chartGraficoSuperiorBarra = new google.visualization.ColumnChart(document.getElementById('superior--primeiro-grafico'));
     chartGraficoSuperiorBarra.draw(dataGraficoSuperiorBarra, optionsGraficoSuperiorBarra);
@@ -41,9 +40,7 @@ function drawChart() {
         ['Iara', valorIara, 'green' ],
      ]);
     var optionsGraficoSuperiorPizza = {'title':'Primeiro Gráfico Superior',
-                       'width':300,
-                       'height':300,
-                    'padding':0};
+                       'height':300};
     var chartGraficoSuperiorPizza = new google.visualization.PieChart(document.getElementById('superior--segundo-grafico'));
     chartGraficoSuperiorPizza.draw(dataGraficoSuperiorPizza, optionsGraficoSuperiorPizza);
 
@@ -58,7 +55,6 @@ function drawChart() {
         ['Elemento 4', 21.45], // CSS-style declaration
      ]);
     var optionsGraficoInferiorBarra = {'title':'Primeiro Gráfico Inferior',
-                       'width':500,
                        'height':300};
     var chartGraficoInferiorBarra = new google.visualization.ColumnChart(document.getElementById('inferior--primeiro-grafico'));
     chartGraficoInferiorBarra.draw(dataGraficoInferiorBarra, optionsGraficoInferiorBarra);
@@ -74,7 +70,6 @@ function drawChart() {
         ['Elemento 4', 21.45, 'color: #e5e4e2' ],
      ]);
     var optionsGraficoInferiorPizza = {'title':'Primeiro Gráfico Inferior',
-                       'width':500,
                        'height':300};
     var chartGraficoInferiorPizza = new google.visualization.PieChart(document.getElementById('inferior--segundo-grafico'));
     chartGraficoInferiorPizza.draw(dataGraficoInferiorPizza, optionsGraficoInferiorPizza);

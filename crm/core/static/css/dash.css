@@ -1,6 +1,14 @@
-.direita-superior{
+.direita-div{
     display:flex;
-    background: greenyellow;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
+    height: 50%;
 }
 
 .grafico{
@@ -21,27 +29,16 @@ h2{
 
 @media screen and (max-width: 600px){
    
-    .direita--superior{
+    .direita-div{
         display: flex;
         flex-direction: column;
         width: 100%;
-    }
-    .superior--leads{  
-        width: 100%;
-        margin-top: 500px;   
     }
     .grafico{
         width: 100%;
     }
-    .direita--inferior{
-        display: flex;
-        flex-direction: column;
+    .info{
         width: 100%;
-        margin-top: 500px;
+        height: min-content;
     }
-    .inferior--leads{   
-        width: 100%;
-        margin-top: 500px;
-    }   
-    
 }
