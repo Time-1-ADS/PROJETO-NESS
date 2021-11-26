@@ -72,12 +72,15 @@ function drawChart() {
 
     //Segundo Gráfico Inferior - Pizza
 
+    var alta = parseInt(document.getElementById("alta").innerHTML)
+    var media = parseInt(document.getElementById("media").innerHTML)
+    var baixa = parseInt(document.getElementById("baixa").innerHTML)
+
     var dataGraficoInferiorPizza = google.visualization.arrayToDataTable([
         ['Element', '', { role: 'style' }],
-        ['Elemento 1', 8.94, '#b87333'],
-        ['Elemento 2', 10.49, 'silver'],
-        ['Elemento 3', 19.30, 'gold'],
-        ['Elemento 4', 21.45, 'color: #e5e4e2' ],
+        ['Baixa', baixa, '#000'],
+        ['Alta', alta, 'silver'],
+        ['Média', media, 'gold'],
      ]);
     var optionsGraficoInferiorPizza = {'title':'Primeiro Gráfico Inferior',
                        'height':300};
