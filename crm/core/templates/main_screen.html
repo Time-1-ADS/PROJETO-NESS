@@ -9,7 +9,7 @@
             Nova Proposta
         </div> <!-- onclick="formularioNovaProposta()" -->
         </a>
-        {% if user.cargo.cargo == "Administrador"%}
+        {% if user.cargo.cargo == "Administrador" %}
         {% for titulo in titulo %}
         <a class="add-nova-proposta" href="{% url 'AtualizaTitulo' %}">
         <div class="btn--nova-proposta edit">
@@ -27,7 +27,7 @@
                 {% endfor %}
                 {% if user.cargo.cargo == "Administrador" or user.cargo.cargo == "Diretor" %}
                 {% for form_pip in form_pip %}
-                    <div class="coluna__propostas" id="novasPropostas">
+                    <div class="coluna__propostas {{form_pip.prioridade}}" id="novasPropostas">
                         {% if form_pip.status == "Novo" %}
                         <div class="ttle">
                         <a class="titulo-da-proposta" href="{% url 'Atualiza' form_pip.id %}"><strong>{{ form_pip.titulo }}</strong></a>
@@ -45,7 +45,7 @@
                 {% elif user.cargo.cargo == "Agente" %}
                 {% for form_pip in form_pip %}
                 {% if form_pip.visivel.cargo == "Agente" %}
-                <div class="coluna__propostas" id="novasPropostas">
+                <div class="coluna__propostas {{form_pip.prioridade}}" id="novasPropostas">
                     {% if form_pip.status == "Novo" %}
                     <div class="ttle">
                     <a class="titulo-da-proposta" href="{% url 'Atualiza' form_pip.id %}"><strong>{{ form_pip.titulo }}</strong></a>
@@ -70,7 +70,7 @@
                 {% endfor %}
                 {% if user.cargo.cargo == "Administrador" or user.cargo.cargo == "Diretor" %}
                 {% for form_pip in form_pip %}
-                    <div class="coluna__propostas" id="novasPropostas">
+                    <div class="coluna__propostas {{form_pip.prioridade}}" id="novasPropostas">
                         {% if form_pip.status == "Aberto" %}
                         <div class="ttle">
                         <a class="titulo-da-proposta" href="{% url 'Atualiza' form_pip.id %}"><strong>{{ form_pip.titulo }}</strong></a>
@@ -88,7 +88,7 @@
                 {% elif user.cargo.cargo == "Agente" %}
                 {% for form_pip in form_pip %}
                 {% if form_pip.visivel.cargo == "Agente" %}
-                <div class="coluna__propostas" id="novasPropostas">
+                <div class="coluna__propostas {{form_pip.prioridade}}" id="novasPropostas">
                     {% if form_pip.status == "Aberto" %}
                     <div class="ttle">
                     <a class="titulo-da-proposta" href="{% url 'Atualiza' form_pip.id %}"><strong>{{ form_pip.titulo }}</strong></a>
@@ -112,7 +112,7 @@
                 {% endfor %}
                 {% if user.cargo.cargo == "Administrador" or user.cargo.cargo == "Diretor" %}
                 {% for form_pip in form_pip %}
-                    <div class="coluna__propostas" id="novasPropostas">
+                    <div class="coluna__propostas {{form_pip.prioridade}}" id="novasPropostas">
                         {% if form_pip.status == "Pendente" %}
                         <div class="ttle">
                         <a class="titulo-da-proposta" href="{% url 'Atualiza' form_pip.id %}"><strong>{{ form_pip.titulo }}</strong></a>
@@ -130,7 +130,7 @@
                 {% elif user.cargo.cargo == "Agente" %}
                 {% for form_pip in form_pip %}
                 {% if form_pip.visivel.cargo == "Agente" %}
-                <div class="coluna__propostas" id="novasPropostas">
+                <div class="coluna__propostas {{form_pip.prioridade}}" id="novasPropostas">
                     {% if form_pip.status == "Pendente" %}
                     <div class="ttle">
                     <a class="titulo-da-proposta" href="{% url 'Atualiza' form_pip.id %}"><strong>{{ form_pip.titulo }}</strong></a>
@@ -154,7 +154,7 @@
                 {% endfor %}
                 {% if user.cargo.cargo == "Administrador" or user.cargo.cargo == "Diretor" %}
                 {% for form_pip in form_pip %}
-                    <div class="coluna__propostas" id="novasPropostas">
+                    <div class="coluna__propostas {{form_pip.prioridade}}" id="novasPropostas">
                         {% if form_pip.status == "Fechado" %}
                         <div class="ttle">
                         <a class="titulo-da-proposta" href="{% url 'Atualiza' form_pip.id %}"><strong>{{ form_pip.titulo }}</strong></a>
@@ -172,7 +172,7 @@
                 {% elif user.cargo.cargo == "Agente" %}
                 {% for form_pip in form_pip %}
                 {% if form_pip.visivel.cargo == "Agente" %}
-                <div class="coluna__propostas" id="novasPropostas">
+                <div class="coluna__propostas {{form_pip.prioridade}}" id="novasPropostas">
                     {% if form_pip.status == "Fechado" %}
                     <div class="ttle">
                     <a class="titulo-da-proposta" href="{% url 'Atualiza' form_pip.id %}"><strong>{{ form_pip.titulo }}</strong></a>

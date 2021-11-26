@@ -12,9 +12,9 @@
 .btn--nova-proposta{
     border-radius: 10px;
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
-    width: 264px;
+    width: 200px;
     height: 45px;
     background: #48C1BC;
     display: flex;
@@ -149,6 +149,16 @@ padding-right: 5px;
     padding: 20px;
     height: calc(100vh - 50px);
     width: 50%;
+}
+
+.Baixo{
+    background:rgba(128, 255, 0, 0.473);
+}
+.Médio{
+    background: rgba(255, 255, 0, 0.534);
+}
+.Alto{
+    background: rgba(255, 0, 0, 0.445);
 }
 
 .formulario__nova-proposta--primeira-parte{}
