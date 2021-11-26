@@ -27,6 +27,11 @@
 </head>
 
 <body>
+    <div class="popup-background hidden" onclick="back()">
+        <div class="popup">
+
+        </div>
+    </div>
     <div class="navbar" id="navbar">
         <div class="topnav" id="myTopnav">
             <abbr title="Início">
@@ -52,7 +57,6 @@
             <abbr title="Cadastrar">
                 <a href="{% url 'Register' %}" class="menu" id="registration">
                     <i data-feather="user-plus" class="menu__icon"></i>
-                    <p class="menu-identify">Registration</p>
                 </a>
             </abbr>
             <abbr title="Leads">
@@ -63,7 +67,6 @@
             <abbr title="Perfil">
                 <a href="{% url 'Profile' user.id %}" class="menu" id="profile">
                     <i data-feather="user" class="menu__icon"></i>
-                    <p class="menu-identify">Registration</p>
                 </a>
             </abbr>
             <abbr title="Sair">

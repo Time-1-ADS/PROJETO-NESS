@@ -6,6 +6,7 @@
         
         <div class="contatos">
             <h1>Contatos</h1>
+            <i data-feather="mail" class="menu__icon" onclick="email()"></i>
         </div>
 
         <div class="grandona">
@@ -49,7 +50,7 @@
                     <br>
                 </div>
                 <div class="informacao">
-                    <p>{{contact.email}}</p>
+                    <p class="email">{{contact.email}}</p>
                     <br>
                 </div>
                 <div class="informacao">
@@ -85,7 +86,7 @@
                 </div>
 
                 <div class="informacao">
-                    <p>{{clinica.email}}</p>
+                    <p class="email">{{clinica.email}}</p>
                     <br>
                 </div>
                 <div class="informacao">
@@ -101,4 +102,5 @@
             {% endfor %}
                 </div>
         </div>
+        
 {% endblock %}

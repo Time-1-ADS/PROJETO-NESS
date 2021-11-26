@@ -46,13 +46,23 @@ function drawChart() {
 
 
     //Primeiro Gráfico Inferior - Barra
+
+    var preco1 = parseFloat(document.getElementById("preco1").innerHTML)
+    var preco2 = parseFloat(document.getElementById("preco2").innerHTML)
+    var preco3 = parseFloat(document.getElementById("preco3").innerHTML)
+    var preco4 = parseFloat(document.getElementById("preco4").innerHTML)
+
+    var nome1 = document.getElementById("nomepreco1").innerHTML
+    var nome2 = document.getElementById("nomepreco2").innerHTML
+    var nome3 = document.getElementById("nomepreco3").innerHTML
+    var nome4 = document.getElementById("nomepreco4").innerHTML
     
     var dataGraficoInferiorBarra = google.visualization.arrayToDataTable([
         ['Element', ''],
-        ['Elemento 1', 8.94],            // RGB value
-        ['Elemento 2', 10.49],            // English color name
-        ['Elemento 3', 19.30],
-        ['Elemento 4', 21.45], // CSS-style declaration
+        [nome4, preco4],            // RGB value
+        [nome3, preco3],            // English color name
+        [nome2, preco2],
+        [nome1, preco1], // CSS-style declaration
      ]);
     var optionsGraficoInferiorBarra = {'title':'Primeiro Gráfico Inferior',
                        'height':300};
