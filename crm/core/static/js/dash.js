@@ -64,7 +64,7 @@ function drawChart() {
         [nome2, preco2],
         [nome1, preco1], // CSS-style declaration
      ]);
-    var optionsGraficoInferiorBarra = {'title':'Primeiro Gráfico Inferior',
+    var optionsGraficoInferiorBarra = {'title':'Projetos mais valiosos',
                        'height':300};
     var chartGraficoInferiorBarra = new google.visualization.ColumnChart(document.getElementById('inferior--primeiro-grafico'));
     chartGraficoInferiorBarra.draw(dataGraficoInferiorBarra, optionsGraficoInferiorBarra);
