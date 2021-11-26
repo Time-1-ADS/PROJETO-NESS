@@ -61,6 +61,13 @@ def dashboard(request):
     nreport_count = nreport.count()
     iara_count = iara.count()
 
+    leads_preco = leads.order_by('-valor_total')
+
+    leads_preco1 = leads_preco[0]
+    leads_preco2 = leads_preco[1]
+    leads_preco3 = leads_preco[2]
+    leads_preco4 = leads_preco[3]
+
     
     
     if request.method=="GET":
@@ -75,7 +82,11 @@ def dashboard(request):
             'ncommand': ncommand_count,
             'necho': necho_count,
             'nreport': nreport_count,
-            'iara': iara_count
+            'iara': iara_count,
+            'preco1': leads_preco1,
+            'preco2': leads_preco2,
+            'preco3': leads_preco3,
+            'preco4': leads_preco4,
         }
     return render(request, 'dashboard.html', context=context)
 
@@ -248,3 +259,17 @@ def importacao(request):
 @login_required
 def emailEnviar(request):
     pass
+
+def titulomain(request):
+    pk= '1'
+    titulo = TituloMain.objects.get(id=pk)
+    form = TituloMainForm(instance=titulo)
+    if request.method == 'POST':
+        form = TituloMainForm(request.POST, instance=titulo)
+        if form.is_valid():
+            form.save()
+            return redirect('index')
+    context = {
+        'form': form
+    }
+    return render(request, 'titulomain.html', context=context)

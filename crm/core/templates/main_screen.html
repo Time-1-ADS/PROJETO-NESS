@@ -9,12 +9,16 @@
             Nova Proposta
         </div> <!-- onclick="formularioNovaProposta()" -->
         </a>
-        <a class="add-nova-proposta" href="#">
+        {% if user.cargo.cargo == "Administrador"%}
+        {% for titulo in titulo %}
+        <a class="add-nova-proposta" href="{% url 'AtualizaTitulo' %}">
         <div class="btn--nova-proposta edit">
             <i data-feather="edit" class="menu__icon"></i>
             Editar Tabelas
         </div> <!-- onclick="formularioNovaProposta()" -->
         </a>
+        {% endfor %}
+        {% endif %}
     </div>
         <div class="tabela">
             <div class="tabela__coluna">

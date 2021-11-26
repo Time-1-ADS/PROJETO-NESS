@@ -1,3 +1,4 @@
+from django.forms import fields
 from .models import *
 from django import forms
 
@@ -33,3 +34,9 @@ class DocumentForm(forms.Form):
         label='Select a file',
         help_text='max. 42 megabytes'
     )
+
+class TituloMainForm(forms.ModelForm):
+
+    class Meta:
+        model = TituloMain
+        fields = ['novo', 'aberto', 'pendente', 'fechado']
