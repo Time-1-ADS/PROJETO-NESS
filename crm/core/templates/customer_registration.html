@@ -12,14 +12,16 @@
 
                 <br>
 
-                <button type="submit" class="btn-cancelar-cadastrar" id="cor_input">Register</button>
+                <div class="formulario__nova-proposta__botoes">
+                    <div class="botoes--cancelar-cadastrar">
+                    <a href="{% url 'Contacts' %}">
+                <div class="btn--cancelar">Cancelar </div>
+                        </a>
+                <button type="submit" class="cadastrar">Cadastrar</button>
+                    </div>
+                </div>
             </form>
-            
-
         </div>
-        <a href="{% url 'Contacts' %}">
-            <div class="btn-cancelar-cadastrar">Cancelar</div>  
-        </a>
 
 
 {% endblock %}

@@ -23,6 +23,14 @@ def regcustumer(request):
     return render(request, 'customer_registration.html')
 
 @login_required
+def register(request):
+    return render(request, 'register.html')
+
+@login_required
+def register_client(request):
+    return render(request, 'register2.html')
+
+@login_required
 def contacts(request):
     medico = Medic.objects.all()
     clinica = Clinic.objects.all()
@@ -62,12 +70,18 @@ def dashboard(request):
     iara_count = iara.count()
 
     leads_preco = leads.order_by('-valor_total')
-
     leads_preco1 = leads_preco[0]
     leads_preco2 = leads_preco[1]
     leads_preco3 = leads_preco[2]
     leads_preco4 = leads_preco[3]
 
+    alta = leads.filter(prioridade='Alto')
+    medio = leads.filter(prioridade='Médio')
+    baixo = leads.filter(prioridade='Baixo')
+
+    alta_count = alta.count()
+    medio_count = medio.count()
+    baixo_count = baixo.count()
     
     
     if request.method=="GET":
@@ -87,12 +101,13 @@ def dashboard(request):
             'preco2': leads_preco2,
             'preco3': leads_preco3,
             'preco4': leads_preco4,
+            'alto': alta_count,
+            'medio': medio_count,
+            'baixo': baixo_count,
         }
     return render(request, 'dashboard.html', context=context)
 
-@login_required
-def register(request):
-    return render(request, 'register.html')
+
 
 @login_required
 def leads(request):
