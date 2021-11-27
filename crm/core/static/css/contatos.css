@@ -1,8 +1,9 @@
 
 .linha-titulo{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color: #3C3C3C;
+    width: 100%;
     
 }
 .grandona{
@@ -13,9 +14,6 @@
     color: #3C3C3C;
     padding-left: 10px;
     padding-right: 10px;
-
-    
-
 }
 .categoria{
     font-size: 15px;
@@ -84,6 +82,7 @@ text-decoration: none;
     overflow-x: hidden;
     overflow-y: scroll;
     height: 460px;
+    width: 100%;
 }
 
 .popup-background{
@@ -140,7 +139,7 @@ text-decoration: none;
 
     .grandona{
         min-width: max-content;
-        margin-left: 670px;
+        margin-left: 500px;
 
     }
     .linha-titulo{

@@ -1,111 +1,112 @@
 {% extends "base.html" %}
 
-    {% block title %}Contacts{% endblock %}
+{% block title %}Contacts{% endblock %}
 {% load static %}
 {% block content %}
+
+<div class="contatos">
+    <h1>Contatos</h1>
+    <i data-feather="mail" class="menu__icon" onclick="email()"></i>
+</div>
+
+<div class="grandona">
+    
+    
+    <table class="conteudo-contatos">
+        <tr class="categoria">
+            <td class="informacao">
+                <p>Cliente:</p>
+            </td>
+            <td class="informacao">
+                <p>Telefone:</p>
+            </td>
+            <td class="informacao">
+                <p>Whatsapp:</p>
+            </td>
+            <td class="informacao">
+                <p>E-mail:</p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+        </tr>
+        {% for contact in contacts %}
+        <tr class="categoria">
+
+            <td class="informacao">
+                <div class="nome-da-empresa">
+                    <p><a href="{% url 'AtualizaMedico' contact.id %}">{{contact.nome}}</a></p>
+                </div>
+                <p>{{contact.espec}}</p>
+                <br>
+            </td>
+
+            <td class="informacao">
+                <p>{{contact.numero_fixo}}</p>
+                <br>
+            </td>
+
+            <td class="informacao">
+                <p>{{contact.whatsapp}}</p>
+                <br>
+            </td>
+            <td class="informacao">
+                <a class="email" href="mailto:{{contact.email}}" id="emailProfissional">{{contact.email}}</a>
+                <br>
+            </td>
+            <td class="informacao" style="width: min-content;">
+                <a class="titulo-da-proposta" href="{% url 'DeletaMedico' contact.id %}">
+                    <i data-feather="trash-2" class="menu__icon" style="height: 15px;"></i>
+                </a>
+            </td>
+
+
+        </tr>
+
         
-        <div class="contatos">
-            <h1>Contatos</h1>
-            <i data-feather="mail" class="menu__icon" onclick="email()"></i>
-        </div>
+        {% endfor %}
+        {% for clinica in clinica %}
+        <tr class="categoria">
 
-        <div class="grandona">
-            <div class="linha-titulo">
-                <div class="titulo">
-                    <p>Cliente:</p>
+            <td class="informacao">
+                <div class="nome-da-empresa">
+                    <a href="{% url 'AtualizaClinic' clinica.id %}">{{clinica.razao}}</a>
                 </div>
-                <div class="titulo">
-                    <p>Telefone:</p>
-                </div>
-                <div class="titulo">
-                    <p>Whatsapp:</p>
-                </div>
-                <div class="titulo">
-                    <p>E-mail:</p>
-                </div>
-                <div class="titulo">
-                    <p> </p>
-                </div>
-            </div>
-            <hr>
-            <div class="conteudo-contatos">
-            {% for contact in contacts %}
-            <div class="categoria">
+                <p>{{clinica.categoria}}</p>
+                <br>
+            </td>
 
-                <div class="informacao">
-                    <div class="nome-da-empresa">
-                        <p><a href="{% url 'AtualizaMedico' contact.id %}">{{contact.nome}}</a></p>
-                    </div>
-                    <p>{{contact.espec}}</p>
-                    <br>
-                </div>
-                
-                <div class="informacao">
-                    <p>{{contact.numero_fixo}}</p>
-                    <br>
-                </div>
+            <td class="informacao">
+                <p>{{clinica.numero}}</p>
+                <br>
+            </td>
 
-                <div class="informacao">
-                    <p>{{contact.whatsapp}}</p>
-                    <br>
-                </div>
-                <div class="informacao">
-                    <a class="email" href="mailto:{{contact.email}}" id="emailProfissional">{{contact.email}}</a>
-                    <br>
-                </div>
-                <div class="informacao">
-                    <a class="titulo-da-proposta" href="{% url 'DeletaMedico' contact.id %}">
-                        <i data-feather="trash-2" class="menu__icon" style="height: 15px;"></i>
-                    </a>
-                </div>
+            <td class="informacao">
+                <p>-</p>
+                <br>
+            </td>
 
+            <td class="informacao">
+                <a class="email" href="mailto:{{clinica.email}}" id="emailClinica">{{clinica.email}}</a>
+                <br>
+            </td>
+            <td class="informacao" style="width: min-content;">
+                <a class="titulo-da-proposta" href="{% url 'DeletaClinic' clinica.id %}">
+                    <i data-feather="trash-2" class="menu__icon" style="height: 15px;"></i>
+                </a>
+            </td>
 
-            </div>
+        </tr>
 
-            <hr>
-            {% endfor %}
-            {% for clinica in clinica %}
-            <div class="categoria">
-
-                <div class="informacao">
-                    <div class="nome-da-empresa">
-                        <a href="{% url 'AtualizaClinic' clinica.id %}">{{clinica.razao}}</a>
-                    </div>
-                    <p>{{clinica.categoria}}</p>
-                    <br>
-                </div>
-
-                <div class="informacao">
-                    <p>{{clinica.numero}}</p>
-                    <br>
-                </div>
-
-                <div class="informacao">
-                    <p>-</p>
-                    <br>
-                </div>
-
-                <div class="informacao">
-                    <a class="email" href="mailto:{{clinica.email}}" id="emailClinica">{{clinica.email}}</a>
-                    <br>
-                </div>
-                <div class="informacao">
-                    <a class="titulo-da-proposta" href="{% url 'DeletaClinic' clinica.id %}">
-                        <i data-feather="trash-2" class="menu__icon" style="height: 15px;"></i>
-                    </a>
-                </div>
-
-            </div>
-
-            <hr>
-            {% endfor %}
-                </div>
-        </div>
-        <script>
-        function atualiza(){
-            document.location.reload(true)
-            console.log("ae")
-        }
-    </script>
         
+        {% endfor %}
+    </table>
+</div>
+<script>
+    function atualiza() {
+        document.location.reload(true)
+        console.log("ae")
+    }
+</script>
+
 {% endblock %}
