@@ -1,6 +1,3 @@
-body{
-    display: flex;
-}
 .direita{
     display: flex;
     flex-direction: column;

@@ -5,11 +5,14 @@ function escolherDestinatario() {
     var mensagem = mensagemFunc()
     var remetente = remetenteFunc()
 
-    var emails = document.querySelectorAll("a#emailClinica")
-    emails.forEach((e)=>{
+    var listEmailClinica = document.querySelectorAll("a#emailClinica")
+    listEmailClinica.forEach((e)=>{
         e.href += "?subject="+assunto+"&body="+cumprimentos+"%0D%0A%0D%0A"+mensagem+"%0D%0A%0D%0AAtenciosamente,%0D%0A"+remetente+"%0D%0A%0D%0A"
     })
-    console.log(emails)
+    var listEmailProfissional = document.querySelectorAll("a#emailProfissional")
+    listEmailProfissional.forEach((e)=>{
+        e.href += "?subject="+assunto+"&body="+cumprimentos+"%0D%0A%0D%0A"+mensagem+"%0D%0A%0D%0AAtenciosamente,%0D%0A"+remetente+"%0D%0A%0D%0A"
+    })
     popup.className = "hidden"
 }
 

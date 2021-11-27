@@ -44,7 +44,7 @@
     
 }
 .contatos{
-    width: min-content;
+    width: 210px;
     font-size: 20px;
     color: #3C3C3C;
     font-weight: 10px;
@@ -140,7 +140,7 @@ text-decoration: none;
 
     .grandona{
         min-width: max-content;
-        margin-left: 650px;
+        margin-left: 670px;
 
     }
     .linha-titulo{
@@ -158,5 +158,8 @@ text-decoration: none;
         display: flex;
     }
 
-
+    .popup{
+        width: 100%;
+        height: 100%;
+    }
 } 

@@ -174,10 +174,7 @@ padding-right: 5px;
 .formulario__nova-proposta__botoes{}
 
 @media screen and (max-width: 600px){
-    body{
-        display: flex;
-        flex-direction: column;
-    }
+    
     .tabela{
         display: flex;
         flex-direction: column;

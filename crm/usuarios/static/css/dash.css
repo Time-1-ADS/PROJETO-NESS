@@ -4,9 +4,6 @@
     box-sizing: 0;
 }
 
-body{
-    display:flex;
-}
 .direita--superior{
     width: 100%;
     height: 50vh;
