@@ -27,9 +27,14 @@
 </head>
 
 <body>
-    <div class="popup-background hidden" onclick="back()">
+    <div class="hidden" id="popup">
         <div class="popup">
-
+            <input type="text" placeholder="Assunto" id="assunto">
+            <textarea name="Text1" cols="0" rows="0" placeholder="Digite sua mensagem aqui" id="mensagem"></textarea>
+            <div class="opcoes-email">
+                <button class="btn-email btn-cancelar" onclick="cancelarEnvio()">Cancelar</button>
+                <button class="btn-email btn-enviar" onclick="escolherDestinatario()">Escolher destinatário</button>
+            </div>
         </div>
     </div>
     <div class="navbar" id="navbar">
@@ -88,7 +93,7 @@
     </script>
     <script type="text/javascript" src="{% static '/js/dash.js' %}"></script>
     <script src="{% static 'js/navbar.js' %}"></script>
-    <script src="{% static 'js/lgn.js' %}"></script>
+    <script src="{% static 'js/email.js' %}"></script>
 </body>
 
 </html>

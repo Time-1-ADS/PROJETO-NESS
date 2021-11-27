@@ -6,6 +6,7 @@
         
         <div class="contatos">
             <h1>Contatos</h1>
+            <i data-feather="mail" class="menu__icon" onclick="email()"></i>
         </div>
 
         <div class="grandona">
@@ -85,7 +86,7 @@
                 </div>
 
                 <div class="informacao">
-                    <p class="email">{{clinica.email}}</p>
+                    <a class="email" href="mailto:{{clinica.email}}" target="_self" id="emailClinica" onclick="atualiza()">{{clinica.email}}</a>
                     <br>
                 </div>
                 <div class="informacao">
@@ -94,12 +95,17 @@
                     </a>
                 </div>
 
-
             </div>
 
             <hr>
             {% endfor %}
                 </div>
         </div>
+        <script>
+        function atualiza(){
+            document.location.reload(true)
+            console.log("ae")
+        }
+    </script>
         
 {% endblock %}
