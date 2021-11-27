@@ -104,7 +104,7 @@ text-decoration: none;
 }
 .popup textarea{
     width: 100%;
-    height: calc(80% - 10px);
+    height: calc(60% - 55px);
     resize: none;
     padding: 10px;
 }
