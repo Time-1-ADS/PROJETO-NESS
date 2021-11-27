@@ -9,23 +9,16 @@
     <i data-feather="mail" class="menu__icon" onclick="email()"></i>
 </div>
 
+
 <div class="grandona">
-    
-    
+
+
     <table class="conteudo-contatos">
         <tr class="categoria">
-            <td class="informacao">
-                <p>Cliente:</p>
-            </td>
-            <td class="informacao">
-                <p>Telefone:</p>
-            </td>
-            <td class="informacao">
-                <p>Whatsapp:</p>
-            </td>
-            <td class="informacao">
-                <p>E-mail:</p>
-            </td>
+            <td class="informacao">Cliente</td>
+            <td class="informacao">Telefone</td>
+            <td class="informacao">Whatsapp</td>
+            <td class="informacao">E-mail</td>
             <td>
                 <p></p>
             </td>
@@ -63,7 +56,7 @@
 
         </tr>
 
-        
+
         {% endfor %}
         {% for clinica in clinica %}
         <tr class="categoria">
@@ -98,15 +91,57 @@
 
         </tr>
 
-        
+
         {% endfor %}
     </table>
 </div>
+<div id="btnExport" class="btn--nova-proposta" style="margin-top: 15px;">
+    Exportar CSV
+</div>
+
+<div class="hidden" id="dvData">
+    <table>
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Especialidade</th>
+                <th>Telefone</th>
+                <th>Whatsapp</th>
+                <th>E-mail</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for contact in contacts %}
+            <tr>
+                
+                <td>{{contact.nome}}</td>
+                <td>{{contact.espec}}</td>
+                <td>{{contact.numero_fixo}}</td>
+                <td>{{contact.whatsapp}}</td>
+                <td>{{contact.email}}</td>
+                
+            </tr>
+            {% endfor %}
+            {% for clinica in clinica %}
+            <tr>
+                
+                <td>{{clinica.razao}}</td>
+                <td>{{clinica.categoria}}</td>
+                <td>{{clinica.numero}}</td>
+                <td></td>
+                <td>{{clinica.email}}</td>
+                
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
 <script>
-    function atualiza() {
-        document.location.reload(true)
-        console.log("ae")
-    }
+    $("#btnExport").click(function (e) {
+        window.open('data:application/vnd.ms-excel,' + $('#dvData').html());
+        e.preventDefault();
+    });
 </script>
 
 {% endblock %}
