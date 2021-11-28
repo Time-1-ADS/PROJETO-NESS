@@ -146,7 +146,7 @@ O Cliente pode ser B2B ou B2C, sendo assim temos os formulários de cadastro par
 
 Após finalizarmos todo o processo de planejamento. Foi concluído o backlog das etapas de cada entrega:
 
-🔗 **[Clique aqui]()** para mais detalhes.
+🔗 **[Clique aqui](https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/BacklogSprints.png)** para mais detalhes.
 
 <br>
 
