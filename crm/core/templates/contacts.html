@@ -96,8 +96,12 @@
     </table>
 </div>
 {% if user.cargo.cargo == "Administrador" or user.cargo.cargo == "Diretor" %}
+<div class="botn">
 <div id="btnExport" class="btn--nova-proposta" style="margin-top: 15px;">
     Exportar CSV
+</div>
+<label style="margin-top: 15px;" for='selecao-arquivo'>Importar Contatos</label>
+<input id='selecao-arquivo' type='file'>
 </div>
 {% endif %}
 <div class="hidden" id="dvData">
