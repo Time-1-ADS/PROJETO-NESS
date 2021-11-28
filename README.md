@@ -18,7 +18,7 @@ A empresa parceira deseja o desenvolvimento de um sistema CRM para fins de geren
 
 **O impacto disto é:** Ter de forma organizada todo o processo de gerenciamento de vendas, através disso conseguir de forma adequada entrar em contato com o cliente, para manter o gerenciamento dessa relação cliente e venda.
 
-**A solução seria:** O desenvolvimento de um sistema CRM no qual tanto o gerenciamneto de vendas quanto o contato com o cliente seja possível em uma mesma plataforma.
+**A solução seria:** O desenvolvimento de um sistema CRM no qual tanto o gerenciamento de vendas quanto o contato com o cliente seja possível em uma mesma plataforma.
 <br>
 
 ## :black_nib: Escopo da Solução
