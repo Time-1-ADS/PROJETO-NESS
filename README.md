@@ -5,9 +5,9 @@
 ![GitHub forks](https://img.shields.io/github/forks/Time-1-ADS/PROJETO-NESS?style=for-the-badge)
 
 
-### ATALHOS SPRINTS
+### ACESSE AS SPRINTS POR AQUI:
 
-O projeto ainda está concluído:
+O projeto está concluído:
 
 - ✅ [SPRINT 1](https://github.com/Time-1-ADS/PROJETO-NESS/tree/SPRINT_1)
 - ✅ [SPRINT 2](https://github.com/Time-1-ADS/PROJETO-NESS/tree/SPRINT_2)
