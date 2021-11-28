@@ -5,7 +5,7 @@
 Diante do exposto, chegamos na etapa final do projeto. Concluímos todas as telas que estavam faltando.
 
 Como mostrado no card a seguir, concluímos as telas restantes e aperfeiçoamos o sistema:
-<h1 align="center"> <img src = "" width="710" height="420" /></h1>
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/4.png" width="710" height="420" /></h1>
 
 <br>
 
@@ -152,10 +152,10 @@ Após finalizarmos todo o processo de planejamento. Foi concluído o backlog das
 
 ## :chart_with_downwards_trend: Burndown da Equipe
 
-<img src = "" width="600" height="450"/></h1>
+<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/burndown4.JPG" width="600" height="450"/></h1>
 
 <br>
 
 ## :newspaper: Backlog do Produto
 
-<img src = ""/></h1>
+<img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/Backlog_Produto4.png"/></h1>
