@@ -35,7 +35,7 @@ Tela do Formulário de Cadastro de cliente B2C           |  Tela de Leads
 :-------------------------:|:-------------------------:
 ![Login]()  |  ![Inicial]()
 
-## :desktop_computer: Tela de Usuário
+## Tela de Usuário
 
 <h1 align="center"> <img src = ""/></h1>
 
