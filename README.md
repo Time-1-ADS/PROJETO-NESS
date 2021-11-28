@@ -5,18 +5,14 @@
 ![GitHub forks](https://img.shields.io/github/forks/Time-1-ADS/PROJETO-NESS?style=for-the-badge)
 
 
-<img src="https://cdn.dribbble.com/users/10549/screenshots/3062682/build.png?compress=1&resize=400x300" alt="exemplo imagem">
+### ATALHOS SPRINTS
 
-> Imagem em construção.
-
-### Ajustes e melhorias
-
-O projeto ainda está em desenvolvimento:
+O projeto ainda está concluído:
 
 - ✅ [SPRINT 1](https://github.com/Time-1-ADS/PROJETO-NESS/tree/SPRINT_1)
 - ✅ [SPRINT 2](https://github.com/Time-1-ADS/PROJETO-NESS/tree/SPRINT_2)
 - ✅ [SPRINT 3](https://github.com/Time-1-ADS/PROJETO-NESS/tree/SPRINT_3)
-- ⬜ SPRINT 4
+- ✅ [SPRINT 4](https://github.com/Time-1-ADS/PROJETO-NESS/tree/SPRINT_4)
 
 
 ## 💻 Pré-requisitos
