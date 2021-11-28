@@ -13,7 +13,7 @@ class MedicForm(forms.ModelForm):
     class Meta:
         model = Medic
         fields = ['nome', 'cpf', 'crm', 'uf_crm', 'espec', 'estado', 'cidade',
-                  'numero_fixo', 'whatsapp', 'produto']
+                  'numero_fixo', 'whatsapp', 'email', 'produto']
 
 class ClinicForm(forms.ModelForm):
 

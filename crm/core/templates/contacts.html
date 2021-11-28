@@ -95,10 +95,11 @@
         {% endfor %}
     </table>
 </div>
+{% if user.cargo.cargo == "Administrador" or user.cargo.cargo == "Diretor" %}
 <div id="btnExport" class="btn--nova-proposta" style="margin-top: 15px;">
     Exportar CSV
 </div>
-
+{% endif %}
 <div class="hidden" id="dvData">
     <table>
         <thead>
