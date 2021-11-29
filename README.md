@@ -59,8 +59,8 @@ $ pip install requirements.txt
 
 Para usar o PROJETO-NESS, siga estas etapas:
 
-```
 **Vá para a pasta onde tem o arquivo manage.py**
+
 
 - Rodar o comando migrate
 ```
@@ -71,7 +71,7 @@ $ python manage.py migrate
 ```
 $ python manage.py runserver
 ```
-```
+
 
 ## 📝 Backlog das Sprints
 <img src="https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/BacklogSprints.png" width="2000" height="650">
