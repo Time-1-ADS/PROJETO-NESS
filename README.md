@@ -27,16 +27,50 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 Para instalar o PROJETO-NESS, siga estas etapas:
 
 Windows:
+
+- Clonar Repositório
+
 ```
-**BUILDING**
+$ git clone "https://github.com/Time-1-ADS/PROJETO-NESS.git"
 ```
+
+- Criar a venv
+```
+$ python -m venv (nome da venv)
+```
+
+- Ativar a venv
+```
+$ ./venvname/Scripts/activate
+```
+
+- Instalar Requerimentos
+```
+$ pip install requirements.txt
+```
+
+- Inicializar o banco de dados
+
+- Criar o banco de dados com as informações presentes no arquivo db.py
+
+- Criar o arquivo secret.py com a função key_sec() que retorna a chave do settings
 
 ## ☕ Usando PROJETO-NESS
 
 Para usar o PROJETO-NESS, siga estas etapas:
 
 ```
-**BUILDING**
+**Vá para a pasta onde tem o arquivo manage.py**
+
+- Rodar o comando migrate
+```
+$ python manage.py migrate
+```
+
+- Rodar o servidor
+```
+$ python manage.py runserver
+```
 ```
 
 ## 📝 Backlog das Sprints
