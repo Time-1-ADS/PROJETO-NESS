@@ -13,27 +13,30 @@ Como mostrado no card a seguir, concluímos as telas restantes e aperfeiçoamos 
 
 Tela de Login             |  Tela de Propostas
 :-------------------------:|:-------------------------:
-![Login]()  |  ![Inicial]()
+![Login](https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/tela_login.JPG)  |  ![Inicial](https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/tela_proposta.JPG)
 
 Tela de Cadastro de nova Proposta            |  Tela de Personalização de Tabelas 
 :-------------------------:|:-------------------------:
-![Login]()  |  ![Inicial]()
+![Login](https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/tela_nova_proposta.JPG)  |  ![Inicial](https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/tela_editar_tabela.JPG)
 
 Tela de Contatos           |  Tela do Dashboard
 :-------------------------:|:-------------------------:
-![Login]()  |  ![Inicial]()
+![Login](https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/tela_contatos.JPG)  |  ![Inicial](https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/tela_dashboard.JPG)
 
 Tela de Cadastro de Clientes e Funcionários           |  Tela de Cadastro de Clientes B2B e B2C   
 :-------------------------:|:-------------------------:
-![Login]()  |  ![Inicial]()
+![Login](
+https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/tela_cadastro_cliente_funcionario.JPG
+)  |  ![Inicial](https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/tela_b2b_b2c.JPG)
 
 Tela do Formulário de Cliente B2B      | Tela do Formulário de Cadastro de cliente B2C
 :-------------------------:|:-------------------------:
-![Login]()  |  ![Inicial]()
+![Login](https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/cadastro_b2b.JPG)  |  ![Inicial](https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/cadastro_b2c.JPG)
 
 Tela de Leads           |  Tela de dados do usuário
 :-------------------------:|:-------------------------:
-![Login]()  |  ![Inicial]()
+![Login](https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/tela_leads.JPG)  |  ![Inicial](https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/tela_dados_usuario.JPG
+)
 
 <br>
 
