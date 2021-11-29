@@ -126,6 +126,14 @@ Nesta tela é mostrado as informações da pessoa que está usando o sistema.
 
 <br>
 
+## :desktop_computer: Mostrando a Responsividade
+
+<h3 align="center">:space_invader: Versão em Mobile</h3>
+
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/responsivo.gif"/></h1>
+
+<br>
+
 ## :dart: Backlog das Sprints
 
 Após finalizarmos todo o processo de planejamento. Foi concluído o backlog das etapas de cada entrega:
