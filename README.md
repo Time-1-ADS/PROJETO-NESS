@@ -15,29 +15,25 @@ Tela de Login             |  Tela de Propostas
 :-------------------------:|:-------------------------:
 ![Login]()  |  ![Inicial]()
 
-Tela de Cadastro de nova Proposta            |  Tela de Editar Tabelas
+Tela de Cadastro de nova Proposta            |  Tela de Personalização de Tabelas 
 :-------------------------:|:-------------------------:
 ![Login]()  |  ![Inicial]()
 
-Tela de Personalização de Tabelas            |  Tela de Contatos
+Tela de Contatos           |  Tela do Dashboard
 :-------------------------:|:-------------------------:
 ![Login]()  |  ![Inicial]()
 
-Tela do Dashboard           |  Tela de Cadastro de Clientes e Funcionários
+Tela de Cadastro de Clientes e Funcionários           |  Tela de Cadastro de Clientes B2B e B2C   
 :-------------------------:|:-------------------------:
 ![Login]()  |  ![Inicial]()
 
-Tela de Cadastro de Clientes B2B e B2C          |  Tela do Formulário de Cliente B2B
+Tela do Formulário de Cliente B2B      | Tela do Formulário de Cadastro de cliente B2C
 :-------------------------:|:-------------------------:
 ![Login]()  |  ![Inicial]()
 
-Tela do Formulário de Cadastro de cliente B2C           |  Tela de Leads
+Tela de Leads           |  Tela de dados do usuário
 :-------------------------:|:-------------------------:
 ![Login]()  |  ![Inicial]()
-
-## Tela de Usuário
-
-<h1 align="center"> <img src = ""/></h1>
 
 <br>
 
