@@ -37,7 +37,7 @@ Tela de Leads           |  Tela de dados do usuário
 
 <br>
 
-#### 🔗 [Visualizar *Link do Figma* atualizado]()
+#### 🔗 [Visualizar *Link do Figma* atualizado](https://www.figma.com/file/QN0WHqnnH4DB72c1DiaZdU/Untitled?node-id=0%3A1)
 
 <br>
 
