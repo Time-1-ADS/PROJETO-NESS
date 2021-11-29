@@ -25,9 +25,7 @@ Tela de Contatos           |  Tela do Dashboard
 
 Tela de Cadastro de Clientes e Funcionários           |  Tela de Cadastro de Clientes B2B e B2C   
 :-------------------------:|:-------------------------:
-![Login](
-https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/tela_cadastro_cliente_funcionario.JPG
-)  |  ![Inicial](https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/tela_b2b_b2c.JPG)
+![Login](https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/tela_cadastro_cliente_funcionario.JPG)  |  ![Inicial](https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/tela_b2b_b2c.JPG)
 
 Tela do Formulário de Cliente B2B      | Tela do Formulário de Cadastro de cliente B2C
 :-------------------------:|:-------------------------:
