@@ -33,8 +33,7 @@ Tela do Formulário de Cliente B2B      | Tela do Formulário de Cadastro de cli
 
 Tela de Leads           |  Tela de dados do usuário
 :-------------------------:|:-------------------------:
-![Login](https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/tela_leads.JPG)  |  ![Inicial](https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/tela_dados_usuario.JPG
-)
+![Login](https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/tela_leads.JPG)  |  ![Inicial](https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/tela_dados_usuario.JPG)
 
 <br>
 
