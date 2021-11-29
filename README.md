@@ -45,7 +45,7 @@ Tela de Leads           |  Tela de dados do usuário
 
 Nesta tela, o usuário pode acessar o sistema através de um Login com e-mail e senha.
 
-<h3 align="center">:space_invader: E-mail e Senha para acesso</h3>
+<h3 align="center">:space_invader: Usuário e Senha para acesso</h3>
 
 <h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/Login.gif"/></h1>
 
