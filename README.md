@@ -47,7 +47,7 @@ Nesta tela, o usuário pode acessar o sistema através de um Login com e-mail e 
 
 <h3 align="center">:space_invader: E-mail e Senha para acesso</h3>
 
-<h1 align="center"> <img src = ""/></h1>
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/Login.gif"/></h1>
 
 <br>
 
@@ -58,7 +58,7 @@ Nesta tela, é possível realizar cadastros de clientes (Médicos ou Clínicas),
 
 <h3 align="center">:ringed_planet: Cadastro de Clientes e Funcionários</h3>
 
-<h1 align="center"> <img src = ""/></h1>
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/Registro.gif"/></h1>
 
 <br>
 
@@ -70,7 +70,7 @@ Ao cadastrar uma proposta, também é cadastrado o contato do cliente.
 
 <h3 align="center">:medal_sports: Contatos</h3>
 
-<h1 align="center"> <img src = ""/></h1>
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/Contatos.gif"/></h1>
 
 <br>
 
@@ -80,7 +80,7 @@ Ainda na tela de propostas, temos também o botão de "Editar Tabelas" que possi
 
 <h3 align="center">:outbox_tray: Editar Tabelas </h3>
 
-<h1 align="center"> <img src = ""/></h1>
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/Editando-tabelas.gif"/></h1>
 
 <br>
 
