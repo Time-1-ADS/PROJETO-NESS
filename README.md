@@ -18,7 +18,7 @@ O projeto está concluído:
 ## 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
-* Veja se você instalou a versão mais recente de `Python / SQL `
+* Veja se você instalou a versão mais recente de `Python / MySQL `
 * Veja se você tem uma máquina `Windows`.
 
 
