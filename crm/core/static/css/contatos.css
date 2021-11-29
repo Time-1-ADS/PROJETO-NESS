@@ -66,7 +66,7 @@ input[type='file'] {
   }
   
   /* Aparência que terá o seletor de arquivo */
-  label {
+ .botn label {
     border-radius: 10px;
     color: #fff;
     font-size: 20px;
@@ -191,7 +191,7 @@ text-decoration: none;
     .botn{
         flex-direction: column;
     }
-    label{
+    .botn label{
         width: 100%;
     }
 } 
