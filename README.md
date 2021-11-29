@@ -90,20 +90,9 @@ Na tela de propostas temos o botão de "Nova Proposta" que nos redireciona para 
 
 <h3 align="center">:flying_saucer: Nova Proposta </h3>
 
-<h1 align="center"> <img src = ""/></h1>
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/novas-propostas.gif"/></h1>
 
 <br>
-
-## :desktop_computer: Tela de Propostas
-
-Nesta tela, será mostrado as propostas contidas no sistema, sendo elas propostas: Novo, Aberto, Pendente e Fechado.
-
-<h3 align="center">:dizzy: Propostas</h3>
-
-<h1 align="center"> <img src = ""/></h1>
-
-<br>
-
 
 ## :desktop_computer: Tela de Leads
 
@@ -111,7 +100,7 @@ Nesta tela, será mostrado todas as informações das propostas dos possíveis s
 
 <h3 align="center">:dizzy: Leads</h3>
 
-<h1 align="center"> <img src = ""/></h1>
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/leads.png"/></h1>
 
 <br>
 
@@ -123,7 +112,7 @@ E também possuí um gráfico que contabiliza a porcentagem de cada projeto.
 
 <h3 align="center">:medal_sports: Dashboard</h3>
 
-<h1 align="center"> <img src = ""/></h1>
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/dashboard.png"/></h1>
 
 <br>
 
@@ -133,16 +122,9 @@ Nesta tela é mostrado as informações da pessoa que está usando o sistema.
 
 <h3 align="center">:medal_sports: Perfil</h3>
 
-<h1 align="center"> <img src = ""/></h1>
+<h1 align="center"> <img src = "https://github.com/Time-1-ADS/PROJETO-NESS/blob/codes/imagens/perfil.png"/></h1>
 
 <br>
-
-
-
-
-
-
-
 
 ## :dart: Backlog das Sprints
 
