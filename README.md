@@ -51,52 +51,12 @@ Nesta tela, o usuário pode acessar o sistema através de um Login com e-mail e 
 
 <br>
 
-## :desktop_computer: Tela de Propostas
-
-Nesta tela, será mostrado as propostas contidas no sistema, sendo elas propostas: Novo, Aberto, Pendente e Fechado.
-
-<h3 align="center">:dizzy: Propostas</h3>
-
-<h1 align="center"> <img src = ""/></h1>
-
-<br>
-
 ## :desktop_computer: Tela de Cadastro de Clientes e Funcionários
 
 Nesta tela, é possível realizar cadastros de clientes (Médicos ou Clínicas), e de funcionários que serão os que terão acesso ao sistema.
 
 
 <h3 align="center">:ringed_planet: Cadastro de Clientes e Funcionários</h3>
-
-<h1 align="center"> <img src = ""/></h1>
-
-<br>
-
-## :desktop_computer: Tela de Cadastro de Nova Proposta
-
-Na tela de propostas temos o botão de "Nova Proposta" que nos redireciona para esta tela, onde é possível cadastrar uma nova proposta..
-
-<h3 align="center">:flying_saucer: Tela para cadastrar uma nova proposta</h3>
-
-<h1 align="center"> <img src = ""/></h1>
-
-<br>
-
-## :desktop_computer: Tela Editar Tabelas
-
-Ainda na tela de propostas, temos também o botão de "Editar Tabelas" que possibilita o usuário alterar os nomes das tabelas.
-
-<h3 align="center">:outbox_tray: Editar Tabelas </h3>
-
-<h1 align="center"> <img src = ""/></h1>
-
-<br>
-
-## :desktop_computer: Tela de Personalização de tabelas
-
-Nesta tela é possível editar os títulos das tabelas de acordo com sua preferência.
-
-<h3 align="center">:busts_in_silhouette: Formulário de personalização de tabelas</h3>
 
 <h1 align="center"> <img src = ""/></h1>
 
@@ -114,6 +74,47 @@ Ao cadastrar uma proposta, também é cadastrado o contato do cliente.
 
 <br>
 
+## :desktop_computer: Tela Editar Tabelas
+
+Ainda na tela de propostas, temos também o botão de "Editar Tabelas" que possibilita o usuário alterar os nomes das tabelas.
+
+<h3 align="center">:outbox_tray: Editar Tabelas </h3>
+
+<h1 align="center"> <img src = ""/></h1>
+
+<br>
+
+## :desktop_computer: Tela de Cadastro de Nova Proposta
+
+Na tela de propostas temos o botão de "Nova Proposta" que nos redireciona para esta tela, onde é possível cadastrar uma nova proposta..
+
+<h3 align="center">:flying_saucer: Nova Proposta </h3>
+
+<h1 align="center"> <img src = ""/></h1>
+
+<br>
+
+## :desktop_computer: Tela de Propostas
+
+Nesta tela, será mostrado as propostas contidas no sistema, sendo elas propostas: Novo, Aberto, Pendente e Fechado.
+
+<h3 align="center">:dizzy: Propostas</h3>
+
+<h1 align="center"> <img src = ""/></h1>
+
+<br>
+
+
+## :desktop_computer: Tela de Leads
+
+Nesta tela, será mostrado todas as informações das propostas dos possíveis serviços que serão realizados.
+
+<h3 align="center">:dizzy: Leads</h3>
+
+<h1 align="center"> <img src = ""/></h1>
+
+<br>
+
 ## :desktop_computer: Tela do Dashboard
 
 Nesta tela é mostrado todos os status que o sistema possuí, mostrando o total de Leads, Quantidade de itens por status e os projetos novos recém cadastrados.
@@ -126,17 +127,22 @@ E também possuí um gráfico que contabiliza a porcentagem de cada projeto.
 
 <br>
 
-## :desktop_computer: Tela de Cadastro de Cliente e Funcionário
+## :desktop_computer: Tela de Perfil
 
-Nesta tela, é possível realizar o cadastro de clientes e funcionários.
+Nesta tela é mostrado as informações da pessoa que está usando o sistema.
 
-O Cliente pode ser B2B ou B2C, sendo assim temos os formulários de cadastro para ambos os tipos.
-
-<h3 align="center">:medal_sports: Cadastro Clientes e Funcionários</h3>
+<h3 align="center">:medal_sports: Perfil</h3>
 
 <h1 align="center"> <img src = ""/></h1>
 
 <br>
+
+
+
+
+
+
+
 
 ## :dart: Backlog das Sprints
 
