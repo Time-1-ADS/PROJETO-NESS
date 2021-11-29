@@ -64,7 +64,7 @@ Nesta tela, é possível realizar cadastros de clientes (Médicos ou Clínicas),
 
 ## :desktop_computer: Tela de Contatos
 
-Nesta telas, é mostrado os contatos, com os dados necessários para que possa ser realizado o atendimento.
+Nesta tela, é mostrado os contatos, com os dados necessários para que possa ser realizado o atendimento.
 
 Ao cadastrar uma proposta, também é cadastrado o contato do cliente. 
 
